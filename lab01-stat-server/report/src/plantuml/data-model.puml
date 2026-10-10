@@ -1,0 +1,54 @@
+@startuml data-model
+!pragma layout smetana
+skinparam defaultFontName "DejaVu Sans"
+skinparam shadowing false
+title Модель данных data/stats.json
+
+class "stats.json" as root {
+  version : 1
+  createdAt / updatedAt
+  counters : {events, pageViews, actions,
+  heartbeats, sessionEnds, feedback, trimmedEvents}
+}
+
+class "visitors {id}" as visitor {
+  id : string (localStorage)
+  firstSeen / lastSeen : ts
+  visits : число сессий
+  pageViews : число просмотров
+  ua / device / lang / screen / tz
+}
+
+class "sessions {id}" as session {
+  id : string (sessionId)
+  visitorId : FK → visitors
+  start / lastEvent / end : ts
+  closed : boolean
+  durationSec : end − start
+  pageViews / actions : counters
+  pages : {page → count}
+  entryPage / exitPage / referrer / device
+}
+
+class "events []" as event {
+  id : UUID
+  ts : ms (массив отсортирован)
+  type : pageview | action | heartbeat | session_end
+  visitorId / sessionId : FK
+  page / label / referrer / device / ip
+}
+
+class "feedback []" as feedback {
+  id : UUID, ts
+  name / email / topic / message
+  page / visitorId / sessionId / ip
+}
+
+root *-- visitor : 1..*
+root *-- session : 1..*
+root *-- event : 1..MAX_EVENTS (20000)
+root *-- feedback : 1..MAX_FEEDBACK (500)
+visitor "1" -- "1..*" session : visits
+session "1" -- "1..*" event : содержит
+visitor "1" -- "0..*" feedback : отправил
+@enduml

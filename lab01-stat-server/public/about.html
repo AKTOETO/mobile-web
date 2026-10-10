@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Описание лабораторной работы №1, варианта 7 и собираемых показателей.">
+  <title>WebLab — о проекте</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/index.html">Web<span>Lab</span></a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav">
+        Меню
+      </button>
+      <nav class="nav" id="mainNav">
+        <a href="/index.html">Главная</a>
+        <a href="/catalog.html">Каталог</a>
+        <a href="/about.html" class="is-active">О проекте</a>
+        <a href="/contact.html">Обратная связь</a>
+        <a href="/dashboard.html" class="nav-dashboard">Статистика</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero hero-compact">
+      <h1>О проекте</h1>
+      <p class="lead">
+        Лабораторная работа №1 «Взаимодействие с web-клиентом», вариант 7 —
+        сервер статистики аналитики сайта.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Какие показатели считаются</h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th>Показатель</th><th>Как считается</th></tr></thead>
+          <tbody>
+            <tr><td>Просмотры страниц</td><td>число событий <code>pageview</code> (по одному на каждое открытие страницы)</td></tr>
+            <tr><td>Уникальные посетители</td><td>число различных <code>visitorId</code>; идентификатор хранится в <code>localStorage</code> браузера</td></tr>
+            <tr><td>Сессия</td><td>цепочка событий одного посетителя без перерыва дольше 30 минут</td></tr>
+            <tr><td>Длительность сессии</td><td><code>последнее событие − первое событие</code>, продлевается heartbeat-запросами, закрывается по <code>session_end</code> или таймауту</td></tr>
+            <tr><td>Глубина просмотра</td><td>среднее число просмотров за сессию</td></tr>
+            <tr><td>Показатель отказов</td><td>доля сессий ровно с одним просмотром</td></tr>
+            <tr><td>Устройства</td><td>классификация по User-Agent: desktop / mobile / tablet / aurora</td></tr>
+            <tr><td>Источники переходов</td><td>переходы напрямую, изнутри сайта и с внешних сайтов (по <code>document.referrer</code>)</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Требования задания и где они выполнены</h2>
+      <div class="table-wrap">
+        <table class="table">
+          <thead><tr><th>Требование</th><th>Реализация</th></tr></thead>
+          <tbody>
+            <tr><td>Серверное ПО на любом языке</td><td>Node.js, только встроенные модули (<code>http</code>, <code>fs</code>, <code>path</code>, <code>crypto</code>)</td></tr>
+            <tr><td>Web-интерфейс в браузере</td><td><code>public/index.html</code>, <code>catalog.html</code>, <code>contact.html</code>, <code>about.html</code>, <code>dashboard.html</code></td></tr>
+            <tr><td>JS управляет действиями пользователя и кнопками формы</td><td><code>public/js/app.js</code> (фильтр каталога, форма обратной связи), <code>public/js/dashboard.js</code> (форма отчёта)</td></tr>
+            <tr><td>Асинхронный вызов в JS</td><td><code>async/await</code>, <code>Promise.all</code>, <code>fetch</code>, <code>AbortController</code> в <code>api.js</code>, <code>tracker.js</code>, <code>dashboard.js</code></td></tr>
+            <tr><td>Адаптивная вёрстка через <code>@media</code></td><td><code>public/css/style.css</code> и <code>public/css/dashboard.css</code> (992 px, 768 px, 480 px)</td></tr>
+            <tr><td>Работа в локальной сети</td><td>сервер слушает <code>0.0.0.0:3000</code> и печатает адрес для телефона</td></tr>
+            <tr><td>Визуализация результата</td><td>графики на <code>&lt;canvas&gt;</code> в <code>public/js/charts.js</code>: столбцы, временная линия, кольцевая диаграмма</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="hero-actions">
+        <a class="btn" href="/dashboard.html" data-track="open:dashboard">Перейти к графикам</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Лабораторная работа №1 · вариант 7 · MAI, Разработка мобильных и web-приложений</p>
+    </div>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/tracker.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

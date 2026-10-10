@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Web-форма обратной связи: асинхронная отправка на сервер через fetch.">
+  <title>WebLab — обратная связь</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/index.html">Web<span>Lab</span></a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav">
+        Меню
+      </button>
+      <nav class="nav" id="mainNav">
+        <a href="/index.html">Главная</a>
+        <a href="/catalog.html">Каталог</a>
+        <a href="/about.html">О проекте</a>
+        <a href="/contact.html" class="is-active">Обратная связь</a>
+        <a href="/dashboard.html" class="nav-dashboard">Статистика</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero hero-compact">
+      <h1>Обратная связь</h1>
+      <p class="lead">
+        Нажатие кнопки «Отправить» обрабатывается в <code>app.js</code>: данные формы
+        валидируются и асинхронно отправляются запросом <code>POST /api/feedback</code>.
+        Страница не перезагружается.
+      </p>
+    </section>
+
+    <section class="panel">
+      <form class="form" id="feedbackForm" autocomplete="off" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Имя <span class="req">*</span></label>
+            <input id="name" name="name" type="text" required minlength="2" placeholder="Иван">
+          </div>
+
+          <div class="field">
+            <label for="email">E-mail <span class="req">*</span></label>
+            <input id="email" name="email" type="email" required placeholder="student@mai.ru">
+          </div>
+
+          <div class="field">
+            <label for="topic">Тема обращения</label>
+            <select id="topic" name="topic">
+              <option value="question">Вопрос по лабораторной работе</option>
+              <option value="bug">Нашёл ошибку</option>
+              <option value="feature">Предложение</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+
+          <div class="field field-full">
+            <label for="message">Сообщение <span class="req">*</span></label>
+            <textarea id="message" name="message" rows="5" required minlength="5"
+              placeholder="Опишите вопрос или проблему…"></textarea>
+          </div>
+
+          <div class="field field-full field-check">
+            <label>
+              <input type="checkbox" id="trackConsent" name="trackConsent" checked>
+              разрешить собирать статистику моего визита
+            </label>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn" type="submit" id="sendFeedback" data-track="contact:submit">Отправить</button>
+          <button class="btn btn-secondary" type="reset" id="clearFeedback" data-track="contact:clear">Очистить</button>
+        </div>
+
+        <ul class="messages" id="formMessages"></ul>
+        <p class="muted" id="formStatus"></p>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Отправленные сообщения на сервере</h2>
+      <p class="muted">Загрузка через <code>GET /api/feedback</code>…</p>
+      <div class="table-wrap">
+        <table class="table" id="feedbackTable">
+          <thead>
+            <tr><th>Когда</th><th>Имя</th><th>E-mail</th><th>Тема</th><th>Страница</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Лабораторная работа №1 · вариант 7 · MAI, Разработка мобильных и web-приложений</p>
+    </div>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/tracker.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>

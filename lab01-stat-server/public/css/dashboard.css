@@ -1,0 +1,112 @@
+/* ==========================================================================
+   dashboard.css — стили страницы статистики (графики, статусы, toast).
+   Также содержит @media-правила адаптации дашборда под телефон/планшет.
+   ========================================================================== */
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.chart-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow);
+}
+
+.chart {
+  width: 100%;
+  height: 260px;
+}
+.chart canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.status-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  min-height: 24px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: var(--color-secondary);
+  border: 1px solid var(--color-line);
+  color: var(--color-muted);
+}
+
+.toast {
+  margin-top: 10px;
+  padding: 0;
+  border-radius: 8px;
+  font-size: 14px;
+  min-height: 0;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+.toast.is-visible {
+  opacity: 1;
+  padding: 10px 12px;
+  background: #e7f6ec;
+  border: 1px solid #b9e0c6;
+  color: #14683a;
+}
+.toast.is-error {
+  background: #fdeaea;
+  border-color: #f3c9c9;
+  color: #8d2020;
+}
+
+.legend {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  color: var(--color-muted);
+  margin-top: 8px;
+}
+.legend i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* ============================ Адаптивность: @media ======================= */
+
+@media (max-width: 992px) {
+  .charts { grid-template-columns: 1fr; }
+  .chart { height: 240px; }
+}
+
+@media (max-width: 768px) {
+  .chart { height: 220px; }
+  .chart-card { padding: 12px; }
+  .status-bar { flex-direction: column; align-items: flex-start; }
+}
+
+@media (max-width: 480px) {
+  .chart { height: 200px; }
+  .kpi { padding: 10px; }
+}
+
+/* Печать отчёта (иногда просят «распечатать графики»). */
+@media print {
+  .site-header, .site-footer, .form-actions, .toast, .status-bar { display: none !important; }
+  body { background: #fff; }
+  .chart-card, .panel { box-shadow: none; }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "lab01-stat-server",
+  "version": "1.0.0",
+  "description": "Лабораторная работа №1 (вариант 7): сервер статистики аналитики сайта + web-интерфейс",
+  "private": true,
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js",
+    "seed": "node server/seed-cli.js",
+    "test": "node test/api-test.js",
+    "test:ui": "node test/frontend-smoke.js",
+    "reset": "node server/seed-cli.js --reset"
+  },
+  "devDependencies": {
+    "jsdom": "^30.0.0",
+    "puppeteer-core": "^25.13.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "analytics",
+    "statistics",
+    "lab",
+    "MAI"
+  ],
+  "license": "MIT"
+}

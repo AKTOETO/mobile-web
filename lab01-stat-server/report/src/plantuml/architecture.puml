@@ -1,0 +1,51 @@
+@startuml architecture
+!pragma layout smetana
+skinparam defaultFontName "DejaVu Sans"
+skinparam componentStyle rectangle
+skinparam shadowing false
+skinparam roundCorner 12
+title Архитектура сервера статистики (лабораторная работа №1, вариант 7)
+
+package "Браузер (ПК / телефон Аврора)" #F2F7FF {
+  [index.html\ncatalog.html\nabout.html\ncontact.html] as pages
+  [dashboard.html] as dash
+  [tracker.js\npageview / action\nheartbeat / session_end] as tracker
+  [api.js\nfetch + AbortController] as api
+  [app.js\nформы, кнопки] as app
+  [dashboard.js\nформа отчёта] as dashjs
+  [charts.js\ncanvas-графики] as charts
+  [localStorage\nsessionId: sessionStorage] as store
+}
+
+package "Node.js сервер (встроенные модули)" #FFF6E8 {
+  [server.js\nмаршрутизация, статика, API] as srv
+  [analytics.js\nKPI, ряды для графиков] as anal
+  [storage.js\naddEvent / endSession / reset] as stor
+  [seed.js\nдемо-данные] as seed
+}
+
+database "data/stats.json\nпосетители, сессии,\nсобытия, сообщения формы" as db
+
+pages ..> tracker : <script>
+dash ..> dashjs
+app -> api
+dashjs -> api
+tracker -> api
+api --> srv : HTTP JSON\n(async/await)
+dashjs --> srv : GET /api/stats\nPOST /api/seed, /api/reset
+srv -> anal : сводные показатели
+srv -> stor : приём событий
+srv --> seed : вызов генератора
+stor -> db : атомарная запись\n(debounce 400 мс)
+anal -> db : чтение
+tracker <-> store : visitorId / sessionId
+charts <- dashjs : timeline, topPages,\ndevices, sessions
+
+note right of srv
+  POST /api/events
+  POST /api/session-end
+  GET  /api/stats
+  GET  /api/export.csv
+  POST /api/feedback
+end note
+@enduml

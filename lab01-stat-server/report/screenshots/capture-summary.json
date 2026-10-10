@@ -1,0 +1,132 @@
+{
+  "capturedAt": "2026-10-10T21:35:44.636Z",
+  "totals": {
+    "pageViews": 138,
+    "uniqueVisitors": 25,
+    "sessions": 54,
+    "openSessions": 12,
+    "newVisitors": 25,
+    "returningVisitors": 11,
+    "actions": 39,
+    "avgSessionDurationSec": 221,
+    "maxSessionDurationSec": 588,
+    "avgPagesPerSession": 2.56,
+    "bounceRate": 44.4,
+    "activeNow": 5
+  },
+  "lifetime": {
+    "pageViews": 138,
+    "uniqueVisitors": 25,
+    "sessions": 54,
+    "avgSessionDurationSec": 221,
+    "avgPagesPerSession": 2.56,
+    "newVisitors": 14,
+    "returningVisitors": 11,
+    "actions": 39,
+    "feedback": 1,
+    "firstEvent": 1791095640000,
+    "lastEvent": 1791668142755
+  },
+  "devices": {
+    "desktop": 34,
+    "aurora": 12,
+    "mobile": 6,
+    "tablet": 2
+  },
+  "sources": {
+    "direct": 27,
+    "internal": 11,
+    "external": [
+      {
+        "host": "google.com",
+        "count": 7
+      },
+      {
+        "host": "mai.ru",
+        "count": 5
+      },
+      {
+        "host": "pikabu.ru",
+        "count": 4
+      }
+    ]
+  },
+  "facts": {
+    "catalogBefore": "Показано 6 из 12.",
+    "catalogAfter": "Показано 4 из 4. Фильтр применён, страница не перезагружалась.",
+    "catalogCards": [
+      "Смартфон Aurora X",
+      "Смартфон Nova 5G",
+      "Смартфон Compact Lite",
+      "Смартфон Aurora Pro"
+    ],
+    "validationErrors": [
+      "Укажите имя (минимум 2 символа). Некорректный e-mail. Сообщение слишком короткое (минимум 5 символов)."
+    ],
+    "formStatus": "Сервер принял форму в 2026-10-10T21:35:37.086Z",
+    "feedbackRows": [
+      "11.10.2026, 00:35:37Иван Петровivan@example.ruquestion/contact.html"
+    ],
+    "kpi": [
+      "pageViews=28",
+      "uniqueVisitors=11",
+      "sessions=19",
+      "avgSessionDurationSec=1 мин 41 с",
+      "avgPagesPerSession=1.47",
+      "bounceRate=73.7 %",
+      "activeNow=5",
+      "newVisitors=9",
+      "returningVisitors=7",
+      "actions=9"
+    ],
+    "canvas": [
+      "timelineChart 496x260",
+      "pagesChart 496x260",
+      "devicesChart 496x260",
+      "durationChart 496x260"
+    ],
+    "sessionRows": [
+      "11.10 00:35:377f1927a0…Компьютер0 с10/dashboard.htmlоткрыта",
+      "11.10 00:35:377f1927a0…Компьютер0 с01/contact.htmlоткрыта",
+      "11.10 00:35:377f1927a0…Компьютер0 с01/contact.htmlоткрыта"
+    ],
+    "reportRange": "последние 7 дней · /catalog.html",
+    "kpiFiltered": [
+      "pageViews=77",
+      "uniqueVisitors=21",
+      "sessions=22",
+      "avgSessionDurationSec=5 мин 19 с",
+      "avgPagesPerSession=3.5",
+      "bounceRate=18.2 %",
+      "activeNow=5",
+      "newVisitors=21",
+      "returningVisitors=10",
+      "actions=34"
+    ],
+    "mobileVisitorId": "7f1927a0-e704-4f03-94c3-1168ee1000bb",
+    "mobileStats": [
+      "pageViews=135",
+      "uniqueVisitors=25",
+      "sessions=50",
+      "avgSessionDurationSec=3 мин 59 с"
+    ],
+    "auroraCanvas": [
+      "timelineChart 672x400",
+      "pagesChart 672x400",
+      "devicesChart 672x400",
+      "durationChart 672x400"
+    ],
+    "auroraKpi": [
+      "pageViews=31",
+      "uniqueVisitors=11",
+      "sessions=24",
+      "avgSessionDurationSec=1 мин 20 с",
+      "avgPagesPerSession=1.29",
+      "bounceRate=79.2 %",
+      "activeNow=5",
+      "newVisitors=9",
+      "returningVisitors=7",
+      "actions=11"
+    ]
+  }
+}

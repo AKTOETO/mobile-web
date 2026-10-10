@@ -1,0 +1,55 @@
+@startuml sequence-tracking
+!pragma layout smetana
+skinparam defaultFontName "DejaVu Sans"
+skinparam shadowing false
+title Поток данных: визит посетителя и формирование отчёта
+
+actor "Пользователь\n(ПК / Аврора)" as user
+participant "страница сайта\n+ tracker.js" as page
+participant "api.js\n(fetch, async/await)" as api
+participant "server.js\n(HTTP, маршрутизация)" as srv
+participant "storage.js" as stor
+database "data/stats.json" as db
+participant "dashboard.js" as dash
+participant "charts.js\n(canvas)" as charts
+
+user -> page : открыть /catalog.html
+page -> api : sendEvent("pageview")
+api -> srv : POST /api/events\n{visitorId, sessionId, page, ua}
+srv -> stor : addEvent()
+stor -> stor : создать посетителя\nоткрыть сессию
+stor -> db : scheduleSave()\n(атомарная запись)
+stor --> srv : {eventId, counters}
+srv --> api : 201 Created
+api --> page : Promise resolved
+
+user -> page : клик по кнопке\n(data-track="catalog:filter")
+page -> api : sendEvent("action", label)
+api -> srv : POST /api/events
+srv -> stor : session.actions += 1
+
+loop каждые 30 с, пока вкладка видима
+  page -> api : sendEvent("heartbeat")
+  api -> srv : POST /api/events
+  srv -> stor : session.lastEvent = ts\n(сессия продлевается)
+end
+
+user -> page : закрыть вкладку (pagehide)
+page -> srv : navigator.sendBeacon("/api/session-end")
+srv -> stor : closeSession()\ndurationSec = end - start
+stor -> db : запись
+
+user -> dash : открыть /dashboard.html
+dash -> api : loadReport()
+api -> srv : GET /api/stats?range=7d&page=…
+srv -> stor : состояние базы
+srv -> srv : analytics.computeStats()
+srv --> api : {totals, timeline, topPages,\ndevices, recentSessions}
+api --> dash : await resolved
+dash -> charts : drawLine / drawBars /\ndrawDonut / drawColumns
+charts --> user : графики на canvas
+
+opt автообновление включено
+  dash -> api : каждые 5 с повторить loadReport()
+end
+@enduml

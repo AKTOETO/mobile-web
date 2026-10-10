@@ -1,0 +1,13 @@
+# Данные статистики и временные файлы тестов не коммитим
+data/
+test/tmp-data/
+test/tmp-data-smoke/
+node_modules/
+*.log
+
+# Временные данные и сборка отчёта
+report/.screens-data/
+report/build/
+
+# Внешние инструменты (plantuml.jar скачивается отдельно)
+tools/

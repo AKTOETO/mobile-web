@@ -1,0 +1,24 @@
+@startuml session-lifecycle
+!pragma layout smetana
+skinparam defaultFontName "DejaVu Sans"
+skinparam shadowing false
+skinparam ranksep 60
+skinparam nodesep 45
+skinparam roundCorner 12
+title Жизненный цикл сессии и расчёт её длительности
+
+state "Новая\nsessions[id] создан" as N #E8F4FF
+state "Активная\nидёт сбор событий" as A #E8F4FF
+state "Закрытая\nclosed = true" as C #FFE9E6
+
+N -> A : pageview (start = ts)
+A -> A : heartbeat / pageview / action\nlastEvent = ts
+A -> C : POST /api/session_end\n(закрытие вкладки)
+A -> C : перерыв > SESSION_TIMEOUT_SEC\n(1800 с по умолчанию)
+C -> A : тот же sessionId после возврата\n→ новая сессия id#visits-N
+
+note bottom of C
+  durationSec = end − start
+  открытая сессия: min(lastEvent − start, SESSION_TIMEOUT_SEC)
+end note
+@enduml

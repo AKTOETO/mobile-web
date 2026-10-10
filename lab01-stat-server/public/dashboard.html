@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Дашборд статистики: просмотры страниц, уникальные посетители, длительность сессий, графики.">
+  <title>WebLab — статистика сайта</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body class="dashboard-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/index.html">Web<span>Lab</span></a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav">
+        Меню
+      </button>
+      <nav class="nav" id="mainNav">
+        <a href="/index.html">Главная</a>
+        <a href="/catalog.html">Каталог</a>
+        <a href="/about.html">О проекте</a>
+        <a href="/contact.html">Обратная связь</a>
+        <a href="/dashboard.html" class="nav-dashboard is-active">Статистика</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero hero-compact">
+      <h1>Статистика аналитики сайта</h1>
+      <p class="lead">
+        Данные собираются асинхронно с каждой страницы сайта и визуализируются графиками
+        на <code>&lt;canvas&gt;</code>. Обновление — по кнопке, по изменению формы отчёта
+        и автоматически каждые 5 секунд.
+      </p>
+    </section>
+
+    <!-- Форма отчёта: все кнопки обрабатываются в dashboard.js -->
+    <section class="panel">
+      <form class="form form-inline" id="reportForm" autocomplete="off">
+        <div class="field">
+          <label for="range">Период</label>
+          <select id="range" name="range">
+            <option value="24h" selected>последние 24 часа</option>
+            <option value="7d">последние 7 дней</option>
+            <option value="30d">последние 30 дней</option>
+            <option value="all">всё время</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="page">Страница</label>
+          <select id="page" name="page">
+            <option value="">все страницы</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="limit">Сессий в таблице</label>
+          <input id="limit" name="limit" type="number" min="1" max="50" step="1" value="15" inputmode="numeric">
+        </div>
+
+        <div class="field field-check">
+          <label><input type="checkbox" id="autoRefresh" checked> автообновление (5 с)</label>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn" type="submit" id="applyReport" data-track="dashboard:apply">Применить</button>
+          <button class="btn btn-secondary" type="button" id="reloadReport" data-track="dashboard:reload">Обновить</button>
+          <button class="btn btn-secondary" type="button" id="seedDemo" data-track="dashboard:seed">Демо-данные</button>
+          <button class="btn btn-ghost" type="button" id="exportCsv" data-track="dashboard:export">Экспорт CSV</button>
+          <button class="btn btn-danger" type="button" id="resetStats" data-track="dashboard:reset">Сбросить</button>
+        </div>
+      </form>
+
+      <div class="status-bar">
+        <span id="reportStatus" class="muted">Ожидание данных…</span>
+        <span id="reportRange" class="badge"></span>
+      </div>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </section>
+
+    <!-- Основные показатели -->
+    <section class="panel">
+      <h2>Основные показатели</h2>
+      <div class="kpi-grid kpi-grid-6" id="kpis">
+        <div class="kpi"><span class="kpi-value" data-kpi="pageViews">—</span><span class="kpi-label">просмотров страниц</span></div>
+        <div class="kpi"><span class="kpi-value" data-kpi="uniqueVisitors">—</span><span class="kpi-label">уникальных посетителей</span></div>
+        <div class="kpi"><span class="kpi-value" data-kpi="sessions">—</span><span class="kpi-label">сессий</span></div>
+        <div class="kpi"><span class="kpi-value" data-kpi="avgSessionDurationSec">—</span><span class="kpi-label">средняя длительность</span></div>
+        <div class="kpi"><span class="kpi-value" data-kpi="avgPagesPerSession">—</span><span class="kpi-label">глубина просмотра</span></div>
+        <div class="kpi"><span class="kpi-value" data-kpi="bounceRate">—</span><span class="kpi-label">показатель отказов</span></div>
+      </div>
+      <div class="kpi-grid kpi-grid-4">
+        <div class="kpi kpi-small"><span class="kpi-value" data-kpi="activeNow">—</span><span class="kpi-label">на сайте сейчас</span></div>
+        <div class="kpi kpi-small"><span class="kpi-value" data-kpi="newVisitors">—</span><span class="kpi-label">новые посетители</span></div>
+        <div class="kpi kpi-small"><span class="kpi-value" data-kpi="returningVisitors">—</span><span class="kpi-label">вернувшиеся</span></div>
+        <div class="kpi kpi-small"><span class="kpi-value" data-kpi="actions">—</span><span class="kpi-label">нажатий кнопок</span></div>
+      </div>
+    </section>
+
+    <!-- Графики -->
+    <section class="charts">
+      <div class="chart-card">
+        <h2>Просмотры по времени</h2>
+        <div class="chart"><canvas id="timelineChart"></canvas></div>
+        <p class="muted" id="timelineNote"></p>
+      </div>
+
+      <div class="chart-card">
+        <h2>Популярные страницы</h2>
+        <div class="chart"><canvas id="pagesChart"></canvas></div>
+        <p class="muted" id="pagesNote"></p>
+      </div>
+
+      <div class="chart-card">
+        <h2>Устройства посетителей</h2>
+        <div class="chart"><canvas id="devicesChart"></canvas></div>
+        <p class="muted" id="devicesNote"></p>
+      </div>
+
+      <div class="chart-card">
+        <h2>Длительность последних сессий, сек</h2>
+        <div class="chart"><canvas id="durationChart"></canvas></div>
+        <p class="muted" id="durationNote"></p>
+      </div>
+    </section>
+
+    <!-- Таблицы -->
+    <section class="panel">
+      <h2>Последние сессии</h2>
+      <div class="table-wrap">
+        <table class="table" id="sessionsTable">
+          <thead>
+            <tr>
+              <th>Начало</th><th>Посетитель</th><th>Устройство</th>
+              <th>Длительность</th><th>Просмотры</th><th>Кнопки</th><th>Первая страница</th><th>Статус</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Источники переходов</h2>
+      <div class="table-wrap">
+        <table class="table" id="sourcesTable">
+          <thead><tr><th>Источник</th><th>Сессий</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Лабораторная работа №1 · вариант 7 · MAI, Разработка мобильных и web-приложений</p>
+    </div>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/tracker.js"></script>
+  <script src="/js/charts.js"></script>
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>

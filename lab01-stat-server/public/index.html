@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Демонстрационный сайт для лабораторной работы №1: сбор статистики посещений.">
+  <title>WebLab — главная</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="/index.html">Web<span>Lab</span></a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mainNav">
+        Меню
+      </button>
+      <nav class="nav" id="mainNav">
+        <a href="/index.html" class="is-active">Главная</a>
+        <a href="/catalog.html">Каталог</a>
+        <a href="/about.html">О проекте</a>
+        <a href="/contact.html">Обратная связь</a>
+        <a href="/dashboard.html" class="nav-dashboard">Статистика</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Сервер статистики аналитики сайта</h1>
+      <p class="lead">
+        Это демонстрационный сайт лабораторной работы №1 (вариант 7). Каждая страница
+        асинхронно отправляет на сервер события: просмотр страницы, нажатия кнопок,
+        длительность сессии. Сервер считает уникальных посетителей и строит графики.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="/dashboard.html" data-track="open:dashboard">Открыть статистику</a>
+        <button class="btn btn-secondary" type="button" id="refreshCounters" data-track="index:refresh">
+          Обновить счётчики
+        </button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Что уже произошло на сайте</h2>
+      <p class="muted">
+        Значения получены запросом <code>GET /api/stats?range=all</code> через
+        <code>fetch</code> + <code>async/await</code>.
+      </p>
+      <div class="kpi-grid" id="liveStats">
+        <div class="kpi"><span class="kpi-value" data-stat="pageViews">—</span><span class="kpi-label">просмотров страниц</span></div>
+        <div class="kpi"><span class="kpi-value" data-stat="uniqueVisitors">—</span><span class="kpi-label">уникальных посетителей</span></div>
+        <div class="kpi"><span class="kpi-value" data-stat="sessions">—</span><span class="kpi-label">сессий</span></div>
+        <div class="kpi"><span class="kpi-value" data-stat="avgSessionDurationSec">—</span><span class="kpi-label">средняя сессия</span></div>
+      </div>
+      <p class="muted" id="statsNote">Загрузка данных…</p>
+    </section>
+
+    <section class="panel">
+      <h2>Как собираются данные</h2>
+      <ol class="steps">
+        <li>При открытии страницы <code>tracker.js</code> отправляет событие <code>pageview</code>.</li>
+        <li>Клиент хранит идентификатор посетителя в <code>localStorage</code>, а сессию — в <code>sessionStorage</code>.</li>
+        <li>Пока страница открыта, каждые 30 секунд отправляется <code>heartbeat</code> — он продлевает сессию.</li>
+        <li>Клик по кнопке с атрибутом <code>data-track</code> создаёт событие <code>action</code>.</li>
+        <li>При закрытии вкладки отправляется <code>session_end</code> — сервер фиксирует длительность сессии.</li>
+      </ol>
+      <div class="hero-actions">
+        <button class="btn" type="button" id="demoAction" data-track="index:demo-action">
+          Нажать демо-кнопку (событие action)
+        </button>
+        <a class="btn btn-secondary" href="/contact.html" data-track="open:contact">Перейти к форме</a>
+      </div>
+      <p class="muted" id="actionNote">Нажатия кнопок на этой странице попадают в график «Действия посетителей».</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Лабораторная работа №1 · вариант 7 · MAI, Разработка мобильных и web-приложений</p>
+      <p class="muted">Посетитель <code id="visitorId">…</code> · сессия <code id="sessionId">…</code></p>
+    </div>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/tracker.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
