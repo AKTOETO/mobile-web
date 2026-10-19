@@ -2,6 +2,7 @@
 data/
 test/tmp-data/
 test/tmp-data-smoke/
+test/tmp-data-ws/
 node_modules/
 *.log
 

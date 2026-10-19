@@ -3,7 +3,7 @@
 **Курс:** Разработка мобильных и web-приложений
 **Лабораторная работа №1:** Взаимодействие с web-клиентом
 **Вариант №7:** Сервер статистики аналитики сайта
-**Проект:** `lab01-stat-server/`
+**Проект:** `lab01/stat-server/`
 **Стек:** Node.js (только встроенные модули) · HTML · CSS · JavaScript (canvas, fetch/async-await) · Python + matplotlib (графики отчёта) · PlantUML (схемы)
 
 ---
@@ -51,10 +51,10 @@
 
 ## 3. Структура проекта
 
-Лабораторные работы разделены по папкам: эта работа занимает `lab01-stat-server/`, следующие получат соседние папки (`lab02-…/`).
+Лабораторные работы разделены по папкам: эта работа занимает `lab01/stat-server/`, следующие получат соседние папки (`lab02/…`).
 
 ```
-lab01-stat-server/
+lab01/stat-server/
 ├── server/                 серверная часть (Node.js)
 │   ├── server.js           HTTP-сервер, маршруты /api/*, раздача статики
 │   ├── storage.js          модель данных, запись на диск, сессии, посетители
@@ -295,7 +295,7 @@ async function sendEvent(type, extra) {
 ### 6.1 Запуск в локальной сети
 
 ```bash
-cd lab01-stat-server
+cd lab01/stat-server
 npm install          # не обязателен: сервер работает без зависимостей
 npm run seed         # наполнить статистику демонстрационными данными
 npm start
@@ -444,7 +444,7 @@ PY
 libreoffice --headless --convert-to docx --outdir report/build report/build/report.html
 ```
 
-Изображения указаны относительными путями (`report/images/…`, `report/screenshots/report/…`), поэтому DOCX нужно собирать из каталога `lab01-stat-server/`.
+Изображения указаны относительными путями (`report/images/…`, `report/screenshots/report/…`), поэтому DOCX нужно собирать из каталога `lab01/stat-server/`.
 
 ---
 

@@ -9,6 +9,7 @@
     "dev": "node --watch server/server.js",
     "seed": "node server/seed-cli.js",
     "test": "node test/api-test.js",
+    "test:ws": "node test/ws-test.js",
     "test:ui": "node test/frontend-smoke.js",
     "reset": "node server/seed-cli.js --reset"
   },

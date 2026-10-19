@@ -18,6 +18,9 @@
 | `GET` | `/api/export.csv` | Экспорт отчёта в CSV (`type=sessions\|pages\|timeline`) | кнопка «Экспорт CSV» |
 | `POST` | `/api/seed` | Наполнить статистику демонстрационными данными | кнопка «Демо-данные» |
 | `POST` | `/api/reset` | Полная очистка статистики | кнопка «Сбросить» |
+| `WS` | `/ws` | «Живая» статистика и отправка событий по WebSocket (RFC 6455) | мобильное приложение Аврора |
+
+> Канал `/ws` и бинарный протокол сообщений описаны в [10-websocket.md](10-websocket.md).
 
 ---
 
@@ -34,9 +37,10 @@ curl http://localhost:3000/api/health
   "version": "1.0.0",
   "startedAt": "2026-10-10T14:22:53.020Z",
   "uptimeSec": 2,
-  "dataFile": "/…/lab01-stat-server/data/stats.json",
+  "dataFile": "/…/lab01/stat-server/data/stats.json",
   "sessionTimeoutSec": 1800,
-  "heartbeatSec": 30
+  "heartbeatSec": 30,
+  "websocket": { "path": "/ws", "clients": 1 }
 }
 ```
 

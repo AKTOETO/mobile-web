@@ -27,7 +27,7 @@
 Нужен Node.js 18+ (проверить: `node --version`).
 
 ```bash
-cd lab01-stat-server
+cd lab01/stat-server
 npm start                 # или: node server/server.js
 ```
 
@@ -70,9 +70,11 @@ npm run test:ui           # тест интерфейса в jsdom (нужен n
 ## Структура
 
 ```
-lab01-stat-server/
+lab01/stat-server/
 ├── server/          серверная часть (Node.js)
 │   ├── server.js    HTTP-сервер, маршрутизация, API, раздача html/css/js
+│   ├── websocket.js реализация серверной части WebSocket (RFC 6455) без зависимостей
+│   ├── realtime.js  «живой» канал /ws: подписка, рассылка обновлений, приём событий
 │   ├── storage.js   хранение статистики в data/stats.json (атомарная запись)
 │   ├── analytics.js расчёт показателей и данных для графиков
 │   ├── seed.js      генератор демонстрационных данных
@@ -83,7 +85,8 @@ lab01-stat-server/
 │   ├── favicon.svg
 │   ├── css/style.css css/dashboard.css   (адаптивная вёрстка, @media)
 │   └── js/api.js tracker.js charts.js dashboard.js app.js
-├── test/            api-test.js (33 проверки), frontend-smoke.js (16 проверок в jsdom)
+├── test/            api-test.js (33 проверки), ws-test.js (9 проверок WebSocket),
+│                    frontend-smoke.js (16 проверок в jsdom)
 ├── docs/            подробная документация
 ├── report/          материалы отчёта: схемы, графики, скриншоты и их исходники
 ├── REPORT.md        отчёт по лабораторной работе (текст, таблицы, графики, скриншоты)

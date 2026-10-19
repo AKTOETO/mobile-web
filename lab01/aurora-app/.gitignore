@@ -1,0 +1,18 @@
+# Артефакты сборки qmake / Qt Creator
+*.o
+*.so
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+Makefile
+Makefile.*
+*.pro.user
+*.pro.user.*
+.qmake.stash
+.sfdk/
+RPMS/
+build-*/
+*.qm
+*.qmlc
+*.jsc
+*.autosave

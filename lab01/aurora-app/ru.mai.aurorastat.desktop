@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=ru.mai.aurorastat
+Exec=/usr/bin/ru.mai.aurorastat
+Name=Aurora Stat
+Name[ru]=Статистика сайта
+
+[X-Application]
+Permissions=Internet
+OrganizationName=ru.mai
+ApplicationName=aurorastat
+ExecDBus=/usr/bin/ru.mai.aurorastat

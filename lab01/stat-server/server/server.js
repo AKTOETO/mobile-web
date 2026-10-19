@@ -19,6 +19,7 @@ const config = require('./config');
 const Storage = require('./storage');
 const computeStats = require('./analytics');
 const seedDemo = require('./seed');
+const { createRealtime } = require('./realtime');
 
 const storage = new Storage(config);
 storage.load();
@@ -141,6 +142,10 @@ async function handleApi(req, res, url) {
       dataFile: storage.statsFile,
       sessionTimeoutSec: config.sessionTimeoutSec,
       heartbeatSec: config.heartbeatSec,
+      websocket: {
+        path: '/ws',
+        clients: realtime.wss.clients.size,
+      },
     });
   }
 
@@ -200,6 +205,7 @@ async function handleApi(req, res, url) {
   if (method === 'POST' && route === '/api/events') {
     const body = await readBody(req, config.maxBodyBytes);
     const event = storage.addEvent(body, meta(req));
+    realtime.notifyChange(event.type, event);
     return sendJson(res, 201, {
       ok: true,
       eventId: event.id,
@@ -212,6 +218,7 @@ async function handleApi(req, res, url) {
   if (method === 'POST' && (route === '/api/session-end' || route === '/api/events/end')) {
     const body = await readBody(req, config.maxBodyBytes);
     const session = storage.endSession(body, meta(req));
+    if (session) realtime.notifyChange('session_end');
     return sendJson(res, session ? 200 : 404, {
       ok: Boolean(session),
       session: session || null,
@@ -231,6 +238,7 @@ async function handleApi(req, res, url) {
     if (errors.length) return sendJson(res, 422, { ok: false, errors });
 
     const item = storage.addFeedback({ ...body, name, email, message }, meta(req));
+    realtime.notifyChange('feedback');
     return sendJson(res, 201, { ok: true, id: item.id, createdAt: new Date(item.ts).toISOString() });
   }
 
@@ -274,6 +282,7 @@ async function handleApi(req, res, url) {
       return sendJson(res, 400, { ok: false, error: 'Нужно подтвердить сброс: {"confirm": true}' });
     }
     await storage.reset();
+    realtime.notifyChange('reset');
     return sendJson(res, 200, { ok: true, message: 'Статистика очищена' });
   }
 
@@ -286,6 +295,7 @@ async function handleApi(req, res, url) {
       seed: Number(body.seed) || Date.now() % 100000,
     });
     await storage.save();
+    realtime.notifyChange('seed');
     return sendJson(res, 201, { ok: true, ...result });
   }
 
@@ -357,6 +367,9 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
+// WebSocket-сервер /ws — «живые» обновления статистики для мобильного приложения.
+const realtime = createRealtime(server, { storage, config });
+
 function printAccessUrls() {
   const port = server.address().port;
   console.log('');
@@ -368,12 +381,14 @@ function printAccessUrls() {
     console.log(`  В локальной сети: http://${iface.address}:${port}/   (${iface.name})`);
   }
   console.log('  На телефоне (Аврора) откройте адрес из строки «В локальной сети».');
+  console.log(`  WebSocket для приложения: ws://<адрес>:${port}/ws`);
   console.log('  Данные: ', storage.statsFile);
   console.log('');
 }
 
 async function shutdown(signal) {
   console.log(`\n[${signal}] останавливаю сервер, сохраняю статистику...`);
+  realtime.close();
   server.close();
   try {
     await storage.flush();

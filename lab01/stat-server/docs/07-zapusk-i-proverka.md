@@ -9,7 +9,7 @@
 ## Запуск
 
 ```bash
-cd lab01-stat-server
+cd lab01/stat-server
 npm start            # = node server/server.js
 ```
 
@@ -20,7 +20,7 @@ npm start            # = node server/server.js
   На этом ПК:       http://localhost:3000/
   Дашборд:          http://localhost:3000/dashboard.html
   В локальной сети: http://192.168.1.15:3000/   (wlan0)
-  Файл статистики:  …/lab01-stat-server/data/stats.json
+  Файл статистики:  …/lab01/stat-server/data/stats.json
 Остановка: Ctrl+C
 ```
 
@@ -39,7 +39,7 @@ SEED_ON_START=1 npm start   # если данных ещё нет — сразу
 |---|---|---|
 | `HOST` | `0.0.0.0` | интерфейс прослушивания; `0.0.0.0` нужен для доступа с телефона |
 | `PORT` | `3000` | порт HTTP-сервера |
-| `DATA_DIR` | `lab01-stat-server/data` | папка с `stats.json` |
+| `DATA_DIR` | `lab01/stat-server/data` | папка с `stats.json` |
 | `DATA_FILE` | `data/stats.json` | явный путь к файлу статистики |
 | `SESSION_TIMEOUT_SEC` | `1800` | перерыв, после которого сессия считается закрытой |
 | `HEARTBEAT_SEC` | `30` | период продления сессии клиентом |
