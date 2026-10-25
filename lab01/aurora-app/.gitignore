@@ -16,3 +16,7 @@ build-*/
 *.qmlc
 *.jsc
 *.autosave
+
+# Артефакты сборки, попадающие в каталог исходников
+ru.mai.aurorastat
+documentation.list
