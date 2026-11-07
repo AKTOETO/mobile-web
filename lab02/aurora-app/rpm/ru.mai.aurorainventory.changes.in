@@ -1,0 +1,3 @@
+* Sat Nov 07 2026 MAI <student@mai.ru> 1.0.0-1
+- Первая версия: REST-клиент инвентаря, QSettings/QNetworkCookieJar,
+  SQLite-кэш и очередь операций, offline-режим, демо-сценарий

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Инвентарь — REST API (ЛР №2, вариант 7)</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar__inner">
+    <div>
+      <h1>Инвентарь</h1>
+      <p class="muted">Лабораторная работа №2, вариант 7 — REST API, HTTPS, JWT, кэширование</p>
+    </div>
+    <nav class="topbar__nav">
+      <a href="/docs.html">Документация API</a>
+      <a href="/api/v1/openapi.json">openapi.json</a>
+    </nav>
+  </div>
+</header>
+
+<main class="layout">
+  <section class="card" id="login-card">
+    <h2>Вход</h2>
+    <p class="muted">Демо-пользователи: <code>admin/admin123</code>, <code>user/user123</code>, <code>viewer/viewer123</code>.</p>
+    <div class="row">
+      <label>Логин <input id="login-user" value="admin" autocomplete="username"></label>
+      <label>Пароль <input id="login-pass" type="password" value="admin123" autocomplete="current-password"></label>
+      <button id="btn-login" class="primary">Войти</button>
+      <button id="btn-logout" class="ghost">Выйти</button>
+      <span id="auth-status" class="status">Не выполнен вход</span>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="toolbar">
+      <input id="filter-q" placeholder="Поиск по названию или месту" class="grow">
+      <select id="filter-condition">
+        <option value="">Все состояния</option>
+        <option value="new">новый</option>
+        <option value="good">хорошее</option>
+        <option value="used">б/у</option>
+        <option value="broken">неисправен</option>
+      </select>
+      <button id="btn-refresh">Обновить</button>
+      <button id="btn-create" class="primary">Создать</button>
+    </div>
+
+    <div id="cache-info" class="cache muted">Кэш: ещё не запрашивали список</div>
+
+    <div id="editor" class="editor hidden">
+      <h3 id="editor-title">Новый предмет</h3>
+      <div class="row">
+        <label class="grow">Название <input id="f-name"></label>
+        <label>Количество <input id="f-quantity" type="number" min="0" step="1" value="1"></label>
+      </div>
+      <div class="row">
+        <label class="grow">Место хранения <input id="f-location"></label>
+        <label>Состояние
+          <select id="f-condition">
+            <option value="new">новый</option>
+            <option value="good">хорошее</option>
+            <option value="used">б/у</option>
+            <option value="broken">неисправен</option>
+          </select>
+        </label>
+      </div>
+      <div class="row">
+        <button id="btn-save" class="primary">Сохранить</button>
+        <button id="btn-cancel" class="ghost">Отмена</button>
+      </div>
+    </div>
+
+    <div id="banner" class="banner hidden"></div>
+
+    <div class="table-wrap">
+      <table id="items-table">
+        <thead>
+          <tr><th>Название</th><th>Кол-во</th><th>Место хранения</th><th>Состояние</th><th>Действия</th></tr>
+        </thead>
+        <tbody id="items-body">
+          <tr><td colspan="5" class="muted">Войдите и нажмите «Обновить».</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Проверка кодов ответа</h2>
+    <p class="muted">Кнопки выполняют запросы, которые возвращают нужные коды состояний.</p>
+    <div class="row wrap">
+      <button data-error="400">400 — валидация</button>
+      <button data-error="401">401 — без токена</button>
+      <button data-error="403">403 — роль viewer</button>
+      <button data-error="404">404 — нет предмета</button>
+      <button data-error="500">500 — сервер</button>
+      <button id="btn-304">304 — кэш (If-None-Match)</button>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Журнал запросов</h2>
+    <div id="log" class="log"><p class="muted">Пока пусто.</p></div>
+  </section>
+
+  <section class="card hidden" id="demo-panel">
+    <h2>Автодемонстрация CRUD</h2>
+    <p class="muted">Сценарий выполняется автоматически при открытии со страницы с <code>?auto=1</code>.</p>
+    <ol id="demo-steps" class="demo-steps"></ol>
+    <p id="demo-summary" class="status"></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>Учебный проект МАИ. Самоподписанный HTTPS-сертификат: <code>lab02/inventory-server/certs/ca.crt</code>.</p>
+</footer>
+
+<script src="/js/api.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>

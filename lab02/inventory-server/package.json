@@ -1,0 +1,25 @@
+{
+  "name": "lab02-inventory-server",
+  "version": "1.0.0",
+  "description": "Лабораторная работа №2 (вариант 7): REST API инвентаря, HTTPS, JWT, кэширование, OpenAPI",
+  "private": true,
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node --watch server/server.js",
+    "certs": "bash tools/gen-cert.sh",
+    "test": "node test/api-test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "rest",
+    "https",
+    "jwt",
+    "openapi",
+    "lab",
+    "MAI"
+  ],
+  "license": "MIT"
+}

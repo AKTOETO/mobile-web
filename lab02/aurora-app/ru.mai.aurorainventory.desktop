@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Icon=ru.mai.aurorainventory
+Exec=/usr/bin/ru.mai.aurorainventory
+Name=Aurora Inventory
+Name[ru]=Инвентарь
+
+[X-Application]
+Permissions=Internet
+OrganizationName=ru.mai
+ApplicationName=aurorainventory
+ExecDBus=/usr/bin/ru.mai.aurorainventory
