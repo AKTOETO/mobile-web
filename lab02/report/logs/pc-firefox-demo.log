@@ -1,8 +1,8 @@
-[2026-11-07T19:22:06.145Z] geckodriver запущен на порту 45823
-[2026-11-07T19:22:08.859Z] сессия Firefox: 4a6faf71-e891-46e7-97c8-05e754a4b132
-[2026-11-07T19:22:09.411Z] открыта страница https://127.0.0.1:8443/?auto=1
-[2026-11-07T19:22:12.155Z] автодемо: 14/14 шагов, ok=true
-[2026-11-07T19:22:12.236Z] скриншот: /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab02/report/screenshots/pc-firefox-demo.png
-[2026-11-07T19:22:13.790Z] открыта документация, заголовок: Документация API — Инвентарь (ЛР №2)
-[2026-11-07T19:22:13.878Z] скриншот: /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab02/report/screenshots/pc-firefox-docs.png
-[2026-11-07T19:22:14.980Z] geckodriver stderr: *** You are running in headless mode. | Gtk-Message: 22:22:06.210: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it. | 
+[2026-11-07T19:39:26.566Z] geckodriver запущен на порту 38403
+[2026-11-07T19:39:29.273Z] сессия Firefox: 07227820-472c-4bfc-bf8c-fe9070cd2e87
+[2026-11-07T19:39:29.770Z] открыта страница https://127.0.0.1:8443/?auto=1
+[2026-11-07T19:39:32.491Z] автодемо: 14/14 шагов, ok=true
+[2026-11-07T19:39:32.583Z] скриншот: /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab02/report/screenshots/pc-firefox-demo.png
+[2026-11-07T19:39:34.157Z] открыта документация, заголовок: Документация API — Инвентарь (ЛР №2)
+[2026-11-07T19:39:34.254Z] скриншот: /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab02/report/screenshots/pc-firefox-docs.png
+[2026-11-07T19:39:35.402Z] geckodriver stderr: *** You are running in headless mode. | Gtk-Message: 22:39:26.671: Not loading module "atk-bridge": The functionality is provided by GTK natively. Please try to not load it. | 

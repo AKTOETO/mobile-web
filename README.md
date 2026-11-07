@@ -8,7 +8,7 @@
 |---|---|---|
 | [`lab01/stat-server/`](lab01/stat-server/README.md) | Лабораторная работа №1, **вариант №7** — сервер статистики аналитики сайта (Node.js) | готова |
 | `lab01/aurora-app/` | Приложение под **ОС Аврора** (Qt/QML), клиент статистики по WebSocket | код готов, требует сборки в SDK |
-| `lab02/…` | следующая работа | появится позже |
+| [`lab02/`](lab02/README.md) | Лабораторная работа №2, **вариант №7** — REST API, HTTPS и offline-клиент «Инвентарь» | готова |
 
 Правило: внутри папки лаборатории — свои `package.json`/`rpm`, код, тесты и
 документация; общих зависимостей между работами нет.
@@ -45,3 +45,19 @@ sfdk deploy --pkcon
 Описание сервера, API, метрик и сценария демонстрации — в
 [`lab01/stat-server/README.md`](lab01/stat-server/README.md) и
 [`lab01/stat-server/docs/`](lab01/stat-server/docs/README.md).
+
+## Лабораторная работа №2 (вариант 7) — кратко
+
+Сервер на Node.js (без внешних зависимостей) отдаёт REST API `/api/v1` по HTTPS:
+JWT/cookie, роли, CRUD предметов инвентаря, ETag/Cache-Control/Last-Modified,
+OpenAPI. Тестовая страница работает в браузере ПК и Авроры, включая автодемо
+`?auto=1`. Нативное приложение Qt/QML/C++ кэширует данные в SQLite, работает
+offline, хранит JWT и cookie в QSettings и синхронизирует очередь операций.
+
+```bash
+cd lab02/inventory-server && npm start     # https://localhost:8443/
+cd lab02/inventory-server && npm test      # 114 проверок API
+```
+
+Подробности — в [`lab02/README.md`](lab02/README.md) и
+[`lab02/REPORT.md`](lab02/REPORT.md).

@@ -1,0 +1,18 @@
+Transaction:	Installing files
+Status: 	Waiting in queue
+Status: 	Waiting for authentication
+Status: 	Waiting in queue
+Status: 	Starting
+Status: 	Resolving dependencies
+Percentage:	0
+Percentage:	100
+Status: 	Installing packages
+Percentage:	0
+Status: 	Downloading packages
+Package:	ru.mai.aurorainventory-1.0.0-1.x86_64
+Percentage:	100
+Status: 	Installing packages
+Status: 	Finished
+Results:
+Downloaded   ru.mai.aurorainventory-1.0.0-1.x86_64 (PK_TMP_DIR)
+Installed    ru.mai.aurorainventory-1.0.0-1.x86_64 (PK_TMP_DIR)

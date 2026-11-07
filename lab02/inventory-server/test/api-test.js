@@ -417,6 +417,16 @@ async function main() {
     eq('debug/error → 500', res.status, 500);
     eq('debug/error: internal_error', res.json && res.json.error, 'internal_error');
 
+    res = await request(httpsPort, 'GET', '/api/v1/debug/demo-result?ok=1&passed=14&total=14');
+    eq('debug/demo-result → 200', res.status, 200);
+    eq('debug/demo-result: ok', res.json && res.json.ok, true);
+    eq('debug/demo-result: passed', res.json && res.json.passed, 14);
+    eq('debug/demo-result: total', res.json && res.json.total, 14);
+    eq('debug/demo-result: no-store', res.headers['cache-control'], 'no-store');
+
+    res = await request(httpsPort, 'POST', '/api/v1/debug/demo-result');
+    eq('debug/demo-result POST → 405', res.status, 405);
+
     res = await request(httpsPort, 'GET', '/api/v1/unknown', { token: adminToken });
     eq('неизвестный маршрут → 404', res.status, 404);
 

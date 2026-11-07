@@ -498,6 +498,21 @@ async function handleApi(req, res, url) {
     return handleMe(req, res, actor);
   }
 
+  if (sub === '/debug/demo-result') {
+    if (method !== 'GET') return sendError(req, res, 405, 'method_not_allowed', 'Метод не поддерживается.', []);
+    if (!config.enableDebug) {
+      return sendError(req, res, 404, 'not_found', 'Отладочный маршрут выключен.');
+    }
+    const passed = Number(url.searchParams.get('passed') || 0);
+    const total = Number(url.searchParams.get('total') || 0);
+    return sendJson(req, res, 200, {
+      ok: url.searchParams.get('ok') === '1',
+      passed: Number.isFinite(passed) ? passed : 0,
+      total: Number.isFinite(total) ? total : 0,
+      at: new Date().toISOString(),
+    }, { 'Cache-Control': 'no-store' });
+  }
+
   if (sub === '/debug/error') {
     if (method !== 'GET') return sendError(req, res, 405, 'method_not_allowed', 'Метод не поддерживается.', []);
     if (!config.enableDebug) {

@@ -1,0 +1,135 @@
+
+> lab02-inventory-server@1.0.0 test
+> node test/api-test.js
+
+Сервер: https://127.0.0.1:46697, данные: /tmp/lab02-test-Uza3lB
+
+[1] Здоровье, HTTP-редирект, статика, OpenAPI
+  ok  health 200
+  ok  health status ok
+  ok  health: host записан
+  ok  health: user-agent записан
+  ok  HTTP → 301
+  ok  HTTP Location на https
+  ok  HTTP Location на HTTPS-порт
+  ok  GET / → 200
+  ok  GET / — HTML
+  ok  GET / — страница инвентаря
+  ok  GET / — Cache-Control no-cache
+  ok  CSS 200
+  ok  CSS content-type
+  ok  JS 200
+  ok  JS content-type
+  ok  app.js 200
+  ok  app.js содержит автодемо
+  ok  docs.html 200
+  ok  docs.html — OpenAPI
+  ok  favicon.svg 200
+  ok  favicon content-type
+  ok  HEAD / → 200
+  ok  HEAD / — пустое тело
+  ok  обход каталога → 404
+  ok  openapi 200
+  ok  openapi версия
+  ok  openapi описывает /items
+
+[2] Аутентификация JWT и cookie
+  ok  неверный пароль → 401
+  ok  неверный пароль: invalid_credentials
+  ok  вход admin → 200
+  ok  admin: токен — строка
+  ok  admin: роль
+  ok  cookie: HttpOnly
+  ok  cookie: Secure
+  ok  cookie: SameSite=Strict
+  ok  auth/me Bearer → 200
+  ok  auth/me: источник header
+  ok  auth/me: роль admin
+  ok  auth/me Cookie → 200
+  ok  auth/me: источник cookie
+  ok  список без токена → 401
+  ok  401: WWW-Authenticate
+
+[3] Чтение списка, фильтры, кэширование
+  ok  список admin → 200
+  ok  сидовых предметов
+  ok  X-Total-Count
+  ok  список: ETag есть
+  ok  список: Cache-Control
+  ok  список: Last-Modified есть
+  ok  If-None-Match → 304
+  ok  304: пустое тело
+  ok  304: ETag сохранён
+  ok  If-Modified-Since → 304
+  ok  поиск q=дрель → 1
+  ok  поиск вернул дрель
+  ok  фильтр condition=broken → 1
+  ok  пагинация: limit 2
+  ok  пагинация: total 6
+  ok  пагинация: offset 1
+  ok  limit=0 → 400
+  ok  limit=0: details есть
+
+[4] Согласование заголовков и ошибки запроса
+  ok  Accept: text/html → 406
+  ok  пустой User-Agent не проходит (400/200)
+  ok  POST /health → 405
+  ok  неверный Content-Type → 400
+  ok  некорректный Host → 400
+
+[5] CRUD и валидация
+  ok  невалидный предмет → 400
+  ok  ошибка validation_error
+  ok  валидация: несколько details
+  ok  создание → 201
+  ok  создан: id есть
+  ok  создан: version 1
+  ok  создан: name
+  ok  создан: Location
+  ok  создан: ETag есть
+  ok  чтение созданного → 200
+  ok  чтение: quantity 2
+  ok  чтение с If-None-Match → 304
+  ok  PATCH → 200
+  ok  PATCH: quantity 7
+  ok  PATCH: version 2
+  ok  PUT → 200
+  ok  PUT: version 3
+  ok  PUT: condition used
+  ok  список изменился: ETag другой
+  ok  PATCH несуществующего → 404
+  ok  DELETE admin → 204
+  ok  DELETE: пустое тело
+  ok  удалённый → 404
+  ok  повторное удаление → 404
+
+[6] Роли user и viewer
+  ok  вход user → 200
+  ok  роль user
+  ok  user создаёт → 201
+  ok  user удаляет → 403
+  ok  403: forbidden
+  ok  user изменяет → 200
+  ok  вход viewer → 200
+  ok  роль viewer
+  ok  viewer читает → 200
+  ok  viewer создаёт → 403
+  ok  viewer изменяет → 403
+  ok  viewer удаляет → 403
+  ok  admin удаляет предмет user → 204
+
+[7] Отладка, неизвестные маршруты, выход
+  ok  debug/error → 500
+  ok  debug/error: internal_error
+  ok  debug/demo-result → 200
+  ok  debug/demo-result: ok
+  ok  debug/demo-result: passed
+  ok  debug/demo-result: total
+  ok  debug/demo-result: no-store
+  ok  debug/demo-result POST → 405
+  ok  неизвестный маршрут → 404
+  ok  logout → 204
+  ok  logout: cookie сброшена
+  ok  пустые учётные данные → 400
+
+Итого: 114 проверок, 0 ошибок.
