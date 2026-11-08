@@ -1,4 +1,6 @@
 :root {
+  color-scheme: light;
+  color-scheme: only light;
   --bg: #f3f5f9;
   --card: #ffffff;
   --text: #1f2937;
@@ -221,43 +223,6 @@ code {
   font-size: 12.5px;
 }
 
-/* --- документация --- */
-.operation {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 12px 14px;
-  margin-bottom: 10px;
-  background: #fcfcfd;
-}
-.operation__head { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
-.method {
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 5px;
-  font-weight: 700;
-  font-size: 12.5px;
-  color: #fff;
-  background: #64748b;
-}
-.method--get { background: #0ea5e9; }
-.method--post { background: #16a34a; }
-.method--put { background: #d97706; }
-.method--patch { background: #7c3aed; }
-.method--delete { background: #dc2626; }
-.path { font-family: Consolas, monospace; font-weight: 600; }
-.operation p { margin: 6px 0; font-size: 14px; }
-.operation pre {
-  margin: 6px 0 0;
-  padding: 10px;
-  background: #0f172a;
-  color: #e2e8f0;
-  border-radius: 6px;
-  overflow: auto;
-  font-size: 12px;
-  max-height: 260px;
-}
-.resp-list { margin: 6px 0 0; padding-left: 18px; font-size: 13.5px; }
-
 @media (max-width: 900px) {
   .topbar__inner { align-items: flex-start; }
   .topbar__nav a { margin: 0 14px 0 0; }
@@ -275,20 +240,4 @@ code {
   th, td { font-size: 13px; padding: 6px 6px; }
   th:nth-child(3), td:nth-child(3) { display: none; }
   .log { max-height: 360px; }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0f172a;
-    --card: #111827;
-    --text: #e5e7eb;
-    --muted: #94a3b8;
-    --line: #1f2937;
-    --chip: #1e293b;
-  }
-  input, select, button { background: #0b1220; color: var(--text); }
-  button:hover { background: #172033; }
-  .log-entry, .operation { background: #0b1220; }
-  .badge { color: #c7d2fe; }
-  code { background: #1e293b; }
 }

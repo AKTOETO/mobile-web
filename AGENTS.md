@@ -69,6 +69,10 @@ VBoxManage list vms       # AuroraOS-5.1.1.60-base
   (в образе Авроры он есть).
 - Тесты: `npm test` — `node test/api-test.js` поднимает сервер на свободных
   портах с временным `DATA_DIR`, сам проверяет статусы/заголовки/кэш.
+- Swagger UI — `/docs.html`, локальные JS/CSS в `public/vendor/swagger-ui/`.
+  Старый самописный просмотрщик удалён; `server/openapi.js` — спецификация,
+  которую использует Swagger UI. Проверка кнопок: `/docs.html?auto=1` (11 шагов).
+  На ПК: `LAB02_BASE_URL=https://<адрес>:<порт> node lab02/report/src/swagger-browser-demo.js`.
 - Настройки — переменными окружения (`HTTPS_PORT`, `HTTP_PORT`, `DATA_DIR`,
   `DATA_FILE`, `CERT_DIR`, `JWT_TTL_SEC`, `LAB02_DEBUG=1`, `LAB02_LOG=1`), как в
   `lab01/stat-server/server/config.js`.
@@ -148,6 +152,12 @@ nohup env XDG_RUNTIME_DIR=/run/user/100000 \
 - Всё, что подтверждает выполнение (команды и их вывод, скриншоты браузера и
   эмулятора, демо-журналы), складывать в `lab02/report/`:
   `logs/`, `screenshots/`, `src/`. Подробный отчёт — позже из этих артефактов.
+- ЛР2: `python3 lab02/report/src/append-sources.py` обновляет полные листинги
+  сервера и приложения в `REPORT.md`, затем собирает DOCX/PDF с проверкой.
+  Генерируемые `moc_`/`qrc_` и сторонняя библиотека не входят в печатные листинги.
+- В приложении ЛР2 единое «Обновить»: отправка очереди → GET, с наложением
+  неподтверждённых правок на серверный снимок. Тест с SQLite и настоящим API:
+  `aurora-app/tests/sync-test.pro` (запускать с изолированными XDG-каталогами).
 
 ## Чего избегать
 

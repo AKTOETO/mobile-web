@@ -1,0 +1,9 @@
+TEMPLATE = app
+TARGET = sync-test
+CONFIG += console c++11
+CONFIG -= app_bundle
+QT = core network sql
+INCLUDEPATH += ../src
+SOURCES += sync-test.cpp ../src/inventoryclient.cpp ../src/itemmodel.cpp ../src/localcache.cpp
+HEADERS += ../src/inventoryclient.h ../src/itemmodel.h ../src/localcache.h
+RESOURCES += ../resources.qrc

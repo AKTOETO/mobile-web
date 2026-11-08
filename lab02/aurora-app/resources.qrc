@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/certs">
+        <file alias="ca.crt">certs/ca.crt</file>
+    </qresource>
+</RCC>

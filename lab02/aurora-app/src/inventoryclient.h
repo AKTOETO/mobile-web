@@ -9,6 +9,7 @@
 #include <QNetworkCookieJar>
 #include <QObject>
 #include <QSettings>
+#include <QSslConfiguration>
 #include <QString>
 #include <QStringList>
 #include <QUrl>
@@ -93,7 +94,6 @@ public:
     Q_INVOKABLE void updateItem(const QString &id, const QString &name, int quantity,
                                 const QString &location, const QString &condition);
     Q_INVOKABLE void deleteItem(const QString &id);
-    Q_INVOKABLE void syncPending();
     Q_INVOKABLE void setSimulateOffline(bool offline);
     Q_INVOKABLE void startDemo();
     Q_INVOKABLE QString itemJson(const QString &id) const;
@@ -148,6 +148,7 @@ private:
                                   const QString &location, const QString &condition);
 
     QSettings m_settings;
+    QSslConfiguration m_tls;
     QNetworkAccessManager *m_nam;
     PersistentCookieJar *m_jar;
     LocalCache m_cache;
@@ -160,6 +161,7 @@ private:
     bool m_online = false;
     bool m_simulateOffline = false;
     int m_inflight = 0;
+    bool m_updating = false;
     QString m_status;
     bool m_statusError = false;
     QString m_demoSummary;

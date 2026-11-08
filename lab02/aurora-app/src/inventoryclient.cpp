@@ -14,6 +14,8 @@
 #include <QNetworkReply>
 #include <QNetworkRequest>
 #include <QSslError>
+#include <QSslCertificate>
+#include <QSslSocket>
 #include <QStandardPaths>
 #include <QTimer>
 #include <QUrl>
@@ -90,6 +92,18 @@ InventoryClient::InventoryClient(QObject *parent)
     m_jar = new PersistentCookieJar(&m_settings);
     m_nam->setCookieJar(m_jar);
 
+    QFile caFile(QStringLiteral(":/certs/ca.crt"));
+    QList<QSslCertificate> authorities;
+    if (caFile.open(QIODevice::ReadOnly)) {
+        authorities = QSslCertificate::fromData(caFile.readAll(), QSsl::Pem);
+    }
+    // Только CA этого сервера: системные CA здесь намеренно не используются.
+    // Это позволяет безопасно разрешить смену IP без доверия чужим серверам.
+    m_tls = QSslConfiguration::defaultConfiguration();
+    m_tls.setCaCertificates(authorities);
+    m_tls.setPeerVerifyMode(QSslSocket::VerifyPeer);
+    if (authorities.isEmpty()) qCritical() << "TLS: встроенный CA не загружен";
+
     loadSettings();
     m_jar->load(QUrl(m_baseUrl));
     loadCacheToModel();
@@ -132,7 +146,7 @@ void InventoryClient::setBaseUrl(const QString &url)
 QString InventoryClient::username() const { return m_username; }
 QString InventoryClient::role() const { return m_role; }
 bool InventoryClient::loggedIn() const { return !m_token.isEmpty(); }
-bool InventoryClient::busy() const { return m_inflight > 0; }
+bool InventoryClient::busy() const { return m_inflight > 0 || m_updating; }
 bool InventoryClient::online() const { return m_online; }
 bool InventoryClient::simulateOffline() const { return m_simulateOffline; }
 int InventoryClient::pendingCount() const { return m_cache.pendingCount(); }
@@ -204,6 +218,7 @@ void InventoryClient::request(const QByteArray &method, const QString &path,
 {
     QUrl url(m_baseUrl + path);
     QNetworkRequest request(url);
+    request.setSslConfiguration(m_tls);
     request.setHeader(QNetworkRequest::ContentTypeHeader, QStringLiteral("application/json"));
     request.setRawHeader("Accept", "application/json");
     request.setRawHeader("User-Agent", "aurora-inventory/1.0 (Qt 5.6)");
@@ -243,11 +258,16 @@ void InventoryClient::request(const QByteArray &method, const QString &path,
 
     connect(reply, &QNetworkReply::sslErrors, this,
             [reply](const QList<QSslError> &errors) {
-        // Учебный самоподписанный сертификат: доверяем и пишем предупреждение.
+        // Адрес сервера может меняться. Цепочку проверяем только через наш CA,
+        // а несовпадение имени допускаем; остальные TLS-ошибки остаются fatal.
+        QList<QSslError> addressErrors;
         for (const QSslError &error : errors) {
             qWarning() << "TLS:" << error.errorString();
+            if (error.error() == QSslError::HostNameMismatch) {
+                addressErrors.append(error);
+            }
         }
-        reply->ignoreSslErrors();
+        if (!addressErrors.isEmpty()) reply->ignoreSslErrors(addressErrors);
     });
 
     connect(reply, &QNetworkReply::finished, this, [this, reply, timer, handler]() {
@@ -352,12 +372,32 @@ void InventoryClient::setSimulateOffline(bool offline)
 
 void InventoryClient::refresh()
 {
+    if (busy()) return;
     if (m_simulateOffline) {
         loadCacheOnly();
         setStatus(QStringLiteral("Офлайн-режим включён: показан кэш (%1).").arg(m_model.count()));
         return;
     }
-    doRefresh(nullptr);
+    if (!loggedIn()) {
+        setStatus(QStringLiteral("Сначала войдите в систему."), true);
+        return;
+    }
+    m_updating = true;
+    emit busyChanged();
+    // Сначала отправляем очередь, затем читаем итоговое состояние сервера.
+    syncAll([this](int, int failed) {
+        doRefresh([this, failed](bool ok) {
+            m_updating = false;
+            emit busyChanged();
+            if (m_cache.pendingCount() > 0) {
+                setStatus(QStringLiteral("Не все изменения отправлены. В очереди: %1; "
+                                         "локальные данные сохранены.").arg(m_cache.pendingCount()), true);
+            } else if (failed > 0 && ok) {
+                setStatus(QStringLiteral("Список обновлён; ошибок синхронизации: %1.")
+                          .arg(failed), true);
+            }
+        });
+    });
 }
 
 void InventoryClient::loadCacheOnly()
@@ -375,6 +415,20 @@ void InventoryClient::doRefresh(std::function<void (bool)> done)
             QVector<ItemRecord> items;
             const QJsonArray array = json.toObject().value(QStringLiteral("items")).toArray();
             for (const QJsonValue &value : array) items.append(parseItem(value.toObject()));
+            // Если сервер отклонил операцию или сеть пропала при синхронизации,
+            // серверный снимок не должен затереть оставшиеся локальные правки.
+            const QVector<ItemRecord> cached = m_cache.all();
+            const QVector<LocalCache::PendingOp> pending = m_cache.pendingOps();
+            for (const LocalCache::PendingOp &op : pending) {
+                for (int i = items.size() - 1; i >= 0; --i) {
+                    if (items.at(i).id == op.itemId) items.remove(i);
+                }
+                if (op.method != QLatin1String("DELETE")) {
+                    for (const ItemRecord &item : cached) {
+                        if (item.id == op.itemId) { items.append(item); break; }
+                    }
+                }
+            }
             m_model.setItems(items);
             m_cache.replaceAll(items);
             emit pendingChanged();
@@ -578,14 +632,6 @@ void InventoryClient::applyLocalDelete(const QString &id, DeleteHandler done)
 // Синхронизация очереди
 // ---------------------------------------------------------------------------
 
-void InventoryClient::syncPending()
-{
-    syncAll([this](int, int) {
-        emit pendingChanged();
-        doRefresh(nullptr);
-    });
-}
-
 void InventoryClient::syncAll(std::function<void (int, int)> done)
 {
     if (m_simulateOffline) {
@@ -652,11 +698,7 @@ void InventoryClient::syncStep(const QVector<LocalCache::PendingOp> &ops, int in
             } else if (status == 0) {
                 stop(QStringLiteral("сеть недоступна"));
             } else {
-                m_cache.removePending(op.id);
-                m_cache.remove(op.itemId);
-                m_model.removeById(op.itemId);
-                emit pendingChanged();
-                next(0, 1);
+                stop(QStringLiteral("код %1: %2").arg(status).arg(errorMessage(status, json)));
             }
         });
         return;
@@ -682,9 +724,7 @@ void InventoryClient::syncStep(const QVector<LocalCache::PendingOp> &ops, int in
             } else if (status == 0) {
                 stop(QStringLiteral("сеть недоступна"));
             } else {
-                m_cache.removePending(op.id);
-                emit pendingChanged();
-                next(0, 1);
+                stop(QStringLiteral("код %1: %2").arg(status).arg(errorMessage(status, json)));
             }
         });
         return;
@@ -702,9 +742,7 @@ void InventoryClient::syncStep(const QVector<LocalCache::PendingOp> &ops, int in
             } else if (status == 0) {
                 stop(QStringLiteral("сеть недоступна"));
             } else {
-                m_cache.removePending(op.id);
-                emit pendingChanged();
-                next(0, 1);
+                stop(QStringLiteral("код %1: операция удаления сохранена в очереди").arg(status));
             }
         });
         return;

@@ -6,6 +6,8 @@ PKGCONFIG +=
 
 QT += network sql
 
+RESOURCES += resources.qrc
+
 SOURCES += \
     src/main.cpp \
     src/itemmodel.cpp \

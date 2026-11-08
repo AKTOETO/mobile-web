@@ -1,5 +1,6 @@
 # Артефакты сборки Aurora SDK (shadow build)
 lab01/build-*/
+lab02/build-*/
 
 # Локальные файлы Qt Creator
 *.pro.user

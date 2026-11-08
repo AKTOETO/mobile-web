@@ -19,6 +19,7 @@ Page {
 
             TextField {
                 id: urlField
+                objectName: "serverUrlField"
                 x: Theme.horizontalPageMargin
                 width: parent.width - 2 * Theme.horizontalPageMargin
                 label: "Адрес сервера"
@@ -29,6 +30,7 @@ Page {
 
             TextField {
                 id: userField
+                objectName: "loginUserField"
                 x: Theme.horizontalPageMargin
                 width: parent.width - 2 * Theme.horizontalPageMargin
                 label: "Логин"
@@ -38,6 +40,7 @@ Page {
 
             TextField {
                 id: passwordField
+                objectName: "loginPasswordField"
                 x: Theme.horizontalPageMargin
                 width: parent.width - 2 * Theme.horizontalPageMargin
                 label: "Пароль"
@@ -50,15 +53,19 @@ Page {
                 spacing: Theme.paddingLarge
 
                 Button {
+                    objectName: "settingsLoginButton"
                     text: InventoryClient.loggedIn ? "Войти заново" : "Войти"
+                    enabled: !InventoryClient.busy
                     onClicked: {
-                        InventoryClient.setBaseUrl(urlField.text)
+                        InventoryClient.baseUrl = urlField.text
                         InventoryClient.login(userField.text, passwordField.text)
                     }
                 }
 
                 Button {
+                    objectName: "settingsLogoutButton"
                     visible: InventoryClient.loggedIn
+                    enabled: !InventoryClient.busy
                     text: "Выйти"
                     onClicked: InventoryClient.logout()
                 }
@@ -79,9 +86,9 @@ Page {
             Button {
                 x: Theme.horizontalPageMargin
                 width: parent.width - 2 * Theme.horizontalPageMargin
-                text: "Синхронизировать очередь (" + InventoryClient.pendingCount + ")"
-                enabled: InventoryClient.pendingCount > 0 || !InventoryClient.online
-                onClicked: InventoryClient.syncPending()
+                text: "Обновить (в очереди: " + InventoryClient.pendingCount + ")"
+                enabled: !InventoryClient.busy
+                onClicked: InventoryClient.refresh()
             }
 
             Button {

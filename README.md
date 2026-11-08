@@ -56,8 +56,10 @@ offline, хранит JWT и cookie в QSettings и синхронизирует
 
 ```bash
 cd lab02/inventory-server && npm start     # https://localhost:8443/
-cd lab02/inventory-server && npm test      # 114 проверок API
+cd lab02/inventory-server && npm test      # 122 проверки API
 ```
 
 Подробности — в [`lab02/README.md`](lab02/README.md) и
 [`lab02/REPORT.md`](lab02/REPORT.md).
+
+Интерактивная документация — `/docs.html` (Swagger UI, кнопки Try it out / Execute).

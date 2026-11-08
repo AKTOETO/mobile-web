@@ -158,14 +158,11 @@ Page {
 
         PullDownMenu {
             MenuItem {
-                text: "Обновить"
-                onClicked: InventoryClient.refresh()
-            }
-            MenuItem {
                 text: InventoryClient.pendingCount > 0
-                      ? "Синхронизировать (" + InventoryClient.pendingCount + ")"
-                      : "Синхронизировать"
-                onClicked: InventoryClient.syncPending()
+                      ? "Обновить и отправить изменения (" + InventoryClient.pendingCount + ")"
+                      : "Обновить"
+                enabled: !InventoryClient.busy
+                onClicked: InventoryClient.refresh()
             }
             MenuItem {
                 text: "Настройки"

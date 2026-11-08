@@ -176,6 +176,7 @@ async function main() {
     contains('GET / — HTML', res.headers['content-type'], 'text/html');
     contains('GET / — страница инвентаря', res.raw, 'Инвентарь');
     check('GET / — Cache-Control no-cache', /no-cache/.test(res.headers['cache-control'] || ''));
+    contains('главная содержит ссылку Swagger UI', res.raw, 'Swagger UI');
 
     res = await request(httpsPort, 'GET', '/css/style.css');
     eq('CSS 200', res.status, 200);
@@ -191,7 +192,15 @@ async function main() {
 
     res = await request(httpsPort, 'GET', '/docs.html');
     eq('docs.html 200', res.status, 200);
-    contains('docs.html — OpenAPI', res.raw, '/api/v1/openapi.json');
+    contains('docs.html — Swagger UI', res.raw, '/vendor/swagger-ui/swagger-ui-bundle.js');
+    res = await request(httpsPort, 'GET', '/js/swagger.js');
+    eq('инициализация Swagger UI доступна', res.status, 200);
+    contains('Swagger UI загружает локальное описание', res.raw, "url: '/api/v1/openapi.json'");
+    res = await request(httpsPort, 'GET', '/vendor/swagger-ui/swagger-ui-bundle.js');
+    eq('локальный Swagger UI доступен без CDN', res.status, 200);
+    contains('Swagger UI имеет тип JavaScript', res.headers['content-type'], 'javascript');
+    res = await request(httpsPort, 'GET', '/vendor/swagger-ui/swagger-ui.css');
+    eq('стили Swagger UI доступны', res.status, 200);
 
     res = await request(httpsPort, 'GET', '/favicon.svg');
     eq('favicon.svg 200', res.status, 200);
@@ -208,6 +217,12 @@ async function main() {
     eq('openapi 200', res.status, 200);
     eq('openapi версия', res.json && res.json.openapi, '3.0.3');
     check('openapi описывает /items', !!(res.json && res.json.paths && res.json.paths['/items']));
+    eq('API использует текущий адрес без фиксированного IP', res.json.servers[0].url, '/api/v1');
+
+    res = await request(httpPort, 'GET', '/docs.html',
+      { https: false, headers: { Host: '192.168.55.77:' + httpPort } });
+    eq('редирект сохраняет адрес другой сети', res.headers.location,
+      'https://192.168.55.77:' + httpsPort + '/docs.html');
 
     console.log('\n[2] Аутентификация JWT и cookie');
     res = await request(httpsPort, 'POST', '/api/v1/auth/login',

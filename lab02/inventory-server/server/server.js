@@ -671,9 +671,10 @@ async function main() {
   console.log('Инвентарь API (лабораторная работа №2, вариант 7)');
   console.log('  HTTPS: https://%s:%d%s', config.host, config.httpsPort, API);
   console.log('  HTTP:  http://%s:%d/  (редирект на HTTPS)', config.host, config.httpPort);
-  console.log('  OpenAPI: https://%s:%d%s/openapi.json', config.host, config.httpsPort, API);
+  console.log('  Swagger UI: https://%s:%d/docs.html', config.host, config.httpsPort);
   for (const lan of config.lanAddresses()) {
     console.log('  сеть: https://%s:%d/  (%s)', lan.address, config.httpsPort, lan.name);
+    console.log('  Swagger UI в сети: https://%s:%d/docs.html', lan.address, config.httpsPort);
   }
 
   function shutdown() {

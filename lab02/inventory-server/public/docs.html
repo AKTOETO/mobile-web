@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Документация API — Инвентарь (ЛР №2)</title>
+  <meta name="color-scheme" content="only light">
+  <title>Swagger UI — Инвентарь (ЛР №2)</title>
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/vendor/swagger-ui/swagger-ui.css">
+  <link rel="stylesheet" href="/css/swagger.css?v=light-1">
 </head>
 <body>
 <header class="topbar">
   <div class="topbar__inner">
     <div>
-      <h1>Документация API</h1>
-      <p class="muted">OpenAPI 3.0 — <a href="/api/v1/openapi.json">openapi.json</a></p>
+      <h1>Swagger UI</h1>
+      <p class="muted">Интерактивная проверка API инвентаря</p>
     </div>
     <nav class="topbar__nav">
       <a href="/">← Тестовая страница</a>
@@ -20,19 +22,22 @@
   </div>
 </header>
 
-<main class="layout">
+<main>
   <section class="card">
-    <h2 id="doc-title">Загрузка описания…</h2>
-    <p id="doc-description" class="muted"></p>
-    <p id="doc-security" class="muted"></p>
+    <p>Раскройте метод → <b>Try it out</b> → заполните поля → <b>Execute</b>.
+      Сначала выполните <code>POST /auth/login</code> с
+      <code>admin/admin123</code>. Токен автоматически применяется к следующим запросам.
+      Можно также вставить JWT через кнопку <b>Authorize</b>.</p>
+    <p id="swagger-status" role="status">Загрузка Swagger UI…</p>
   </section>
-  <div id="doc-groups"></div>
+  <div id="swagger-ui"></div>
 </main>
 
 <footer class="footer">
-  <p>Описание формируется из <code>/api/v1/openapi.json</code>.</p>
+  <p>Запросы отправляются на тот же сервер, с которого открыта эта страница.</p>
 </footer>
 
-<script src="/js/docs.js"></script>
+<script src="/vendor/swagger-ui/swagger-ui-bundle.js"></script>
+<script src="/js/swagger.js"></script>
 </body>
 </html>

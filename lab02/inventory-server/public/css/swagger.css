@@ -1,0 +1,24 @@
+/* Отдельное оформление оболочки, без глобальных стилей таблиц главной страницы. */
+:root { color-scheme: light; color-scheme: only light; }
+body { margin: 0; background: #fff; color: #263238; font-family: Arial, sans-serif; }
+.topbar { background: #2455b5; color: #fff; padding: 18px 24px; }
+.topbar__inner { max-width: 1400px; margin: auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.topbar h1 { margin: 0; font-size: 24px; }
+.topbar a { color: #fff; }
+.muted { opacity: .85; }
+.card { border: 1px solid #ddd; border-radius: 8px; line-height: 1.6; }
+.card code { background: #edf1f5; padding: 2px 4px; }
+.footer { padding: 20px; text-align: center; font-size: 14px; }
+main > .card { margin: 16px auto; max-width: 1400px; padding: 16px; }
+.swagger-ui { text-align: left; }
+.swagger-ui button { min-height: 40px; }
+.swagger-ui textarea { min-height: 160px; }
+.swagger-ui input, .swagger-ui select, .swagger-ui textarea { color: #263238; }
+.swagger-ui .responses-wrapper { overflow-x: auto; }
+.swagger-ui .opblock-summary-path { word-break: break-all; }
+@media (max-width: 600px) {
+  .swagger-ui .wrapper { padding: 0 8px; }
+  .swagger-ui .opblock-summary { flex-wrap: wrap; }
+  .swagger-ui .opblock-summary-description { width: 100%; padding: 6px; }
+  .swagger-ui .opblock .opblock-section-header { flex-wrap: wrap; }
+}

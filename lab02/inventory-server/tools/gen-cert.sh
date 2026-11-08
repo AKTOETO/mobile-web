@@ -9,7 +9,7 @@ cd "$(dirname "$0")/.."
 DIR="${CERT_DIR:-certs}"
 mkdir -p "$DIR"
 
-SAN="DNS:localhost,IP:127.0.0.1,IP:10.0.2.2"
+SAN="DNS:localhost,DNS:inventory.local,IP:127.0.0.1,IP:10.0.2.2"
 for ip in $(hostname -I 2>/dev/null || true); do
   case "$ip" in
     *:*) ;;                       # IPv6 в SAN не добавляем: SAN уже с IPv4
@@ -17,10 +17,17 @@ for ip in $(hostname -I 2>/dev/null || true); do
   esac
 done
 
+if [[ -f "$DIR/ca.crt" && -f "$DIR/ca.key" ]]; then
+  echo "Используется существующий CA: $DIR/ca.crt"
+elif [[ -e "$DIR/ca.crt" || -e "$DIR/ca.key" ]]; then
+  echo "Ошибка: нужна пара ca.crt и ca.key; существующий CA не перезаписан." >&2
+  exit 1
+else
 openssl req -x509 -newkey rsa:2048 -nodes -days 3650 \
   -keyout "$DIR/ca.key" -out "$DIR/ca.crt" \
   -subj "/C=RU/ST=Moscow/O=MAI/OU=Laboratory/CN=MAI Lab02 Inventory CA" \
   >/dev/null 2>&1
+fi
 
 openssl req -newkey rsa:2048 -nodes \
   -keyout "$DIR/server.key" -out "$DIR/server.csr" \
