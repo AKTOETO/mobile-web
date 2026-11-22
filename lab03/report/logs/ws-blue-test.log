@@ -1,0 +1,1 @@
+PASS WebSocket hello, push, ping/pong > 10 с; HTTP 405/404; версия 1.0.0

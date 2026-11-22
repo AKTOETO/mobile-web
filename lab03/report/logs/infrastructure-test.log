@@ -1,0 +1,33 @@
++ systemctl --user start lab03-backend@blue1.service
++ systemctl --user start lab03-backend@blue2.service
++ docker exec lab03-nginx nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
++ docker exec lab03-nginx nginx -s reload
+2026/11/22 17:11:33 [notice] 37#37: signal process started
+ACTIVE blue
+PASS балансировка { blue1: 15, blue2: 15 }
++ systemctl --user stop lab03-backend@blue1.service
+PASS 30/30 запросов при остановленном blue1
++ systemctl --user start lab03-backend@blue1.service
++ docker exec lab03-nginx nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
++ docker exec lab03-nginx nginx -s reload
+2026/11/22 17:11:35 [notice] 50#50: signal process started
+ACTIVE green
+PASS 100/100 запросов во время blue-green; версии: [ '1.0.0', '2.0.0' ]
+PASS каталог доступен на green
++ docker exec lab03-nginx nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
++ docker exec lab03-nginx nginx -s reload
+2026/11/22 17:11:38 [notice] 63#63: signal process started
+ACTIVE blue
+PASS откат green → blue
+PASS 16 секунд стабильных запросов после отката
++ systemctl --user stop lab03-backend@green1.service
++ systemctl --user start lab03-backend@green1.service
+PASS нездоровый green отклонён; blue продолжает обслуживать
+ИТОГО: все инфраструктурные проверки пройдены
++ systemctl --user start lab03-backend@blue1.service

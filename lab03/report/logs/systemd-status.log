@@ -1,0 +1,77 @@
++ systemctl --user --no-pager status lab03-backend@blue1.service lab03-backend@blue2.service lab03-backend@green1.service lab03-backend@green2.service lab03-nginx.service
+● lab03-backend@blue1.service - ЛР3 backend blue1
+     Loaded: loaded (/home/bogdan/.config/systemd/user/lab03-backend@.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-11-22 20:11:34 MSK; 2min 4s ago
+   Main PID: 98360 (node)
+      Tasks: 7 (limit: 16239)
+     Memory: 10.6M (peak: 11.4M)
+        CPU: 126ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/app-lab03\x2dbackend.slice/lab03-backend@blue1.service
+             └─98360 /usr/bin/node /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab03/server/server.js
+
+Nov 22 20:11:34 laptop systemd[3377]: Started lab03-backend@blue1.service - ЛР3 backend blue1.
+Nov 22 20:11:34 laptop node[98360]: {"event":"listen","port":9311,"instance":"blue1","version":"1.0.0","time":"2026-11-22T17:11:34.919Z"}
+Nov 22 20:11:55 laptop node[98360]: {"event":"ws-connected","instance":"blue1","version":"1.0.0","time":"2026-11-22T17:11:55.195Z"}
+Nov 22 20:12:46 laptop node[98360]: {"event":"ws-connected","instance":"blue1","version":"1.0.0","time":"2026-11-22T17:12:46.088Z"}
+
+● lab03-backend@blue2.service - ЛР3 backend blue2
+     Loaded: loaded (/home/bogdan/.config/systemd/user/lab03-backend@.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-11-22 20:12:54 MSK; 44s ago
+   Main PID: 101765 (node)
+      Tasks: 7 (limit: 16239)
+     Memory: 8.6M (peak: 10.8M)
+        CPU: 68ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/app-lab03\x2dbackend.slice/lab03-backend@blue2.service
+             └─101765 /usr/bin/node /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab03/server/server.js
+
+Nov 22 20:12:54 laptop systemd[3377]: Started lab03-backend@blue2.service - ЛР3 backend blue2.
+Nov 22 20:12:54 laptop node[101765]: {"event":"listen","port":9312,"instance":"blue2","version":"1.0.0","time":"2026-11-22T17:12:54.497Z"}
+
+● lab03-backend@green1.service - ЛР3 backend green1
+     Loaded: loaded (/home/bogdan/.config/systemd/user/lab03-backend@.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-11-22 20:13:19 MSK; 19s ago
+   Main PID: 102835 (node)
+      Tasks: 7 (limit: 16239)
+     Memory: 8.9M (peak: 10.9M)
+        CPU: 83ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/app-lab03\x2dbackend.slice/lab03-backend@green1.service
+             └─102835 /usr/bin/node /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab03/server/server.js
+
+Nov 22 20:13:19 laptop systemd[3377]: Started lab03-backend@green1.service - ЛР3 backend green1.
+Nov 22 20:13:19 laptop node[102835]: {"event":"listen","port":9321,"instance":"green1","version":"2.0.0","time":"2026-11-22T17:13:19.945Z"}
+
+● lab03-backend@green2.service - ЛР3 backend green2
+     Loaded: loaded (/home/bogdan/.config/systemd/user/lab03-backend@.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-11-22 20:13:19 MSK; 19s ago
+   Main PID: 102845 (node)
+      Tasks: 7 (limit: 16239)
+     Memory: 8.8M (peak: 11.3M)
+        CPU: 88ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/app-lab03\x2dbackend.slice/lab03-backend@green2.service
+             └─102845 /usr/bin/node /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab03/server/server.js
+
+Nov 22 20:13:19 laptop systemd[3377]: Started lab03-backend@green2.service - ЛР3 backend green2.
+Nov 22 20:13:20 laptop node[102845]: {"event":"listen","port":9322,"instance":"green2","version":"2.0.0","time":"2026-11-22T17:13:20.019Z"}
+Nov 22 20:13:22 laptop node[102845]: {"event":"ws-connected","instance":"green2","version":"2.0.0","time":"2026-11-22T17:13:22.668Z"}
+
+● lab03-nginx.service - ЛР3 nginx reverse proxy (Docker)
+     Loaded: loaded (/home/bogdan/.config/systemd/user/lab03-nginx.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2026-11-22 20:11:32 MSK; 2min 6s ago
+    Process: 98133 ExecStartPre=/usr/bin/docker rm -f lab03-nginx (code=exited, status=0/SUCCESS)
+   Main PID: 98152 (docker)
+      Tasks: 14 (limit: 16239)
+     Memory: 11.8M (peak: 14.0M)
+        CPU: 118ms
+     CGroup: /user.slice/user-1000.slice/user@1000.service/app.slice/lab03-nginx.service
+             └─98152 /usr/bin/docker run --rm --name lab03-nginx -p 0.0.0.0:9083:9083 --add-host host.docker.internal:host-gateway -v /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab03/infra/nginx.conf:/etc/nginx/nginx.conf:ro -v /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab03/runtime:/etc/nginx/lab03:ro nginx:1.28-alpine
+
+Nov 22 20:13:14 laptop docker[98152]: 2026-11-22T17:13:14+00:00 502 GET /ws HTTP/1.1 upstream=inventory status=502
+Nov 22 20:13:21 laptop docker[98152]: 2026-11-22T17:13:21+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+Nov 22 20:13:23 laptop docker[98152]: 2026-11-22T17:13:23+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+Nov 22 20:13:25 laptop docker[98152]: 2026-11-22T17:13:25+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+Nov 22 20:13:27 laptop docker[98152]: 2026-11-22T17:13:27+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+Nov 22 20:13:29 laptop docker[98152]: 2026-11-22T17:13:29+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+Nov 22 20:13:31 laptop docker[98152]: 2026-11-22T17:13:31+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+Nov 22 20:13:33 laptop docker[98152]: 2026-11-22T17:13:33+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+Nov 22 20:13:35 laptop docker[98152]: 2026-11-22T17:13:35+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+Nov 22 20:13:37 laptop docker[98152]: 2026-11-22T17:13:37+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200

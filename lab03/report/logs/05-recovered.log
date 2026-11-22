@@ -1,0 +1,10 @@
+[I] DeployClient::record:54 - 22:00:28 REST ERROR Error transferring http://10.0.2.2:9083/api/items - server replied: Bad Gateway; retry=16000
+[I] DeployClient::record:54 - 22:00:28 WS подключён
+[I] DeployClient::record:54 - 22:00:28 PUSH green1 / v2.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 22:00:28 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:31 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:34 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:37 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:40 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:43 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:44 REST OK green1 / v2.0.0

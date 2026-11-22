@@ -1,0 +1,7830 @@
+[
+  {
+    "name": "rollback",
+    "began": "2026-11-22T19:01:39.836Z",
+    "ended": "2026-11-22T19:01:48.309Z",
+    "initial": "green",
+    "target": "blue",
+    "failed": "",
+    "passed": true,
+    "result": {
+      "total": 100,
+      "errors": 0,
+      "successful": 100,
+      "counts": {
+        "blue1": 47,
+        "blue2": 40,
+        "green1": 6,
+        "green2": 7
+      },
+      "versions": [
+        "2.0.0",
+        "1.0.0"
+      ]
+    },
+    "continuous": {
+      "total": 135,
+      "errors": 0,
+      "successful": 135,
+      "counts": {
+        "blue1": 59,
+        "blue2": 58,
+        "green1": 8,
+        "green2": 10
+      },
+      "versions": [
+        "2.0.0",
+        "1.0.0"
+      ]
+    },
+    "requests": [
+      {
+        "id": 364,
+        "time": "2026-11-22T19:01:39.910Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 2
+      },
+      {
+        "id": 366,
+        "time": "2026-11-22T19:01:39.993Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 367,
+        "time": "2026-11-22T19:01:40.076Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 368,
+        "time": "2026-11-22T19:01:40.160Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 370,
+        "time": "2026-11-22T19:01:40.244Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 371,
+        "time": "2026-11-22T19:01:40.327Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 372,
+        "time": "2026-11-22T19:01:40.411Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 374,
+        "time": "2026-11-22T19:01:40.496Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 375,
+        "time": "2026-11-22T19:01:40.580Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 376,
+        "time": "2026-11-22T19:01:40.664Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 378,
+        "time": "2026-11-22T19:01:40.750Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 7
+      },
+      {
+        "id": 379,
+        "time": "2026-11-22T19:01:40.837Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 380,
+        "time": "2026-11-22T19:01:40.920Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 7
+      },
+      {
+        "id": 383,
+        "time": "2026-11-22T19:01:41.006Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 385,
+        "time": "2026-11-22T19:01:41.089Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 386,
+        "time": "2026-11-22T19:01:41.172Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 388,
+        "time": "2026-11-22T19:01:41.255Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 389,
+        "time": "2026-11-22T19:01:41.339Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 390,
+        "time": "2026-11-22T19:01:41.423Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 6
+      },
+      {
+        "id": 392,
+        "time": "2026-11-22T19:01:41.510Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 393,
+        "time": "2026-11-22T19:01:41.593Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 394,
+        "time": "2026-11-22T19:01:41.676Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 396,
+        "time": "2026-11-22T19:01:41.761Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 397,
+        "time": "2026-11-22T19:01:41.844Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 398,
+        "time": "2026-11-22T19:01:41.928Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 400,
+        "time": "2026-11-22T19:01:42.012Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 401,
+        "time": "2026-11-22T19:01:42.094Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 7
+      },
+      {
+        "id": 402,
+        "time": "2026-11-22T19:01:42.181Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 404,
+        "time": "2026-11-22T19:01:42.264Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 405,
+        "time": "2026-11-22T19:01:42.348Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 406,
+        "time": "2026-11-22T19:01:42.431Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 408,
+        "time": "2026-11-22T19:01:42.514Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 409,
+        "time": "2026-11-22T19:01:42.598Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 8
+      },
+      {
+        "id": 410,
+        "time": "2026-11-22T19:01:42.686Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 412,
+        "time": "2026-11-22T19:01:42.769Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 413,
+        "time": "2026-11-22T19:01:42.853Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 414,
+        "time": "2026-11-22T19:01:42.938Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 416,
+        "time": "2026-11-22T19:01:43.021Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 417,
+        "time": "2026-11-22T19:01:43.105Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 418,
+        "time": "2026-11-22T19:01:43.189Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 420,
+        "time": "2026-11-22T19:01:43.272Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 421,
+        "time": "2026-11-22T19:01:43.355Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 422,
+        "time": "2026-11-22T19:01:43.439Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 424,
+        "time": "2026-11-22T19:01:43.523Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 425,
+        "time": "2026-11-22T19:01:43.608Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 426,
+        "time": "2026-11-22T19:01:43.692Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 428,
+        "time": "2026-11-22T19:01:43.775Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 429,
+        "time": "2026-11-22T19:01:43.858Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 6
+      },
+      {
+        "id": 430,
+        "time": "2026-11-22T19:01:43.945Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 432,
+        "time": "2026-11-22T19:01:44.027Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 433,
+        "time": "2026-11-22T19:01:44.111Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 434,
+        "time": "2026-11-22T19:01:44.195Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 436,
+        "time": "2026-11-22T19:01:44.278Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 437,
+        "time": "2026-11-22T19:01:44.362Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 438,
+        "time": "2026-11-22T19:01:44.444Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 440,
+        "time": "2026-11-22T19:01:44.528Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 441,
+        "time": "2026-11-22T19:01:44.613Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 442,
+        "time": "2026-11-22T19:01:44.696Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 444,
+        "time": "2026-11-22T19:01:44.780Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 445,
+        "time": "2026-11-22T19:01:44.863Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 446,
+        "time": "2026-11-22T19:01:44.946Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 7
+      },
+      {
+        "id": 448,
+        "time": "2026-11-22T19:01:45.033Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 449,
+        "time": "2026-11-22T19:01:45.117Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 450,
+        "time": "2026-11-22T19:01:45.201Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 452,
+        "time": "2026-11-22T19:01:45.285Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 453,
+        "time": "2026-11-22T19:01:45.368Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 454,
+        "time": "2026-11-22T19:01:45.451Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 456,
+        "time": "2026-11-22T19:01:45.533Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 457,
+        "time": "2026-11-22T19:01:45.616Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 458,
+        "time": "2026-11-22T19:01:45.699Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 459,
+        "time": "2026-11-22T19:01:45.782Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 6
+      },
+      {
+        "id": 461,
+        "time": "2026-11-22T19:01:45.868Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 462,
+        "time": "2026-11-22T19:01:45.953Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 464,
+        "time": "2026-11-22T19:01:46.038Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 465,
+        "time": "2026-11-22T19:01:46.121Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 466,
+        "time": "2026-11-22T19:01:46.204Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 467,
+        "time": "2026-11-22T19:01:46.286Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 469,
+        "time": "2026-11-22T19:01:46.370Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 470,
+        "time": "2026-11-22T19:01:46.454Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 471,
+        "time": "2026-11-22T19:01:46.537Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 473,
+        "time": "2026-11-22T19:01:46.621Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 474,
+        "time": "2026-11-22T19:01:46.704Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 475,
+        "time": "2026-11-22T19:01:46.788Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 14
+      },
+      {
+        "id": 477,
+        "time": "2026-11-22T19:01:46.883Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 478,
+        "time": "2026-11-22T19:01:46.967Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 479,
+        "time": "2026-11-22T19:01:47.050Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 481,
+        "time": "2026-11-22T19:01:47.133Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 482,
+        "time": "2026-11-22T19:01:47.217Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 483,
+        "time": "2026-11-22T19:01:47.301Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 485,
+        "time": "2026-11-22T19:01:47.384Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 6
+      },
+      {
+        "id": 486,
+        "time": "2026-11-22T19:01:47.470Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 487,
+        "time": "2026-11-22T19:01:47.553Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 489,
+        "time": "2026-11-22T19:01:47.637Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 490,
+        "time": "2026-11-22T19:01:47.720Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 491,
+        "time": "2026-11-22T19:01:47.803Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 493,
+        "time": "2026-11-22T19:01:47.886Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 494,
+        "time": "2026-11-22T19:01:47.969Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 8
+      },
+      {
+        "id": 495,
+        "time": "2026-11-22T19:01:48.057Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 497,
+        "time": "2026-11-22T19:01:48.140Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 498,
+        "time": "2026-11-22T19:01:48.224Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      }
+    ],
+    "nginx": [
+      {
+        "time": "2026-11-22T19:01:48+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/items",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.002
+      },
+      {
+        "time": "2026-11-22T19:01:48+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:48+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:48+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:48+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:47+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.003
+      },
+      {
+        "time": "2026-11-22T19:01:47+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:47+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:47+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:47+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:47+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:47+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:47+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:47+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:47+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      }
+    ]
+  },
+  {
+    "name": "deploy",
+    "began": "2026-11-22T19:01:31.122Z",
+    "ended": "2026-11-22T19:01:39.556Z",
+    "initial": "blue",
+    "target": "green",
+    "failed": "",
+    "passed": true,
+    "result": {
+      "total": 100,
+      "errors": 0,
+      "successful": 100,
+      "counts": {
+        "blue1": 8,
+        "blue2": 4,
+        "green1": 41,
+        "green2": 47
+      },
+      "versions": [
+        "1.0.0",
+        "2.0.0"
+      ]
+    },
+    "continuous": {
+      "total": 134,
+      "errors": 0,
+      "successful": 134,
+      "counts": {
+        "blue1": 8,
+        "blue2": 8,
+        "green1": 60,
+        "green2": 58
+      },
+      "versions": [
+        "1.0.0",
+        "2.0.0"
+      ]
+    },
+    "requests": [
+      {
+        "id": 229,
+        "time": "2026-11-22T19:01:31.193Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 230,
+        "time": "2026-11-22T19:01:31.276Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 232,
+        "time": "2026-11-22T19:01:31.358Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 233,
+        "time": "2026-11-22T19:01:31.442Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 234,
+        "time": "2026-11-22T19:01:31.526Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 236,
+        "time": "2026-11-22T19:01:31.608Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 237,
+        "time": "2026-11-22T19:01:31.692Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 238,
+        "time": "2026-11-22T19:01:31.774Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 240,
+        "time": "2026-11-22T19:01:31.857Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 241,
+        "time": "2026-11-22T19:01:31.940Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 242,
+        "time": "2026-11-22T19:01:32.023Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 244,
+        "time": "2026-11-22T19:01:32.108Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 246,
+        "time": "2026-11-22T19:01:32.193Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 247,
+        "time": "2026-11-22T19:01:32.277Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 249,
+        "time": "2026-11-22T19:01:32.360Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 250,
+        "time": "2026-11-22T19:01:32.445Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 251,
+        "time": "2026-11-22T19:01:32.530Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 253,
+        "time": "2026-11-22T19:01:32.614Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 254,
+        "time": "2026-11-22T19:01:32.698Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 255,
+        "time": "2026-11-22T19:01:32.782Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 257,
+        "time": "2026-11-22T19:01:32.865Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 258,
+        "time": "2026-11-22T19:01:32.948Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 259,
+        "time": "2026-11-22T19:01:33.032Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 261,
+        "time": "2026-11-22T19:01:33.116Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 262,
+        "time": "2026-11-22T19:01:33.200Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 263,
+        "time": "2026-11-22T19:01:33.283Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 265,
+        "time": "2026-11-22T19:01:33.366Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 266,
+        "time": "2026-11-22T19:01:33.449Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 267,
+        "time": "2026-11-22T19:01:33.532Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 268,
+        "time": "2026-11-22T19:01:33.617Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 270,
+        "time": "2026-11-22T19:01:33.700Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 271,
+        "time": "2026-11-22T19:01:33.785Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 272,
+        "time": "2026-11-22T19:01:33.867Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 274,
+        "time": "2026-11-22T19:01:33.952Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 275,
+        "time": "2026-11-22T19:01:34.036Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 276,
+        "time": "2026-11-22T19:01:34.120Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 278,
+        "time": "2026-11-22T19:01:34.205Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 279,
+        "time": "2026-11-22T19:01:34.288Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 280,
+        "time": "2026-11-22T19:01:34.371Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 282,
+        "time": "2026-11-22T19:01:34.455Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 283,
+        "time": "2026-11-22T19:01:34.538Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 284,
+        "time": "2026-11-22T19:01:34.622Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 286,
+        "time": "2026-11-22T19:01:34.705Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 287,
+        "time": "2026-11-22T19:01:34.790Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 288,
+        "time": "2026-11-22T19:01:34.873Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 290,
+        "time": "2026-11-22T19:01:34.956Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 291,
+        "time": "2026-11-22T19:01:35.038Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 292,
+        "time": "2026-11-22T19:01:35.121Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 294,
+        "time": "2026-11-22T19:01:35.204Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 295,
+        "time": "2026-11-22T19:01:35.289Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 296,
+        "time": "2026-11-22T19:01:35.372Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 298,
+        "time": "2026-11-22T19:01:35.455Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 299,
+        "time": "2026-11-22T19:01:35.538Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 300,
+        "time": "2026-11-22T19:01:35.622Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 302,
+        "time": "2026-11-22T19:01:35.707Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 303,
+        "time": "2026-11-22T19:01:35.791Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 304,
+        "time": "2026-11-22T19:01:35.876Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 306,
+        "time": "2026-11-22T19:01:35.960Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 307,
+        "time": "2026-11-22T19:01:36.043Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 308,
+        "time": "2026-11-22T19:01:36.126Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 310,
+        "time": "2026-11-22T19:01:36.211Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 311,
+        "time": "2026-11-22T19:01:36.294Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 312,
+        "time": "2026-11-22T19:01:36.378Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 314,
+        "time": "2026-11-22T19:01:36.461Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 315,
+        "time": "2026-11-22T19:01:36.543Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 316,
+        "time": "2026-11-22T19:01:36.626Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 318,
+        "time": "2026-11-22T19:01:36.709Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 319,
+        "time": "2026-11-22T19:01:36.794Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 320,
+        "time": "2026-11-22T19:01:36.877Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 322,
+        "time": "2026-11-22T19:01:36.960Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 323,
+        "time": "2026-11-22T19:01:37.044Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 324,
+        "time": "2026-11-22T19:01:37.127Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 326,
+        "time": "2026-11-22T19:01:37.211Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 327,
+        "time": "2026-11-22T19:01:37.295Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 328,
+        "time": "2026-11-22T19:01:37.379Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 330,
+        "time": "2026-11-22T19:01:37.463Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 331,
+        "time": "2026-11-22T19:01:37.546Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 2
+      },
+      {
+        "id": 332,
+        "time": "2026-11-22T19:01:37.629Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 334,
+        "time": "2026-11-22T19:01:37.713Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 335,
+        "time": "2026-11-22T19:01:37.798Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 336,
+        "time": "2026-11-22T19:01:37.881Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 338,
+        "time": "2026-11-22T19:01:37.965Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 339,
+        "time": "2026-11-22T19:01:38.049Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 340,
+        "time": "2026-11-22T19:01:38.135Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 342,
+        "time": "2026-11-22T19:01:38.219Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 343,
+        "time": "2026-11-22T19:01:38.303Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 6
+      },
+      {
+        "id": 344,
+        "time": "2026-11-22T19:01:38.389Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 346,
+        "time": "2026-11-22T19:01:38.472Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 347,
+        "time": "2026-11-22T19:01:38.556Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 348,
+        "time": "2026-11-22T19:01:38.638Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 350,
+        "time": "2026-11-22T19:01:38.721Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 351,
+        "time": "2026-11-22T19:01:38.805Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 352,
+        "time": "2026-11-22T19:01:38.888Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 354,
+        "time": "2026-11-22T19:01:38.970Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 355,
+        "time": "2026-11-22T19:01:39.055Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 356,
+        "time": "2026-11-22T19:01:39.140Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 2
+      },
+      {
+        "id": 358,
+        "time": "2026-11-22T19:01:39.222Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 359,
+        "time": "2026-11-22T19:01:39.305Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 360,
+        "time": "2026-11-22T19:01:39.389Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 362,
+        "time": "2026-11-22T19:01:39.473Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      }
+    ],
+    "nginx": [
+      {
+        "time": "2026-11-22T19:01:39+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:39+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:39+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:39+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:39+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:39+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:39+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:39+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0.003
+      },
+      {
+        "time": "2026-11-22T19:01:38+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:38+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:38+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:38+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:38+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:38+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:38+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0
+      }
+    ]
+  },
+  {
+    "name": "recover",
+    "began": "2026-11-22T19:01:24.487Z",
+    "ended": "2026-11-22T19:01:30.852Z",
+    "initial": "blue",
+    "target": "blue",
+    "failed": "",
+    "passed": true,
+    "result": {
+      "total": 40,
+      "errors": 0,
+      "successful": 40,
+      "counts": {
+        "blue1": 14,
+        "blue2": 26,
+        "green1": 0,
+        "green2": 0
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    "continuous": {
+      "total": 54,
+      "errors": 0,
+      "successful": 54,
+      "counts": {
+        "blue1": 21,
+        "blue2": 33,
+        "green1": 0,
+        "green2": 0
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    "requests": [
+      {
+        "id": 174,
+        "time": "2026-11-22T19:01:27.500Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 176,
+        "time": "2026-11-22T19:01:27.584Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 177,
+        "time": "2026-11-22T19:01:27.667Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 178,
+        "time": "2026-11-22T19:01:27.750Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 180,
+        "time": "2026-11-22T19:01:27.833Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 6
+      },
+      {
+        "id": 181,
+        "time": "2026-11-22T19:01:27.919Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 182,
+        "time": "2026-11-22T19:01:28.003Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 184,
+        "time": "2026-11-22T19:01:28.087Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 185,
+        "time": "2026-11-22T19:01:28.171Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 186,
+        "time": "2026-11-22T19:01:28.253Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 6
+      },
+      {
+        "id": 188,
+        "time": "2026-11-22T19:01:28.339Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 189,
+        "time": "2026-11-22T19:01:28.423Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 190,
+        "time": "2026-11-22T19:01:28.507Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 192,
+        "time": "2026-11-22T19:01:28.590Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 193,
+        "time": "2026-11-22T19:01:28.676Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 194,
+        "time": "2026-11-22T19:01:28.760Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 196,
+        "time": "2026-11-22T19:01:28.843Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 197,
+        "time": "2026-11-22T19:01:28.926Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 198,
+        "time": "2026-11-22T19:01:29.010Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 200,
+        "time": "2026-11-22T19:01:29.094Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 201,
+        "time": "2026-11-22T19:01:29.177Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 202,
+        "time": "2026-11-22T19:01:29.261Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 204,
+        "time": "2026-11-22T19:01:29.344Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 205,
+        "time": "2026-11-22T19:01:29.428Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 206,
+        "time": "2026-11-22T19:01:29.512Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 208,
+        "time": "2026-11-22T19:01:29.597Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 209,
+        "time": "2026-11-22T19:01:29.681Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 210,
+        "time": "2026-11-22T19:01:29.764Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 212,
+        "time": "2026-11-22T19:01:29.846Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 213,
+        "time": "2026-11-22T19:01:29.930Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 214,
+        "time": "2026-11-22T19:01:30.013Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 216,
+        "time": "2026-11-22T19:01:30.098Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 217,
+        "time": "2026-11-22T19:01:30.180Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 218,
+        "time": "2026-11-22T19:01:30.264Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 220,
+        "time": "2026-11-22T19:01:30.347Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 221,
+        "time": "2026-11-22T19:01:30.431Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 222,
+        "time": "2026-11-22T19:01:30.515Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 224,
+        "time": "2026-11-22T19:01:30.599Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 7
+      },
+      {
+        "id": 225,
+        "time": "2026-11-22T19:01:30.686Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 226,
+        "time": "2026-11-22T19:01:30.769Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      }
+    ],
+    "nginx": [
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/items",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:30+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      }
+    ]
+  },
+  {
+    "name": "failover",
+    "began": "2026-11-22T19:01:19.434Z",
+    "ended": "2026-11-22T19:01:24.070Z",
+    "initial": "blue",
+    "target": "blue",
+    "failed": "blue1",
+    "passed": true,
+    "result": {
+      "total": 40,
+      "errors": 0,
+      "successful": 40,
+      "counts": {
+        "blue1": 0,
+        "blue2": 40,
+        "green1": 0,
+        "green2": 0
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    "continuous": {
+      "total": 54,
+      "errors": 0,
+      "successful": 54,
+      "counts": {
+        "blue1": 0,
+        "blue2": 54,
+        "green1": 0,
+        "green2": 0
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    "requests": [
+      {
+        "id": 112,
+        "time": "2026-11-22T19:01:19.719Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 1003
+      },
+      {
+        "id": 115,
+        "time": "2026-11-22T19:01:20.802Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 116,
+        "time": "2026-11-22T19:01:20.886Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 117,
+        "time": "2026-11-22T19:01:20.969Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 7
+      },
+      {
+        "id": 118,
+        "time": "2026-11-22T19:01:21.056Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 119,
+        "time": "2026-11-22T19:01:21.140Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 120,
+        "time": "2026-11-22T19:01:21.223Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 121,
+        "time": "2026-11-22T19:01:21.307Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 122,
+        "time": "2026-11-22T19:01:21.391Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 124,
+        "time": "2026-11-22T19:01:21.474Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 125,
+        "time": "2026-11-22T19:01:21.560Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 126,
+        "time": "2026-11-22T19:01:21.644Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 128,
+        "time": "2026-11-22T19:01:21.729Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 129,
+        "time": "2026-11-22T19:01:21.812Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 130,
+        "time": "2026-11-22T19:01:21.895Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 132,
+        "time": "2026-11-22T19:01:21.978Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 133,
+        "time": "2026-11-22T19:01:22.063Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 134,
+        "time": "2026-11-22T19:01:22.146Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 136,
+        "time": "2026-11-22T19:01:22.230Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 137,
+        "time": "2026-11-22T19:01:22.313Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 138,
+        "time": "2026-11-22T19:01:22.396Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 140,
+        "time": "2026-11-22T19:01:22.480Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 141,
+        "time": "2026-11-22T19:01:22.563Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 142,
+        "time": "2026-11-22T19:01:22.647Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 144,
+        "time": "2026-11-22T19:01:22.731Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 145,
+        "time": "2026-11-22T19:01:22.814Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 146,
+        "time": "2026-11-22T19:01:22.898Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 148,
+        "time": "2026-11-22T19:01:22.982Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 149,
+        "time": "2026-11-22T19:01:23.066Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 150,
+        "time": "2026-11-22T19:01:23.150Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 152,
+        "time": "2026-11-22T19:01:23.234Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 153,
+        "time": "2026-11-22T19:01:23.316Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 154,
+        "time": "2026-11-22T19:01:23.400Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 156,
+        "time": "2026-11-22T19:01:23.484Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 157,
+        "time": "2026-11-22T19:01:23.568Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 158,
+        "time": "2026-11-22T19:01:23.653Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 159,
+        "time": "2026-11-22T19:01:23.736Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 161,
+        "time": "2026-11-22T19:01:23.819Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 162,
+        "time": "2026-11-22T19:01:23.902Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 163,
+        "time": "2026-11-22T19:01:23.986Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      }
+    ],
+    "nginx": [
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.002
+      },
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:23+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      }
+    ]
+  },
+  {
+    "name": "balance",
+    "began": "2026-11-22T19:01:12.758Z",
+    "ended": "2026-11-22T19:01:18.894Z",
+    "initial": "blue",
+    "target": "blue",
+    "failed": "",
+    "passed": true,
+    "result": {
+      "total": 40,
+      "errors": 0,
+      "successful": 40,
+      "counts": {
+        "blue1": 18,
+        "blue2": 22,
+        "green1": 0,
+        "green2": 0
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    "continuous": {
+      "total": 53,
+      "errors": 0,
+      "successful": 53,
+      "counts": {
+        "blue1": 25,
+        "blue2": 28,
+        "green1": 0,
+        "green2": 0
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    "requests": [
+      {
+        "id": 55,
+        "time": "2026-11-22T19:01:15.531Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 57,
+        "time": "2026-11-22T19:01:15.616Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 58,
+        "time": "2026-11-22T19:01:15.700Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 59,
+        "time": "2026-11-22T19:01:15.783Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 61,
+        "time": "2026-11-22T19:01:15.866Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 62,
+        "time": "2026-11-22T19:01:15.951Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 63,
+        "time": "2026-11-22T19:01:16.034Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 64,
+        "time": "2026-11-22T19:01:16.119Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 6
+      },
+      {
+        "id": 66,
+        "time": "2026-11-22T19:01:16.205Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 67,
+        "time": "2026-11-22T19:01:16.289Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 68,
+        "time": "2026-11-22T19:01:16.373Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 6
+      },
+      {
+        "id": 70,
+        "time": "2026-11-22T19:01:16.459Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 71,
+        "time": "2026-11-22T19:01:16.544Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 73,
+        "time": "2026-11-22T19:01:16.629Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 74,
+        "time": "2026-11-22T19:01:16.712Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 6
+      },
+      {
+        "id": 75,
+        "time": "2026-11-22T19:01:16.798Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 77,
+        "time": "2026-11-22T19:01:16.886Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 78,
+        "time": "2026-11-22T19:01:16.971Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 79,
+        "time": "2026-11-22T19:01:17.055Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 80,
+        "time": "2026-11-22T19:01:17.138Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 82,
+        "time": "2026-11-22T19:01:17.222Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 83,
+        "time": "2026-11-22T19:01:17.307Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 84,
+        "time": "2026-11-22T19:01:17.390Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 86,
+        "time": "2026-11-22T19:01:17.473Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 87,
+        "time": "2026-11-22T19:01:17.556Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 88,
+        "time": "2026-11-22T19:01:17.639Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 90,
+        "time": "2026-11-22T19:01:17.723Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 91,
+        "time": "2026-11-22T19:01:17.807Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 92,
+        "time": "2026-11-22T19:01:17.890Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 94,
+        "time": "2026-11-22T19:01:17.974Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 95,
+        "time": "2026-11-22T19:01:18.057Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 96,
+        "time": "2026-11-22T19:01:18.141Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 98,
+        "time": "2026-11-22T19:01:18.225Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 6
+      },
+      {
+        "id": 99,
+        "time": "2026-11-22T19:01:18.311Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 100,
+        "time": "2026-11-22T19:01:18.393Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 102,
+        "time": "2026-11-22T19:01:18.477Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 103,
+        "time": "2026-11-22T19:01:18.560Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 104,
+        "time": "2026-11-22T19:01:18.644Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 106,
+        "time": "2026-11-22T19:01:18.727Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 107,
+        "time": "2026-11-22T19:01:18.811Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      }
+    ],
+    "nginx": [
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 101,
+        "method": "GET",
+        "path": "/ws",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "101",
+        "backend": "",
+        "version": "",
+        "seconds": 8.857
+      },
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 101,
+        "method": "GET",
+        "path": "/ws",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "101",
+        "backend": "",
+        "version": "",
+        "seconds": 19.525
+      },
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/items",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T19:01:18+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      }
+    ]
+  },
+  {
+    "name": "rollback",
+    "began": "2026-11-22T18:57:20.688Z",
+    "ended": "2026-11-22T18:57:29.117Z",
+    "initial": "green",
+    "target": "blue",
+    "failed": "",
+    "passed": true,
+    "result": {
+      "total": 100,
+      "errors": 0,
+      "successful": 100,
+      "counts": {
+        "blue1": 48,
+        "blue2": 40,
+        "green1": 5,
+        "green2": 7
+      },
+      "versions": [
+        "2.0.0",
+        "1.0.0"
+      ]
+    },
+    "continuous": {
+      "total": 135,
+      "errors": 0,
+      "successful": 135,
+      "counts": {
+        "blue1": 60,
+        "blue2": 58,
+        "green1": 8,
+        "green2": 9
+      },
+      "versions": [
+        "2.0.0",
+        "1.0.0"
+      ]
+    },
+    "requests": [
+      {
+        "id": 359,
+        "time": "2026-11-22T18:57:20.764Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 360,
+        "time": "2026-11-22T18:57:20.847Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 6
+      },
+      {
+        "id": 361,
+        "time": "2026-11-22T18:57:20.933Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 363,
+        "time": "2026-11-22T18:57:21.017Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 364,
+        "time": "2026-11-22T18:57:21.101Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 365,
+        "time": "2026-11-22T18:57:21.184Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 367,
+        "time": "2026-11-22T18:57:21.267Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 368,
+        "time": "2026-11-22T18:57:21.350Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 369,
+        "time": "2026-11-22T18:57:21.434Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 371,
+        "time": "2026-11-22T18:57:21.518Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 372,
+        "time": "2026-11-22T18:57:21.602Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 373,
+        "time": "2026-11-22T18:57:21.686Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 376,
+        "time": "2026-11-22T18:57:21.771Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 377,
+        "time": "2026-11-22T18:57:21.853Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 378,
+        "time": "2026-11-22T18:57:21.936Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 380,
+        "time": "2026-11-22T18:57:22.020Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 381,
+        "time": "2026-11-22T18:57:22.104Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 382,
+        "time": "2026-11-22T18:57:22.188Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 384,
+        "time": "2026-11-22T18:57:22.273Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 385,
+        "time": "2026-11-22T18:57:22.356Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 386,
+        "time": "2026-11-22T18:57:22.438Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 388,
+        "time": "2026-11-22T18:57:22.522Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 389,
+        "time": "2026-11-22T18:57:22.606Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 390,
+        "time": "2026-11-22T18:57:22.689Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 7
+      },
+      {
+        "id": 392,
+        "time": "2026-11-22T18:57:22.777Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 393,
+        "time": "2026-11-22T18:57:22.860Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 394,
+        "time": "2026-11-22T18:57:22.944Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 396,
+        "time": "2026-11-22T18:57:23.027Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 397,
+        "time": "2026-11-22T18:57:23.110Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 398,
+        "time": "2026-11-22T18:57:23.193Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 400,
+        "time": "2026-11-22T18:57:23.277Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 401,
+        "time": "2026-11-22T18:57:23.360Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 402,
+        "time": "2026-11-22T18:57:23.444Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 404,
+        "time": "2026-11-22T18:57:23.528Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 405,
+        "time": "2026-11-22T18:57:23.611Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 406,
+        "time": "2026-11-22T18:57:23.694Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 408,
+        "time": "2026-11-22T18:57:23.777Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 6
+      },
+      {
+        "id": 409,
+        "time": "2026-11-22T18:57:23.863Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 410,
+        "time": "2026-11-22T18:57:23.947Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 412,
+        "time": "2026-11-22T18:57:24.030Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 413,
+        "time": "2026-11-22T18:57:24.114Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 414,
+        "time": "2026-11-22T18:57:24.198Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 416,
+        "time": "2026-11-22T18:57:24.282Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 417,
+        "time": "2026-11-22T18:57:24.365Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 418,
+        "time": "2026-11-22T18:57:24.449Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 420,
+        "time": "2026-11-22T18:57:24.532Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 421,
+        "time": "2026-11-22T18:57:24.615Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 422,
+        "time": "2026-11-22T18:57:24.699Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 424,
+        "time": "2026-11-22T18:57:24.783Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 425,
+        "time": "2026-11-22T18:57:24.867Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 426,
+        "time": "2026-11-22T18:57:24.951Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 428,
+        "time": "2026-11-22T18:57:25.035Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 429,
+        "time": "2026-11-22T18:57:25.119Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 430,
+        "time": "2026-11-22T18:57:25.204Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 432,
+        "time": "2026-11-22T18:57:25.288Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 433,
+        "time": "2026-11-22T18:57:25.371Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 434,
+        "time": "2026-11-22T18:57:25.455Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 436,
+        "time": "2026-11-22T18:57:25.537Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 437,
+        "time": "2026-11-22T18:57:25.620Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 438,
+        "time": "2026-11-22T18:57:25.704Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 440,
+        "time": "2026-11-22T18:57:25.787Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 441,
+        "time": "2026-11-22T18:57:25.869Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 442,
+        "time": "2026-11-22T18:57:25.952Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 443,
+        "time": "2026-11-22T18:57:26.035Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 445,
+        "time": "2026-11-22T18:57:26.119Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 446,
+        "time": "2026-11-22T18:57:26.202Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 447,
+        "time": "2026-11-22T18:57:26.284Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 449,
+        "time": "2026-11-22T18:57:26.366Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 450,
+        "time": "2026-11-22T18:57:26.450Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 451,
+        "time": "2026-11-22T18:57:26.532Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 453,
+        "time": "2026-11-22T18:57:26.616Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 454,
+        "time": "2026-11-22T18:57:26.699Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 455,
+        "time": "2026-11-22T18:57:26.782Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 457,
+        "time": "2026-11-22T18:57:26.866Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 458,
+        "time": "2026-11-22T18:57:26.950Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 6
+      },
+      {
+        "id": 459,
+        "time": "2026-11-22T18:57:27.036Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 461,
+        "time": "2026-11-22T18:57:27.120Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 462,
+        "time": "2026-11-22T18:57:27.203Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 463,
+        "time": "2026-11-22T18:57:27.286Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 465,
+        "time": "2026-11-22T18:57:27.370Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 466,
+        "time": "2026-11-22T18:57:27.453Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 467,
+        "time": "2026-11-22T18:57:27.536Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 469,
+        "time": "2026-11-22T18:57:27.621Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 470,
+        "time": "2026-11-22T18:57:27.705Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 471,
+        "time": "2026-11-22T18:57:27.789Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 473,
+        "time": "2026-11-22T18:57:27.872Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 474,
+        "time": "2026-11-22T18:57:27.956Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 475,
+        "time": "2026-11-22T18:57:28.039Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 477,
+        "time": "2026-11-22T18:57:28.122Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 478,
+        "time": "2026-11-22T18:57:28.205Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 479,
+        "time": "2026-11-22T18:57:28.288Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 481,
+        "time": "2026-11-22T18:57:28.370Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 482,
+        "time": "2026-11-22T18:57:28.453Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 483,
+        "time": "2026-11-22T18:57:28.536Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 485,
+        "time": "2026-11-22T18:57:28.619Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 486,
+        "time": "2026-11-22T18:57:28.702Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 487,
+        "time": "2026-11-22T18:57:28.785Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 489,
+        "time": "2026-11-22T18:57:28.867Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 490,
+        "time": "2026-11-22T18:57:28.951Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 491,
+        "time": "2026-11-22T18:57:29.034Z",
+        "origin": "scenario:rollback",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 2
+      }
+    ],
+    "nginx": [
+      {
+        "time": "2026-11-22T18:57:29+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:29+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:28+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:28+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:28+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:28+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:28+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:28+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:28+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:28+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:28+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:28+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:28+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:28+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:28+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      }
+    ]
+  },
+  {
+    "name": "deploy",
+    "began": "2026-11-22T18:57:12.192Z",
+    "ended": "2026-11-22T18:57:20.639Z",
+    "initial": "blue",
+    "target": "green",
+    "failed": "",
+    "passed": true,
+    "result": {
+      "total": 100,
+      "errors": 0,
+      "successful": 100,
+      "counts": {
+        "blue1": 6,
+        "blue2": 6,
+        "green1": 37,
+        "green2": 51
+      },
+      "versions": [
+        "1.0.0",
+        "2.0.0"
+      ]
+    },
+    "continuous": {
+      "total": 134,
+      "errors": 0,
+      "successful": 134,
+      "counts": {
+        "blue1": 8,
+        "blue2": 8,
+        "green1": 59,
+        "green2": 59
+      },
+      "versions": [
+        "1.0.0",
+        "2.0.0"
+      ]
+    },
+    "requests": [
+      {
+        "id": 224,
+        "time": "2026-11-22T18:57:12.272Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 226,
+        "time": "2026-11-22T18:57:12.356Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 227,
+        "time": "2026-11-22T18:57:12.439Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 228,
+        "time": "2026-11-22T18:57:12.523Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 230,
+        "time": "2026-11-22T18:57:12.607Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 231,
+        "time": "2026-11-22T18:57:12.691Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 232,
+        "time": "2026-11-22T18:57:12.773Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 233,
+        "time": "2026-11-22T18:57:12.856Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 235,
+        "time": "2026-11-22T18:57:12.939Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 236,
+        "time": "2026-11-22T18:57:13.022Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 237,
+        "time": "2026-11-22T18:57:13.105Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 239,
+        "time": "2026-11-22T18:57:13.189Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 241,
+        "time": "2026-11-22T18:57:13.273Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 242,
+        "time": "2026-11-22T18:57:13.357Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 244,
+        "time": "2026-11-22T18:57:13.440Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 245,
+        "time": "2026-11-22T18:57:13.522Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 246,
+        "time": "2026-11-22T18:57:13.606Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 248,
+        "time": "2026-11-22T18:57:13.689Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 249,
+        "time": "2026-11-22T18:57:13.772Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 250,
+        "time": "2026-11-22T18:57:13.856Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 252,
+        "time": "2026-11-22T18:57:13.940Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 253,
+        "time": "2026-11-22T18:57:14.025Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 254,
+        "time": "2026-11-22T18:57:14.108Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 256,
+        "time": "2026-11-22T18:57:14.191Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 257,
+        "time": "2026-11-22T18:57:14.273Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 258,
+        "time": "2026-11-22T18:57:14.357Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 260,
+        "time": "2026-11-22T18:57:14.441Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 261,
+        "time": "2026-11-22T18:57:14.525Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 262,
+        "time": "2026-11-22T18:57:14.608Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 2
+      },
+      {
+        "id": 264,
+        "time": "2026-11-22T18:57:14.690Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 8
+      },
+      {
+        "id": 265,
+        "time": "2026-11-22T18:57:14.779Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 266,
+        "time": "2026-11-22T18:57:14.862Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 268,
+        "time": "2026-11-22T18:57:14.946Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 269,
+        "time": "2026-11-22T18:57:15.031Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 270,
+        "time": "2026-11-22T18:57:15.115Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 272,
+        "time": "2026-11-22T18:57:15.199Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 273,
+        "time": "2026-11-22T18:57:15.284Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 274,
+        "time": "2026-11-22T18:57:15.369Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 276,
+        "time": "2026-11-22T18:57:15.453Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 277,
+        "time": "2026-11-22T18:57:15.539Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 278,
+        "time": "2026-11-22T18:57:15.623Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 280,
+        "time": "2026-11-22T18:57:15.707Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 281,
+        "time": "2026-11-22T18:57:15.791Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 282,
+        "time": "2026-11-22T18:57:15.874Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 284,
+        "time": "2026-11-22T18:57:15.957Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 285,
+        "time": "2026-11-22T18:57:16.040Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 286,
+        "time": "2026-11-22T18:57:16.123Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 288,
+        "time": "2026-11-22T18:57:16.205Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 289,
+        "time": "2026-11-22T18:57:16.289Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 290,
+        "time": "2026-11-22T18:57:16.372Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 292,
+        "time": "2026-11-22T18:57:16.456Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 293,
+        "time": "2026-11-22T18:57:16.539Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 294,
+        "time": "2026-11-22T18:57:16.622Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 296,
+        "time": "2026-11-22T18:57:16.706Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 297,
+        "time": "2026-11-22T18:57:16.789Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 298,
+        "time": "2026-11-22T18:57:16.873Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 300,
+        "time": "2026-11-22T18:57:16.957Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 7
+      },
+      {
+        "id": 301,
+        "time": "2026-11-22T18:57:17.044Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 302,
+        "time": "2026-11-22T18:57:17.127Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 304,
+        "time": "2026-11-22T18:57:17.211Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 305,
+        "time": "2026-11-22T18:57:17.294Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 306,
+        "time": "2026-11-22T18:57:17.378Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 308,
+        "time": "2026-11-22T18:57:17.461Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 309,
+        "time": "2026-11-22T18:57:17.544Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 310,
+        "time": "2026-11-22T18:57:17.627Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 312,
+        "time": "2026-11-22T18:57:17.711Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 313,
+        "time": "2026-11-22T18:57:17.794Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 314,
+        "time": "2026-11-22T18:57:17.877Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 2
+      },
+      {
+        "id": 316,
+        "time": "2026-11-22T18:57:17.959Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 317,
+        "time": "2026-11-22T18:57:18.042Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 318,
+        "time": "2026-11-22T18:57:18.125Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 320,
+        "time": "2026-11-22T18:57:18.209Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 321,
+        "time": "2026-11-22T18:57:18.293Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 322,
+        "time": "2026-11-22T18:57:18.379Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 324,
+        "time": "2026-11-22T18:57:18.462Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 325,
+        "time": "2026-11-22T18:57:18.546Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 326,
+        "time": "2026-11-22T18:57:18.632Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 328,
+        "time": "2026-11-22T18:57:18.715Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 329,
+        "time": "2026-11-22T18:57:18.798Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 330,
+        "time": "2026-11-22T18:57:18.882Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 332,
+        "time": "2026-11-22T18:57:18.966Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 333,
+        "time": "2026-11-22T18:57:19.049Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 334,
+        "time": "2026-11-22T18:57:19.132Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 336,
+        "time": "2026-11-22T18:57:19.216Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 2
+      },
+      {
+        "id": 337,
+        "time": "2026-11-22T18:57:19.298Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 338,
+        "time": "2026-11-22T18:57:19.383Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 340,
+        "time": "2026-11-22T18:57:19.466Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 341,
+        "time": "2026-11-22T18:57:19.550Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 342,
+        "time": "2026-11-22T18:57:19.634Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 344,
+        "time": "2026-11-22T18:57:19.718Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 2
+      },
+      {
+        "id": 345,
+        "time": "2026-11-22T18:57:19.800Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 346,
+        "time": "2026-11-22T18:57:19.884Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 348,
+        "time": "2026-11-22T18:57:19.967Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 349,
+        "time": "2026-11-22T18:57:20.050Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 350,
+        "time": "2026-11-22T18:57:20.134Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 352,
+        "time": "2026-11-22T18:57:20.219Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 4
+      },
+      {
+        "id": 353,
+        "time": "2026-11-22T18:57:20.303Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 5
+      },
+      {
+        "id": 354,
+        "time": "2026-11-22T18:57:20.388Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 356,
+        "time": "2026-11-22T18:57:20.472Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green2",
+        "version": "2.0.0",
+        "ms": 3
+      },
+      {
+        "id": 357,
+        "time": "2026-11-22T18:57:20.555Z",
+        "origin": "scenario:deploy",
+        "status": 200,
+        "backend": "green1",
+        "version": "2.0.0",
+        "ms": 3
+      }
+    ],
+    "nginx": [
+      {
+        "time": "2026-11-22T18:57:20+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:20+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:20+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:20+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:20+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:20+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:20+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:20+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:20+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:19+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:19+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:19+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:19+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:19+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.22:3000",
+        "attempts": "200",
+        "backend": "green2",
+        "version": "2.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:19+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.21:3000",
+        "attempts": "200",
+        "backend": "green1",
+        "version": "2.0.0",
+        "seconds": 0
+      }
+    ]
+  },
+  {
+    "name": "recover",
+    "began": "2026-11-22T18:57:05.719Z",
+    "ended": "2026-11-22T18:57:12.152Z",
+    "initial": "blue",
+    "target": "blue",
+    "failed": "",
+    "passed": true,
+    "result": {
+      "total": 40,
+      "errors": 0,
+      "successful": 40,
+      "counts": {
+        "blue1": 22,
+        "blue2": 18,
+        "green1": 0,
+        "green2": 0
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    "continuous": {
+      "total": 53,
+      "errors": 0,
+      "successful": 53,
+      "counts": {
+        "blue1": 27,
+        "blue2": 26,
+        "green1": 0,
+        "green2": 0
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    "requests": [
+      {
+        "id": 171,
+        "time": "2026-11-22T18:57:08.802Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 172,
+        "time": "2026-11-22T18:57:08.886Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 173,
+        "time": "2026-11-22T18:57:08.970Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 175,
+        "time": "2026-11-22T18:57:09.057Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 176,
+        "time": "2026-11-22T18:57:09.140Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 177,
+        "time": "2026-11-22T18:57:09.225Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 179,
+        "time": "2026-11-22T18:57:09.309Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 180,
+        "time": "2026-11-22T18:57:09.394Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 181,
+        "time": "2026-11-22T18:57:09.478Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 182,
+        "time": "2026-11-22T18:57:09.561Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 184,
+        "time": "2026-11-22T18:57:09.646Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 185,
+        "time": "2026-11-22T18:57:09.730Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 186,
+        "time": "2026-11-22T18:57:09.813Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 188,
+        "time": "2026-11-22T18:57:09.897Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 189,
+        "time": "2026-11-22T18:57:09.980Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 190,
+        "time": "2026-11-22T18:57:10.063Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 192,
+        "time": "2026-11-22T18:57:10.147Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 193,
+        "time": "2026-11-22T18:57:10.230Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 194,
+        "time": "2026-11-22T18:57:10.313Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 196,
+        "time": "2026-11-22T18:57:10.397Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 197,
+        "time": "2026-11-22T18:57:10.480Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 198,
+        "time": "2026-11-22T18:57:10.562Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 200,
+        "time": "2026-11-22T18:57:10.646Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 201,
+        "time": "2026-11-22T18:57:10.729Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 202,
+        "time": "2026-11-22T18:57:10.813Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 204,
+        "time": "2026-11-22T18:57:10.897Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 205,
+        "time": "2026-11-22T18:57:10.981Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 206,
+        "time": "2026-11-22T18:57:11.064Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 208,
+        "time": "2026-11-22T18:57:11.147Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 209,
+        "time": "2026-11-22T18:57:11.231Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 210,
+        "time": "2026-11-22T18:57:11.316Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 212,
+        "time": "2026-11-22T18:57:11.400Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 213,
+        "time": "2026-11-22T18:57:11.485Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 214,
+        "time": "2026-11-22T18:57:11.568Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 216,
+        "time": "2026-11-22T18:57:11.651Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 217,
+        "time": "2026-11-22T18:57:11.734Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 218,
+        "time": "2026-11-22T18:57:11.817Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 220,
+        "time": "2026-11-22T18:57:11.902Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 221,
+        "time": "2026-11-22T18:57:11.985Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 222,
+        "time": "2026-11-22T18:57:12.068Z",
+        "origin": "scenario:recover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      }
+    ],
+    "nginx": [
+      {
+        "time": "2026-11-22T18:57:12+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:12+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:11+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:11+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:11+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:11+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:11+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:11+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:11+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:11+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:11+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:11+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:11+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:11+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:11+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/items",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      }
+    ]
+  },
+  {
+    "name": "failover",
+    "began": "2026-11-22T18:57:00.045Z",
+    "ended": "2026-11-22T18:57:05.656Z",
+    "initial": "blue",
+    "target": "blue",
+    "failed": "blue1",
+    "passed": true,
+    "result": {
+      "total": 40,
+      "errors": 0,
+      "successful": 40,
+      "counts": {
+        "blue1": 0,
+        "blue2": 40,
+        "green1": 0,
+        "green2": 0
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    "continuous": {
+      "total": 58,
+      "errors": 0,
+      "successful": 58,
+      "counts": {
+        "blue1": 0,
+        "blue2": 58,
+        "green1": 0,
+        "green2": 0
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    "requests": [
+      {
+        "id": 101,
+        "time": "2026-11-22T18:57:00.314Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 102,
+        "time": "2026-11-22T18:57:00.397Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 1004
+      },
+      {
+        "id": 104,
+        "time": "2026-11-22T18:57:01.481Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 105,
+        "time": "2026-11-22T18:57:01.564Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 106,
+        "time": "2026-11-22T18:57:01.649Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 108,
+        "time": "2026-11-22T18:57:01.732Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 109,
+        "time": "2026-11-22T18:57:01.815Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 110,
+        "time": "2026-11-22T18:57:01.898Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 112,
+        "time": "2026-11-22T18:57:01.982Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 113,
+        "time": "2026-11-22T18:57:02.065Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 114,
+        "time": "2026-11-22T18:57:02.149Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 116,
+        "time": "2026-11-22T18:57:02.233Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 117,
+        "time": "2026-11-22T18:57:02.315Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 118,
+        "time": "2026-11-22T18:57:02.400Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 120,
+        "time": "2026-11-22T18:57:02.483Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 121,
+        "time": "2026-11-22T18:57:02.566Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 122,
+        "time": "2026-11-22T18:57:02.650Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 124,
+        "time": "2026-11-22T18:57:02.734Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 125,
+        "time": "2026-11-22T18:57:02.817Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 126,
+        "time": "2026-11-22T18:57:02.901Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 128,
+        "time": "2026-11-22T18:57:02.985Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 129,
+        "time": "2026-11-22T18:57:03.068Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 130,
+        "time": "2026-11-22T18:57:03.151Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 132,
+        "time": "2026-11-22T18:57:03.235Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 133,
+        "time": "2026-11-22T18:57:03.318Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 134,
+        "time": "2026-11-22T18:57:03.402Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 136,
+        "time": "2026-11-22T18:57:03.485Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 137,
+        "time": "2026-11-22T18:57:03.568Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 138,
+        "time": "2026-11-22T18:57:03.651Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 140,
+        "time": "2026-11-22T18:57:03.735Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 141,
+        "time": "2026-11-22T18:57:03.818Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 142,
+        "time": "2026-11-22T18:57:03.901Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 2
+      },
+      {
+        "id": 143,
+        "time": "2026-11-22T18:57:03.984Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 145,
+        "time": "2026-11-22T18:57:04.068Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 146,
+        "time": "2026-11-22T18:57:04.151Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 147,
+        "time": "2026-11-22T18:57:04.235Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 1005
+      },
+      {
+        "id": 153,
+        "time": "2026-11-22T18:57:05.319Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 154,
+        "time": "2026-11-22T18:57:05.404Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 155,
+        "time": "2026-11-22T18:57:05.488Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 157,
+        "time": "2026-11-22T18:57:05.572Z",
+        "origin": "scenario:failover",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      }
+    ],
+    "nginx": [
+      {
+        "time": "2026-11-22T18:57:05+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:05+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:05+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:05+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:57:05+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:05+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/items",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.002
+      },
+      {
+        "time": "2026-11-22T18:57:05+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:05+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000, 172.28.3.12:3000",
+        "attempts": "504, 200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 1.002
+      },
+      {
+        "time": "2026-11-22T18:57:05+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:04+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:04+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:04+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:04+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:04+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:57:03+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      }
+    ]
+  },
+  {
+    "name": "balance",
+    "began": "2026-11-22T18:56:53.839Z",
+    "ended": "2026-11-22T18:56:59.981Z",
+    "initial": "blue",
+    "target": "blue",
+    "failed": "",
+    "passed": true,
+    "result": {
+      "total": 40,
+      "errors": 0,
+      "successful": 40,
+      "counts": {
+        "blue1": 18,
+        "blue2": 22,
+        "green1": 0,
+        "green2": 0
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    "continuous": {
+      "total": 54,
+      "errors": 0,
+      "successful": 54,
+      "counts": {
+        "blue1": 26,
+        "blue2": 28,
+        "green1": 0,
+        "green2": 0
+      },
+      "versions": [
+        "1.0.0"
+      ]
+    },
+    "requests": [
+      {
+        "id": 46,
+        "time": "2026-11-22T18:56:56.630Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 48,
+        "time": "2026-11-22T18:56:56.713Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 49,
+        "time": "2026-11-22T18:56:56.796Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 50,
+        "time": "2026-11-22T18:56:56.880Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 52,
+        "time": "2026-11-22T18:56:56.964Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 53,
+        "time": "2026-11-22T18:56:57.047Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 54,
+        "time": "2026-11-22T18:56:57.131Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 56,
+        "time": "2026-11-22T18:56:57.214Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 57,
+        "time": "2026-11-22T18:56:57.297Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 58,
+        "time": "2026-11-22T18:56:57.380Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 60,
+        "time": "2026-11-22T18:56:57.464Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 61,
+        "time": "2026-11-22T18:56:57.547Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 62,
+        "time": "2026-11-22T18:56:57.630Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 64,
+        "time": "2026-11-22T18:56:57.714Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 65,
+        "time": "2026-11-22T18:56:57.797Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 66,
+        "time": "2026-11-22T18:56:57.880Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 68,
+        "time": "2026-11-22T18:56:57.963Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 69,
+        "time": "2026-11-22T18:56:58.047Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 70,
+        "time": "2026-11-22T18:56:58.131Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 72,
+        "time": "2026-11-22T18:56:58.215Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 73,
+        "time": "2026-11-22T18:56:58.299Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 74,
+        "time": "2026-11-22T18:56:58.382Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 76,
+        "time": "2026-11-22T18:56:58.466Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 77,
+        "time": "2026-11-22T18:56:58.550Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 78,
+        "time": "2026-11-22T18:56:58.633Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 80,
+        "time": "2026-11-22T18:56:58.717Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 81,
+        "time": "2026-11-22T18:56:58.802Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 82,
+        "time": "2026-11-22T18:56:58.886Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 84,
+        "time": "2026-11-22T18:56:58.970Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 85,
+        "time": "2026-11-22T18:56:59.054Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 86,
+        "time": "2026-11-22T18:56:59.139Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 3
+      },
+      {
+        "id": 88,
+        "time": "2026-11-22T18:56:59.222Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 89,
+        "time": "2026-11-22T18:56:59.306Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 90,
+        "time": "2026-11-22T18:56:59.391Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 92,
+        "time": "2026-11-22T18:56:59.476Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 93,
+        "time": "2026-11-22T18:56:59.561Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 94,
+        "time": "2026-11-22T18:56:59.644Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 5
+      },
+      {
+        "id": 96,
+        "time": "2026-11-22T18:56:59.729Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 7
+      },
+      {
+        "id": 97,
+        "time": "2026-11-22T18:56:59.815Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue2",
+        "version": "1.0.0",
+        "ms": 4
+      },
+      {
+        "id": 98,
+        "time": "2026-11-22T18:56:59.898Z",
+        "origin": "scenario:balance",
+        "status": 200,
+        "backend": "blue1",
+        "version": "1.0.0",
+        "ms": 3
+      }
+    ],
+    "nginx": [
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.004
+      },
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0
+      },
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/items",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      },
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.11:3000",
+        "attempts": "200",
+        "backend": "blue1",
+        "version": "1.0.0",
+        "seconds": 0.002
+      },
+      {
+        "time": "2026-11-22T18:56:59+00:00",
+        "status": 200,
+        "method": "GET",
+        "path": "/api/health",
+        "upstream": "172.28.3.12:3000",
+        "attempts": "200",
+        "backend": "blue2",
+        "version": "1.0.0",
+        "seconds": 0.001
+      }
+    ]
+  }
+]

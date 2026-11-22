@@ -1,0 +1,3 @@
+ Container lab03-tests-run-5b525cd37253 Creating 
+ Container lab03-tests-run-5b525cd37253 Created 
+PASS WebSocket hello, push, ping/pong > 10 с; HTTP 405/404; версия 2.0.0

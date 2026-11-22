@@ -1,0 +1,7 @@
+NAME              IMAGE                 COMMAND                  SERVICE   CREATED         STATUS                   PORTS
+lab03-blue1-1     lab03-backend:1.0.0   "docker-entrypoint.s…"   blue1     5 minutes ago   Up 4 minutes (healthy)   3000/tcp
+lab03-blue2-1     lab03-backend:1.0.0   "docker-entrypoint.s…"   blue2     5 minutes ago   Up 5 minutes (healthy)   3000/tcp
+lab03-green1-1    lab03-backend:2.0.0   "docker-entrypoint.s…"   green1    5 minutes ago   Up 5 minutes (healthy)   3000/tcp
+lab03-green2-1    lab03-backend:2.0.0   "docker-entrypoint.s…"   green2    5 minutes ago   Up 5 minutes (healthy)   3000/tcp
+lab03-monitor-1   lab03-monitor:1.0.0   "docker-entrypoint.s…"   monitor   5 minutes ago   Up 5 minutes (healthy)   127.0.0.1:9084->9084/tcp
+lab03-nginx-1     lab03-nginx:1.28      "/docker-entrypoint.…"   nginx     5 minutes ago   Up 5 minutes (healthy)   80/tcp, 0.0.0.0:9083->9083/tcp, [::]:9083->9083/tcp

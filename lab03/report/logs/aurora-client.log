@@ -1,0 +1,482 @@
+[I] DeployClient::record:54 - 21:49:22 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:49:23 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:49:24 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:49:26 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:49:26 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:49:28 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:49:29 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:49:30 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:49:32 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:49:32 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:49:34 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:49:35 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:49:36 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:49:38 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:49:38 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:49:40 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:49:41 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:49:42 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:49:44 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:49:44 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:49:46 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:49:47 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:49:48 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:49:50 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:49:50 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:49:52 REST ERROR Connection closed; retry=2000
+[I] DeployClient::record:54 - 21:49:53 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:49:53 WS отключён; retry=1000
+[I] DeployClient::record:54 - 21:49:54 REST ERROR Connection refused; retry=4000
+[I] DeployClient::record:54 - 21:49:54 WS отключён; retry=2000
+[I] DeployClient::record:54 - 21:49:56 WS отключён; retry=4000
+[I] DeployClient::record:54 - 21:49:58 REST ERROR Connection refused; retry=8000
+[I] DeployClient::record:54 - 21:50:00 WS отключён; retry=8000
+[I] DeployClient::record:54 - 21:50:06 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:50:08 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:50:09 WS подключён
+[I] DeployClient::record:54 - 21:50:09 PUSH green2 / v2.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 21:50:09 PUSH green2 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:50:10 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:50:12 REST ERROR Connection closed; retry=2000
+[I] DeployClient::record:54 - 21:50:12 PUSH green2 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:50:14 WS отключён; retry=1000
+[I] DeployClient::record:54 - 21:50:14 REST ERROR Connection closed; retry=4000
+[I] DeployClient::record:54 - 21:50:15 WS подключён
+[I] DeployClient::record:54 - 21:50:15 PUSH blue2 / v1.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 21:50:16 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:50:18 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:50:19 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:50:20 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:50:22 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:50:22 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:50:24 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:50:25 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:50:26 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:50:28 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:50:28 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:50:30 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:50:31 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:50:32 WS отключён; retry=1000
+[I] DeployClient::record:54 - 21:50:32 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:50:32 WS подключён
+[I] DeployClient::record:54 - 21:50:32 PUSH blue1 / v1.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 21:50:33 WS отключён; retry=1000
+[I] DeployClient::record:54 - 21:50:34 WS подключён
+[I] DeployClient::record:54 - 21:50:34 PUSH blue2 / v1.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 21:50:35 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:50:37 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:50:37 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:50:39 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:50:40 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:50:41 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:50:43 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:50:43 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:50:45 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:50:46 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:50:47 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:50:49 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:50:49 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:50:51 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:50:52 WS отключён; retry=1000
+[I] DeployClient::record:54 - 21:50:53 WS подключён
+[I] DeployClient::record:54 - 21:50:53 PUSH green1 / v2.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 21:50:53 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:50:54 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:50:55 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:50:57 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:50:57 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:50:59 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:00 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:51:01 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:01 WS отключён; retry=1000
+[I] DeployClient::record:54 - 21:51:02 WS подключён
+[I] DeployClient::record:54 - 21:51:02 PUSH blue1 / v1.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 21:51:03 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:03 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:05 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:06 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:07 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:51:09 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:09 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:51:11 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:12 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:13 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:51:15 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:15 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:17 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:51:18 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:19 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:51:21 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:21 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:23 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:51:24 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:25 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:51:27 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:27 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:51:29 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:30 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:31 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:33 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:33 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:51:35 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:36 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:37 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:39 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:39 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:51:41 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:42 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:43 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:51:45 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:45 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:47 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:48 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:49 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:51:51 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:51 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:53 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:51:54 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:55 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:51:57 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:51:57 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:51:59 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:00 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:01 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:03 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:03 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:05 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:06 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:07 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:09 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:09 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:11 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:12 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:13 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:15 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:15 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:17 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:18 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:19 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:21 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:21 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:23 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:24 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:25 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:27 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:27 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:29 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:30 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:31 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:33 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:33 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:35 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:36 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:37 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:39 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:39 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:41 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:42 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:43 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:45 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:45 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:47 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:48 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:49 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:51 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:51 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:53 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:54 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:55 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:52:57 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:52:57 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:52:59 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:00 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:01 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:03 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:03 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:53:05 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:06 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:07 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:53:09 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:09 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:11 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:53:12 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:13 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:53:15 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:15 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:17 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:53:18 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:19 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:21 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:21 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:53:23 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:24 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:25 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:27 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:27 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:53:29 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:30 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:31 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:53:33 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:33 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:53:35 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:36 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:37 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:53:39 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:39 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:41 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:53:42 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:43 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:45 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:45 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:47 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:48 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:49 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:53:51 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:51 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:53 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:53:54 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:55 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:57 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:53:57 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:53:58 WS отключён; retry=1000
+[I] DeployClient::record:54 - 21:53:59 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:53:59 WS подключён
+[I] DeployClient::record:54 - 21:53:59 PUSH blue2 / v1.0.0: Push-канал подключён
+[W] unknown:0 - QIODevice::read (QNetworkReplyHttpImpl): device not open
+[I] DeployClient::record:54 - 21:54:04 REST ERROR Operation canceled; retry=2000
+[I] DeployClient::record:54 - 21:54:06 WS отключён; retry=1000
+[W] unknown:0 - QIODevice::read (QNetworkReplyHttpImpl): device not open
+[I] DeployClient::record:54 - 21:54:09 REST ERROR Operation canceled; retry=4000
+[W] unknown:0 - QIODevice::read (QNetworkReplyHttpImpl): device not open
+[I] DeployClient::record:54 - 21:54:16 REST ERROR Operation canceled; retry=8000
+[I] DeployClient::record:54 - 21:54:19 WS: таймаут, переподключение
+[I] DeployClient::record:54 - 21:54:19 WS отключён; retry=2000
+[W] unknown:0 - QIODevice::read (QNetworkReplyHttpImpl): device not open
+[I] DeployClient::record:54 - 21:54:27 REST ERROR Operation canceled; retry=16000
+[I] DeployClient::record:54 - 21:54:33 WS: таймаут, переподключение
+[I] DeployClient::record:54 - 21:54:33 WS отключён; retry=4000
+[W] unknown:0 - QIODevice::read (QNetworkReplyHttpImpl): device not open
+[I] DeployClient::record:54 - 21:54:46 REST ERROR Operation canceled; retry=16000
+[I] DeployClient::record:54 - 21:54:49 WS: таймаут, переподключение
+[I] DeployClient::record:54 - 21:54:49 WS отключён; retry=8000
+[W] unknown:0 - QIODevice::read (QNetworkReplyHttpImpl): device not open
+[I] DeployClient::record:54 - 21:55:05 REST ERROR Operation canceled; retry=16000
+[I] DeployClient::record:54 - 21:55:09 WS: таймаут, переподключение
+[I] DeployClient::record:54 - 21:55:09 WS отключён; retry=16000
+[W] unknown:0 - QIODevice::read (QNetworkReplyHttpImpl): device not open
+[I] DeployClient::record:54 - 21:55:24 REST ERROR Operation canceled; retry=16000
+[I] DeployClient::record:54 - 21:55:35 WS: таймаут, переподключение
+[I] DeployClient::record:54 - 21:55:35 WS отключён; retry=16000
+[W] unknown:0 - QIODevice::read (QNetworkReplyHttpImpl): device not open
+[I] DeployClient::record:54 - 21:55:43 REST ERROR Operation canceled; retry=16000
+[I] DeployClient::record:54 - 21:55:51 WS отключён; retry=16000
+[I] DeployClient::record:54 - 21:55:59 REST ERROR Connection refused; retry=16000
+[I] DeployClient::record:54 - 21:56:07 WS отключён; retry=16000
+[I] DeployClient::record:54 - 21:56:15 REST ERROR Connection refused; retry=16000
+[I] DeployClient::record:54 - 21:56:23 WS отключён; retry=16000
+[I] DeployClient::record:54 - 21:56:31 REST ERROR Connection refused; retry=16000
+[I] DeployClient::record:54 - 21:56:39 WS отключён; retry=16000
+[I] DeployClient::record:54 - 21:56:47 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:56:49 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:56:51 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:56:53 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:56:55 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:56:55 WS подключён
+[I] DeployClient::record:54 - 21:56:55 PUSH blue2 / v1.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 21:56:55 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:56:57 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:56:58 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:56:59 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:57:01 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:57:01 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:03 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:57:04 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:05 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:57:07 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:57:07 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:09 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:57:10 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:11 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:57:13 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:57:13 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:15 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:57:16 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:17 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:57:18 WS отключён; retry=1000
+[I] DeployClient::record:54 - 21:57:19 WS подключён
+[I] DeployClient::record:54 - 21:57:19 PUSH green1 / v2.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 21:57:19 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:57:21 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:57:21 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:57:23 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:57:24 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:57:25 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:57:26 WS отключён; retry=1000
+[I] DeployClient::record:54 - 21:57:27 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:57:27 WS подключён
+[I] DeployClient::record:54 - 21:57:27 PUSH blue2 / v1.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 21:57:28 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:29 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:57:31 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:57:31 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:33 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:57:34 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:35 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:57:37 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:57:37 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:39 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:57:40 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:41 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:57:43 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:57:43 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:45 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:57:46 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:47 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:57:49 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:57:49 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:51 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:57:52 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:53 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:57:55 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:57:55 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:57 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:57:58 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:57:59 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:58:01 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:01 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:58:02 WS отключён; retry=1000
+[I] DeployClient::record:54 - 21:58:03 WS подключён
+[I] DeployClient::record:54 - 21:58:03 PUSH green1 / v2.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 21:58:03 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:03 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:05 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:58:06 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:07 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:09 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:58:09 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:11 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:12 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:13 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:58:15 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:15 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:17 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:18 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:19 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:58:21 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:21 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:23 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:58:24 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:25 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:27 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:58:27 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:29 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:30 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:31 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:58:33 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:33 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:35 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:36 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:37 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:58:39 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:39 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:41 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:58:42 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:43 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:45 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:58:45 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:47 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:48 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:49 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:58:51 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:51 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:53 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:54 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:55 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:58:57 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:58:57 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:58:59 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:59:00 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:01 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:59:03 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:59:03 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:05 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:59:06 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:07 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:59:09 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:59:09 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:11 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:59:12 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:13 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:59:15 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:59:15 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:17 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:59:18 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:19 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:59:21 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:59:21 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:23 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:59:24 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:25 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:59:27 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:59:27 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:29 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:59:30 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:31 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:59:33 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:59:33 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:35 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 21:59:36 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:37 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 21:59:39 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:59:39 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:41 REST OK blue1 / v1.0.0
+[I] DeployClient::record:54 - 21:59:42 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 21:59:43 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:59:43 WS отключён; retry=1000
+[I] DeployClient::record:54 - 21:59:44 WS подключён
+[I] DeployClient::record:54 - 21:59:44 PUSH blue1 / v1.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 21:59:45 PUSH blue1 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:59:45 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:59:47 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:59:47 WS отключён; retry=1000
+[I] DeployClient::record:54 - 21:59:48 WS подключён
+[I] DeployClient::record:54 - 21:59:48 PUSH blue2 / v1.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 21:59:49 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:59:49 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:59:52 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:59:52 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:59:54 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:59:55 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 21:59:56 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:59:58 REST OK blue2 / v1.0.0
+[I] DeployClient::record:54 - 21:59:58 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 22:00:00 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 22:00:01 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 22:00:02 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 22:00:04 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 22:00:04 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 22:00:04 WS отключён; retry=1000
+[I] DeployClient::record:54 - 22:00:05 WS подключён
+[I] DeployClient::record:54 - 22:00:05 PUSH green1 / v2.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 22:00:06 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 22:00:06 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:08 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 22:00:09 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:10 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 22:00:11 WS отключён; retry=1000
+[I] DeployClient::record:54 - 22:00:13 WS отключён; retry=2000
+[I] DeployClient::record:54 - 22:00:13 REST ERROR Error transferring http://10.0.2.2:9083/api/items - server replied: Bad Gateway; retry=2000
+[I] DeployClient::record:54 - 22:00:15 WS отключён; retry=4000
+[I] DeployClient::record:54 - 22:00:15 REST ERROR Error transferring http://10.0.2.2:9083/api/items - server replied: Bad Gateway; retry=4000
+[I] DeployClient::record:54 - 22:00:19 WS отключён; retry=8000
+[I] DeployClient::record:54 - 22:00:19 REST ERROR Error transferring http://10.0.2.2:9083/api/items - server replied: Bad Gateway; retry=8000
+[I] DeployClient::record:54 - 22:00:28 REST ERROR Error transferring http://10.0.2.2:9083/api/items - server replied: Bad Gateway; retry=16000
+[I] DeployClient::record:54 - 22:00:28 WS подключён
+[I] DeployClient::record:54 - 22:00:28 PUSH green1 / v2.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 22:00:28 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:31 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:34 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:37 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:40 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:43 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:44 REST OK green1 / v2.0.0

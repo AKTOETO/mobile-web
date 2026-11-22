@@ -1,0 +1,92 @@
+NOTICE: Using the 'AuroraOS-5.1.1.60-base-armv7hl.default' snapshot of the build target
+Loading repository data...
+Reading installed packages...
+'pkgconfig(Qt5Core)' not found in package names. Trying capabilities.
+'qt5-qtcore-devel' providing 'pkgconfig(Qt5Core)' is already installed.
+'pkgconfig(Qt5Network)' not found in package names. Trying capabilities.
+'qt5-qtnetwork-devel' providing 'pkgconfig(Qt5Network)' is already installed.
+'pkgconfig(Qt5Qml)' not found in package names. Trying capabilities.
+'qt5-qtdeclarative-devel' providing 'pkgconfig(Qt5Qml)' is already installed.
+'pkgconfig(Qt5Quick)' not found in package names. Trying capabilities.
+'qt5-qtdeclarative-qtquick-devel' providing 'pkgconfig(Qt5Quick)' is already installed.
+'pkgconfig(auroraapp)' not found in package names. Trying capabilities.
+'libauroraapp-devel' providing 'pkgconfig(auroraapp)' is already installed.
+'pkgconfig(Qt5WebSockets)' not found in package names. Trying capabilities.
+'qt5-qtwebsockets-devel' providing 'pkgconfig(Qt5WebSockets)' is already installed.
+Resolving package dependencies...
+Nothing to do.
+Building target platforms: armv7hl-meego-linux
+Building for target armv7hl-meego-linux
+Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.bePwTF
++ umask 022
++ cd /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab03/build-armv7hl
++ LANG=C
++ export LANG
++ unset DISPLAY
++ CFLAGS='-g -pipe -fexceptions --param=ssp-buffer-size=4 -D_FILE_OFFSET_BITS=64 -O2 -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -specs=/usr/lib/rpm/aurora/pie-pic-cc1 -fstack-protector-strong -Wall -Wformat -Wformat-security  -fmessage-length=0 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mthumb -Wno-psabi'
++ export CFLAGS
++ CXXFLAGS='-g -pipe -fexceptions --param=ssp-buffer-size=4 -D_FILE_OFFSET_BITS=64 -O2 -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -specs=/usr/lib/rpm/aurora/pie-pic-cc1 -fstack-protector-strong -Wall -Wformat -Wformat-security  -fmessage-length=0 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mthumb -Wno-psabi'
++ export CXXFLAGS
++ FFLAGS='-g -pipe -fexceptions --param=ssp-buffer-size=4 -D_FILE_OFFSET_BITS=64 -O2 -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -specs=/usr/lib/rpm/aurora/pie-pic-cc1 -fstack-protector-strong -Wall -Wformat -Wformat-security  -fmessage-length=0 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mthumb -Wno-psabi -I/usr/lib/gfortran/modules'
++ export FFLAGS
++ LDFLAGS='-Wl,--as-needed -specs=/usr/lib/rpm/aurora/pie-pic-ld -Wl,-z,relro,-z,now'
++ export LDFLAGS
++ export QT_SELECT=5
++ QT_SELECT=5
++ qmake -qt=5 -makefile 'QMAKE_CFLAGS_RELEASE=-g -pipe -fexceptions --param=ssp-buffer-size=4 -D_FILE_OFFSET_BITS=64 -O2 -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -specs=/usr/lib/rpm/aurora/pie-pic-cc1 -fstack-protector-strong -Wall -Wformat -Wformat-security  -fmessage-length=0 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mthumb -Wno-psabi' 'QMAKE_CFLAGS_DEBUG=-g -pipe -fexceptions --param=ssp-buffer-size=4 -D_FILE_OFFSET_BITS=64 -O2 -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -specs=/usr/lib/rpm/aurora/pie-pic-cc1 -fstack-protector-strong -Wall -Wformat -Wformat-security  -fmessage-length=0 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mthumb -Wno-psabi' 'QMAKE_CXXFLAGS_RELEASE=-g -pipe -fexceptions --param=ssp-buffer-size=4 -D_FILE_OFFSET_BITS=64 -O2 -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -specs=/usr/lib/rpm/aurora/pie-pic-cc1 -fstack-protector-strong -Wall -Wformat -Wformat-security  -fmessage-length=0 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mthumb -Wno-psabi' 'QMAKE_CXXFLAGS_DEBUG=-g -pipe -fexceptions --param=ssp-buffer-size=4 -D_FILE_OFFSET_BITS=64 -O2 -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -specs=/usr/lib/rpm/aurora/pie-pic-cc1 -fstack-protector-strong -Wall -Wformat -Wformat-security  -fmessage-length=0 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mthumb -Wno-psabi' DEFINES+=QT_MESSAGELOGCONTEXT QMAKE_STRIP=: PREFIX=/usr LIBDIR=/usr/lib
+/home/mersdk/.mb2/wrappers/mobile-web/lab03/build-armv7hl/qmake: Executing real qmake:
++ /usr/bin/qmake -qt=5 -makefile 'QMAKE_CFLAGS_RELEASE=-g -pipe -fexceptions --param=ssp-buffer-size=4 -D_FILE_OFFSET_BITS=64 -O2 -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -specs=/usr/lib/rpm/aurora/pie-pic-cc1 -fstack-protector-strong -Wall -Wformat -Wformat-security  -fmessage-length=0 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mthumb -Wno-psabi' 'QMAKE_CFLAGS_DEBUG=-g -pipe -fexceptions --param=ssp-buffer-size=4 -D_FILE_OFFSET_BITS=64 -O2 -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -specs=/usr/lib/rpm/aurora/pie-pic-cc1 -fstack-protector-strong -Wall -Wformat -Wformat-security  -fmessage-length=0 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mthumb -Wno-psabi' 'QMAKE_CXXFLAGS_RELEASE=-g -pipe -fexceptions --param=ssp-buffer-size=4 -D_FILE_OFFSET_BITS=64 -O2 -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -specs=/usr/lib/rpm/aurora/pie-pic-cc1 -fstack-protector-strong -Wall -Wformat -Wformat-security  -fmessage-length=0 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mthumb -Wno-psabi' 'QMAKE_CXXFLAGS_DEBUG=-g -pipe -fexceptions --param=ssp-buffer-size=4 -D_FILE_OFFSET_BITS=64 -O2 -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -specs=/usr/lib/rpm/aurora/pie-pic-cc1 -fstack-protector-strong -Wall -Wformat -Wformat-security  -fmessage-length=0 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mthumb -Wno-psabi' DEFINES+=QT_MESSAGELOGCONTEXT QMAKE_STRIP=: PREFIX=/usr LIBDIR=/usr/lib /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab03/aurora-app
++ /usr/bin/make -O -j16 V=1 VERBOSE=1
+/home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/lib/qt5/bin/moc -DQT_MESSAGELOGCONTEXT -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I/usr/share/qt5/mkspecs/linux-g++ -I/home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab03/aurora-app -I/usr/include/auroraapp -I/usr/include/appdir-cpp -I/usr/include/appdir -I/usr/include/appmanifest-glib -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/mdeclarativecache5 -I/usr/include/qt5 -I/usr/include/qt5/QtQuick -I/usr/include/qt5/QtGui -I/usr/include/qt5/QtWebSockets -I/usr/include/qt5/QtQml -I/usr/include/qt5/QtNetwork -I/usr/include/qt5/QtCore -I. -I/opt/cross/armv7hl-meego-linux-gnueabi/include/c++/12.3.1 -I/opt/cross/armv7hl-meego-linux-gnueabi/include/c++/12.3.1/armv7hl-meego-linux-gnueabi -I/opt/cross/armv7hl-meego-linux-gnueabi/include/c++/12.3.1/backward -I/opt/cross/lib/gcc/armv7hl-meego-linux-gnueabi/12.3.1/include -I/usr/local/include -I/opt/cross/lib/gcc/armv7hl-meego-linux-gnueabi/12.3.1/include-fixed -I/opt/cross/armv7hl-meego-linux-gnueabi/include -I/usr/include ../aurora-app/src/deployclient.h -o moc_deployclient.cpp
+g++ -c -pipe -g -pipe -fexceptions --param=ssp-buffer-size=4 -D_FILE_OFFSET_BITS=64 -O2 -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -specs=/usr/lib/rpm/aurora/pie-pic-cc1 -fstack-protector-strong -Wall -Wformat -Wformat-security -fmessage-length=0 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mthumb -Wno-psabi -std=gnu++0x -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -W -D_REENTRANT -fPIC -DQT_MESSAGELOGCONTEXT -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I../aurora-app -I. -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/auroraapp -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/appdir-cpp -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/appdir -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/appmanifest-glib -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/mdeclarativecache5 -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5 -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtQuick -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtGui -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtWebSockets -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtQml -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtNetwork -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtCore -I. -I/usr/share/qt5/mkspecs/linux-g++ -o moc_deployclient.o moc_deployclient.cpp
+g++ -c -pipe -g -pipe -fexceptions --param=ssp-buffer-size=4 -D_FILE_OFFSET_BITS=64 -O2 -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -specs=/usr/lib/rpm/aurora/pie-pic-cc1 -fstack-protector-strong -Wall -Wformat -Wformat-security -fmessage-length=0 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mthumb -Wno-psabi -std=gnu++0x -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -W -D_REENTRANT -fPIC -DQT_MESSAGELOGCONTEXT -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I../aurora-app -I. -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/auroraapp -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/appdir-cpp -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/appdir -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/appmanifest-glib -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/mdeclarativecache5 -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5 -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtQuick -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtGui -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtWebSockets -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtQml -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtNetwork -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtCore -I. -I/usr/share/qt5/mkspecs/linux-g++ -o main.o ../aurora-app/src/main.cpp
+g++ -c -pipe -g -pipe -fexceptions --param=ssp-buffer-size=4 -D_FILE_OFFSET_BITS=64 -O2 -Wp,-U_FORTIFY_SOURCE,-D_FORTIFY_SOURCE=3 -specs=/usr/lib/rpm/aurora/pie-pic-cc1 -fstack-protector-strong -Wall -Wformat -Wformat-security -fmessage-length=0 -march=armv7-a -mfloat-abi=hard -mfpu=neon -mthumb -Wno-psabi -std=gnu++0x -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -W -D_REENTRANT -fPIC -DQT_MESSAGELOGCONTEXT -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_GUI_LIB -DQT_WEBSOCKETS_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -I../aurora-app -I. -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/auroraapp -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/appdir-cpp -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/appdir -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/appmanifest-glib -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/mdeclarativecache5 -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5 -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtQuick -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtGui -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtWebSockets -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtQml -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtNetwork -isystem /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/include/qt5/QtCore -I. -I/usr/share/qt5/mkspecs/linux-g++ -o deployclient.o ../aurora-app/src/deployclient.cpp
+g++ -Wl,--as-needed -specs=/usr/lib/rpm/aurora/pie-pic-ld -Wl,-z,relro,-z,now -Wl,-O1 -Wl,-rpath,/usr/share/ru.mai.auroradeploy/lib -o ru.mai.auroradeploy main.o deployclient.o moc_deployclient.o   -lauroraapp -lappdir-cpp -lappdir -lappmanifest-glib -lglib-2.0 -pie -rdynamic -lmdeclarativecache5 -lQt5Quick -lQt5Gui -lQt5WebSockets -lfontconfig -lQt5Qml -lQt5Network -lQt5Core -lGLESv2 -lpthread 
++ RPM_EC=0
+++ jobs -p
++ exit 0
+Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.EhHp5O
++ umask 022
++ cd /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab03/build-armv7hl
++ flock /home/mersdk/.mb2.lock.lock flock /home/mersdk/.mb2.lock ln -f /home/mersdk/.mb2.lock.FuE /home/mersdk/.mb2.lock
++ '[' /home/deploy/installroot '!=' / ']'
++ rm -rf /home/deploy/installroot
+++ dirname /home/deploy/installroot
++ mkdir -p /home/deploy
++ mkdir /home/deploy/installroot
++ LANG=C
++ export LANG
++ unset DISPLAY
++ /usr/bin/make DESTDIR=/home/deploy/installroot INSTALL_ROOT=/home/deploy/installroot install
+cp -f -R /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab03/aurora-app/qml /home/deploy/installroot/usr/share/ru.mai.auroradeploy/
+install -m 755 -p ru.mai.auroradeploy /home/deploy/installroot/usr/bin/ru.mai.auroradeploy
+: /home/deploy/installroot/usr/bin/ru.mai.auroradeploy
+install -m 644 -p /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab03/aurora-app/ru.mai.auroradeploy.desktop /home/deploy/installroot/usr/share/applications/
++ rm -f /home/deploy/installroot/usr/share/info/dir
++ find /home/deploy/installroot -regex '.*\.la$'
++ xargs rm -f --
++ xargs rm -f --
++ find /home/deploy/installroot -regex '.*\.a$'
++ /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/lib/rpm/check-buildroot
++ /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/lib/rpm/meego/brp-compress
++ /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/lib/rpm/meego/brp-strip /usr/bin/strip
++ /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/lib/rpm/meego/brp-strip-shared /usr/bin/strip
++ /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/lib/rpm/meego/brp-strip-static-archive /usr/bin/strip
++ /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/lib/rpm/meego/brp-strip-comment-note /usr/bin/strip /usr/bin/objdump
++ /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/lib/rpm/brp-python-bytecompile '%{__python}'
++ /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/lib/rpm/brp-python-hardlink
++ /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/lib/rpm/meego/find-docs.sh /home/deploy/installroot
++ /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/lib/rpm/meego/brp-java-repack-jars
+Processing files: ru.mai.auroradeploy-1.0.0-1.armv7hl
+Provides: application() application(ru.mai.auroradeploy.desktop) ru.mai.auroradeploy = 1.0.0-1 ru.mai.auroradeploy(armv7hl-32) = 1.0.0-1
+Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+Requires: ld-linux-armhf.so.3 ld-linux-armhf.so.3(GLIBC_2.4) libQt5Core.so.5 libQt5Core.so.5(Qt_5) libQt5Gui.so.5 libQt5Gui.so.5(Qt_5) libQt5Network.so.5 libQt5Network.so.5(Qt_5) libQt5Qml.so.5 libQt5Qml.so.5(Qt_5) libQt5Quick.so.5 libQt5Quick.so.5(Qt_5) libQt5WebSockets.so.5 libQt5WebSockets.so.5(Qt_5) libauroraapp.so.2 libc.so.6 libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.4) libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libstdc++.so.6 libstdc++.so.6(CXXABI_1.3) libstdc++.so.6(GLIBCXX_3.4)
+Checking for unpackaged file(s): /home/bogdan/AuroraOS/mersdk/targets/AuroraOS-5.1.1.60-base-armv7hl.default/usr/lib/rpm/check-files /home/deploy/installroot
+Wrote: /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab03/build-armv7hl/RPMS/ru.mai.auroradeploy-1.0.0-1.armv7hl.rpm
+Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.03w68U
++ umask 022
++ cd /home/bogdan/MAI/AURORA-SDK-PROJECTS/mobile-web/lab03/build-armv7hl
++ /bin/rm -rf /home/deploy/installroot
++ RPM_EC=0
+++ jobs -p
++ exit 0

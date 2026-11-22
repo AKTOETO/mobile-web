@@ -1,0 +1,23 @@
++ systemctl --user disable --now lab03-blue1.service
+Removed "/home/bogdan/.config/systemd/user/default.target.wants/lab03-blue1.service".
++ systemctl --user disable --now lab03-blue2.service
+Removed "/home/bogdan/.config/systemd/user/default.target.wants/lab03-blue2.service".
++ systemctl --user disable --now lab03-green1.service
+Removed "/home/bogdan/.config/systemd/user/default.target.wants/lab03-green1.service".
++ systemctl --user disable --now lab03-green2.service
+Removed "/home/bogdan/.config/systemd/user/default.target.wants/lab03-green2.service".
++ systemctl --user daemon-reload
++ systemctl --user enable lab03-backend@blue1.service
+Created symlink /home/bogdan/.config/systemd/user/default.target.wants/lab03-backend@blue1.service → /home/bogdan/.config/systemd/user/lab03-backend@.service.
++ systemctl --user restart lab03-backend@blue1.service
++ systemctl --user enable lab03-backend@blue2.service
+Created symlink /home/bogdan/.config/systemd/user/default.target.wants/lab03-backend@blue2.service → /home/bogdan/.config/systemd/user/lab03-backend@.service.
++ systemctl --user restart lab03-backend@blue2.service
++ systemctl --user enable lab03-backend@green1.service
+Created symlink /home/bogdan/.config/systemd/user/default.target.wants/lab03-backend@green1.service → /home/bogdan/.config/systemd/user/lab03-backend@.service.
++ systemctl --user restart lab03-backend@green1.service
++ systemctl --user enable lab03-backend@green2.service
+Created symlink /home/bogdan/.config/systemd/user/default.target.wants/lab03-backend@green2.service → /home/bogdan/.config/systemd/user/lab03-backend@.service.
++ systemctl --user restart lab03-backend@green2.service
++ systemctl --user enable lab03-nginx.service
++ systemctl --user restart lab03-nginx.service

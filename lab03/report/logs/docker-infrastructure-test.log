@@ -1,0 +1,14 @@
+ Image node:22-alpine Pulling 
+ Image node:22-alpine Pulled 
+ Container lab03-tests-run-caa1872c3f14 Creating 
+ Container lab03-tests-run-caa1872c3f14 Created 
+PASS balance 40/40 распределение={"blue1":18,"blue2":22,"green1":0,"green2":0} версии=1.0.0
+PASS failover 40/40 распределение={"blue1":0,"blue2":40,"green1":0,"green2":0} версии=1.0.0
+PASS recover 40/40 распределение={"blue1":22,"blue2":18,"green1":0,"green2":0} версии=1.0.0
+PASS deploy 100/100 распределение={"blue1":6,"blue2":6,"green1":37,"green2":51} версии=1.0.0,2.0.0
+PASS rollback 100/100 распределение={"blue1":48,"blue2":40,"green1":5,"green2":7} версии=2.0.0,1.0.0
+PASS повторный откат на уже активный релиз не выдаётся за обновление
+PASS нездоровый green отклонён, blue продолжает работать
+PASS ограничения управления контейнерами и Origin
+PASS Docker API, 6 контейнеров, настоящий журнал nginx и stub_status
+ИТОГО: Docker-сценарии и проверки пройдены

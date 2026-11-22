@@ -1,0 +1,7 @@
+[I] DeployClient::record:54 - 22:00:11 WS отключён; retry=1000
+[I] DeployClient::record:54 - 22:00:13 WS отключён; retry=2000
+[I] DeployClient::record:54 - 22:00:13 REST ERROR Error transferring http://10.0.2.2:9083/api/items - server replied: Bad Gateway; retry=2000
+[I] DeployClient::record:54 - 22:00:15 WS отключён; retry=4000
+[I] DeployClient::record:54 - 22:00:15 REST ERROR Error transferring http://10.0.2.2:9083/api/items - server replied: Bad Gateway; retry=4000
+[I] DeployClient::record:54 - 22:00:19 WS отключён; retry=8000
+[I] DeployClient::record:54 - 22:00:19 REST ERROR Error transferring http://10.0.2.2:9083/api/items - server replied: Bad Gateway; retry=8000

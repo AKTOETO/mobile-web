@@ -1,0 +1,22 @@
+{"ok":true,"colour":"green"}
+{"ok":true,"colour":"green"}
+{"ok":true,"colour":"green"}
+{"ok":true,"colour":"green"}
+{"ok":true,"colour":"blue"}
+PASS 01-blue-push PID=977
+{"ok":true,"colour":"blue"}
+PASS 02-backend-failure PID=977
+{"ok":true,"colour":"blue"}
+{"ok":true,"colour":"green"}
+PASS 03-blue-green PID=977
+{"ok":true,"colour":"green"}
+{"ok":true,"colour":"green"}
+PASS 04-total-outage PID=977
+{"ok":true,"colour":"green"}
+{"ok":true,"colour":"green"}
+PASS 05-recovered PID=977
+ИТОГО: 5 этапов пройдены; GUI PID не изменился
+{"ok":true,"colour":"green"}
+{"ok":true,"colour":"green"}
+{"ok":true,"colour":"green"}
+{"ok":true,"colour":"green"}

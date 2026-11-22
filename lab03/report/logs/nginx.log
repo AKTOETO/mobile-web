@@ -1,0 +1,286 @@
+/docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+/docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+10-listen-on-ipv6-by-default.sh: info: Getting the checksum of /etc/nginx/conf.d/default.conf
+10-listen-on-ipv6-by-default.sh: info: Enabled listen on IPv6 in /etc/nginx/conf.d/default.conf
+/docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+/docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+/docker-entrypoint.sh: Configuration complete; ready for start up
+2026-11-22T17:11:32+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026/11/22 17:11:34 [error] 43#43: *63 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/health HTTP/1.1", upstream: "http://192.168.65.2:9311/api/health", host: "127.0.0.1:9083"
+2026/11/22 17:11:34 [warn] 43#43: *63 upstream server temporarily disabled while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/health HTTP/1.1", upstream: "http://192.168.65.2:9311/api/health", host: "127.0.0.1:9083"
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311, 192.168.65.2:9312 status=502, 200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:34+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:35+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:36+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:37+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:38+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:38+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:11:38+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:11:38+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:38+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:39+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:39+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:40+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:40+00:00 101 GET /ws HTTP/1.1 upstream=192.168.65.2:9312 status=101
+2026-11-22T17:11:41+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:41+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:42+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:43+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:43+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:44+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:45+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:45+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:46+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:47+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:47+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:48+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:49+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:49+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:50+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:51+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:51+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:52+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:53+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:53+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:54+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:55+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:55+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:11:57+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:11:59+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:12:01+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:12:03+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:12:05+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:12:06+00:00 101 GET /ws HTTP/1.1 upstream=192.168.65.2:9311 status=101
+2026-11-22T17:12:06+00:00 405 POST /api/items HTTP/1.1 upstream=192.168.65.2:9312 status=405
+2026-11-22T17:12:06+00:00 404 GET /missing HTTP/1.1 upstream=192.168.65.2:9311 status=404
+2026-11-22T17:12:07+00:00 200 GET /api/health HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:12:07+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:12:10+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:12:11+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:12:12+00:00 101 GET /ws HTTP/1.1 upstream=192.168.65.2:9312 status=101
+2026-11-22T17:12:13+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:12:15+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:12:17+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:12:18+00:00 101 GET /ws HTTP/1.1 upstream=192.168.65.2:9322 status=101
+2026-11-22T17:12:18+00:00 405 POST /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=405
+2026-11-22T17:12:18+00:00 404 GET /missing HTTP/1.1 upstream=192.168.65.2:9321 status=404
+2026-11-22T17:12:19+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:12:21+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:12:23+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:12:25+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:12:27+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:12:29+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:12:31+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:12:33+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:12:35+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:12:37+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:12:39+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9312 status=200
+2026-11-22T17:12:41+00:00 101 GET /ws HTTP/1.1 upstream=192.168.65.2:9322 status=101
+2026-11-22T17:12:41+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:12:43+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:12:45+00:00 101 GET /ws HTTP/1.1 upstream=192.168.65.2:9312 status=101
+2026/11/22 17:12:45 [error] 95#95: *458 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/items HTTP/1.1", upstream: "http://192.168.65.2:9312/api/items", host: "10.0.2.2:9083"
+2026/11/22 17:12:45 [warn] 95#95: *458 upstream server temporarily disabled while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/items HTTP/1.1", upstream: "http://192.168.65.2:9312/api/items", host: "10.0.2.2:9083"
+2026-11-22T17:12:45+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9312, 192.168.65.2:9311 status=502, 200
+2026-11-22T17:12:47+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:12:49+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:12:51+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026/11/22 17:12:53 [error] 95#95: *469 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/items HTTP/1.1", upstream: "http://192.168.65.2:9312/api/items", host: "10.0.2.2:9083"
+2026/11/22 17:12:53 [warn] 95#95: *469 upstream server temporarily disabled while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/items HTTP/1.1", upstream: "http://192.168.65.2:9312/api/items", host: "10.0.2.2:9083"
+2026-11-22T17:12:53+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9312, 192.168.65.2:9311 status=502, 200
+2026-11-22T17:12:55+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9311 status=200
+2026-11-22T17:12:57+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:12:59+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:13:00+00:00 101 GET /ws HTTP/1.1 upstream=192.168.65.2:9311 status=101
+2026-11-22T17:13:01+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:13:03+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:13:05+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:13:07+00:00 101 GET /ws HTTP/1.1 upstream=192.168.65.2:9322 status=101
+2026/11/22 17:13:07 [error] 108#108: *486 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/items HTTP/1.1", upstream: "http://192.168.65.2:9321/api/items", host: "10.0.2.2:9083"
+2026/11/22 17:13:07 [warn] 108#108: *486 upstream server temporarily disabled while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/items HTTP/1.1", upstream: "http://192.168.65.2:9321/api/items", host: "10.0.2.2:9083"
+2026/11/22 17:13:07 [error] 108#108: *486 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/items HTTP/1.1", upstream: "http://192.168.65.2:9322/api/items", host: "10.0.2.2:9083"
+2026/11/22 17:13:07 [warn] 108#108: *486 upstream server temporarily disabled while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/items HTTP/1.1", upstream: "http://192.168.65.2:9322/api/items", host: "10.0.2.2:9083"
+2026-11-22T17:13:07+00:00 502 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321, 192.168.65.2:9322 status=502, 502
+2026-11-22T17:13:08+00:00 502 GET /ws HTTP/1.1 upstream=inventory status=502
+2026/11/22 17:13:08 [error] 108#108: *489 no live upstreams while connecting to upstream, client: 172.17.0.1, server: , request: "GET /ws HTTP/1.1", upstream: "http://inventory/ws", host: "10.0.2.2:9083"
+2026-11-22T17:13:09+00:00 502 GET /api/items HTTP/1.1 upstream=inventory status=502
+2026/11/22 17:13:09 [error] 108#108: *490 no live upstreams while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/items HTTP/1.1", upstream: "http://inventory/api/items", host: "10.0.2.2:9083"
+2026/11/22 17:13:10 [error] 108#108: *491 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: , request: "GET /ws HTTP/1.1", upstream: "http://192.168.65.2:9322/ws", host: "10.0.2.2:9083"
+2026/11/22 17:13:10 [warn] 108#108: *491 upstream server temporarily disabled while connecting to upstream, client: 172.17.0.1, server: , request: "GET /ws HTTP/1.1", upstream: "http://192.168.65.2:9322/ws", host: "10.0.2.2:9083"
+2026/11/22 17:13:10 [error] 108#108: *491 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: , request: "GET /ws HTTP/1.1", upstream: "http://192.168.65.2:9321/ws", host: "10.0.2.2:9083"
+2026/11/22 17:13:10 [warn] 108#108: *491 upstream server temporarily disabled while connecting to upstream, client: 172.17.0.1, server: , request: "GET /ws HTTP/1.1", upstream: "http://192.168.65.2:9321/ws", host: "10.0.2.2:9083"
+2026-11-22T17:13:10+00:00 502 GET /ws HTTP/1.1 upstream=192.168.65.2:9322, 192.168.65.2:9321 status=502, 502
+2026/11/22 17:13:13 [error] 108#108: *494 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/items HTTP/1.1", upstream: "http://192.168.65.2:9322/api/items", host: "10.0.2.2:9083"
+2026/11/22 17:13:13 [warn] 108#108: *494 upstream server temporarily disabled while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/items HTTP/1.1", upstream: "http://192.168.65.2:9322/api/items", host: "10.0.2.2:9083"
+2026/11/22 17:13:13 [error] 108#108: *494 connect() failed (111: Connection refused) while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/items HTTP/1.1", upstream: "http://192.168.65.2:9321/api/items", host: "10.0.2.2:9083"
+2026/11/22 17:13:13 [warn] 108#108: *494 upstream server temporarily disabled while connecting to upstream, client: 172.17.0.1, server: , request: "GET /api/items HTTP/1.1", upstream: "http://192.168.65.2:9321/api/items", host: "10.0.2.2:9083"
+2026-11-22T17:13:13+00:00 502 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322, 192.168.65.2:9321 status=502, 502
+2026-11-22T17:13:14+00:00 502 GET /ws HTTP/1.1 upstream=inventory status=502
+2026/11/22 17:13:14 [error] 108#108: *497 no live upstreams while connecting to upstream, client: 172.17.0.1, server: , request: "GET /ws HTTP/1.1", upstream: "http://inventory/ws", host: "10.0.2.2:9083"
+2026-11-22T17:13:21+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:13:23+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:13:25+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:13:27+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:13:29+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:13:31+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:13:33+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200
+2026-11-22T17:13:35+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9321 status=200
+2026-11-22T17:13:37+00:00 200 GET /api/items HTTP/1.1 upstream=192.168.65.2:9322 status=200

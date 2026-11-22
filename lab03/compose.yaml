@@ -1,0 +1,94 @@
+name: lab03
+x-backend: &backend
+  restart: unless-stopped
+  init: true
+  networks: [inventory]
+  logging:
+    driver: json-file
+    options: {max-size: "5m", max-file: "2"}
+services:
+  blue1:
+    <<: *backend
+    image: lab03-backend:1.0.0
+    build: {context: ./server, args: {RELEASE: "1"}}
+    environment: {INSTANCE: blue1}
+    networks:
+      inventory: {ipv4_address: 172.28.3.11}
+  blue2:
+    <<: *backend
+    image: lab03-backend:1.0.0
+    pull_policy: never
+    environment: {INSTANCE: blue2}
+    networks:
+      inventory: {ipv4_address: 172.28.3.12}
+    depends_on: [blue1]
+  green1:
+    <<: *backend
+    image: lab03-backend:2.0.0
+    build: {context: ./server, args: {RELEASE: "2"}}
+    environment: {INSTANCE: green1}
+    networks:
+      inventory: {ipv4_address: 172.28.3.21}
+  green2:
+    <<: *backend
+    image: lab03-backend:2.0.0
+    pull_policy: never
+    environment: {INSTANCE: green2}
+    networks:
+      inventory: {ipv4_address: 172.28.3.22}
+    depends_on: [green1]
+  nginx:
+    build: ./infra/nginx
+    image: lab03-nginx:1.28
+    restart: unless-stopped
+    ports: ["9083:9083"]
+    networks: [inventory]
+    volumes:
+      - routing:/etc/nginx/routing
+      - nginx-logs:/var/log/lab03
+    depends_on:
+      blue1: {condition: service_healthy}
+      blue2: {condition: service_healthy}
+      green1: {condition: service_healthy}
+      green2: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1:9083/nginx_status"]
+      interval: 3s
+      timeout: 2s
+      retries: 3
+  monitor:
+    build: ./monitor
+    image: lab03-monitor:1.0.0
+    restart: unless-stopped
+    init: true
+    ports: ["127.0.0.1:9084:9084"]
+    networks: [inventory]
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - routing:/etc/nginx/routing
+      - nginx-logs:/var/log/lab03:ro
+      - evidence:/evidence
+    depends_on: {nginx: {condition: service_healthy}}
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:9084/api/live').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 3s
+      timeout: 2s
+      retries: 3
+  tests:
+    image: node:22-alpine
+    profiles: [test]
+    working_dir: /tests
+    volumes: ["./tests:/tests:ro"]
+    environment:
+      BASE_URL: http://nginx:9083
+      MONITOR_URL: http://monitor:9084
+    networks: [inventory]
+    command: ["node", "infrastructure-test.js"]
+networks:
+  inventory:
+    ipam:
+      config: [{subnet: 172.28.3.0/24}]
+volumes:
+  routing:
+  nginx-logs:
+  evidence:

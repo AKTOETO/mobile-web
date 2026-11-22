@@ -1,0 +1,162 @@
+[
+  {
+    "path": "server/Dockerfile",
+    "sha256": "1cb6af049d8fb1b2e5afa01cc7ab03b90cbbad2ddaf3fff462b19a9f660f3e31",
+    "lines": 9
+  },
+  {
+    "path": "server/package.json",
+    "sha256": "a0202a3d11be774651bf4aa902ee2c1d76e92b6cce79feeda84b0b8b8b4fdaab",
+    "lines": 6
+  },
+  {
+    "path": "server/catalog.json",
+    "sha256": "4e5e4afd7f7a02d3b602c08c700aa6a75387657bb4104268c76b01ff07180504",
+    "lines": 5
+  },
+  {
+    "path": "server/server.js",
+    "sha256": "c5f6e2ab34b5227cebb1c1e5badb5b7e5f34d1b46ae831fa33303b30f9d9611c",
+    "lines": 45
+  },
+  {
+    "path": "server/release-v1.js",
+    "sha256": "d9325e83ff587e1f4db39da79bdbbc198441850f31b3449eb21dc71f20b57de0",
+    "lines": 6
+  },
+  {
+    "path": "server/release-v2.js",
+    "sha256": "0eb94abf46b981714aa809179be6d5c4764bdf9231a619cce5d7212dec79969e",
+    "lines": 8
+  },
+  {
+    "path": "server/websocket.js",
+    "sha256": "a491a5779a93a158d3f901e5e559962cceafbc4dd4e2704cd7e5dcdce910e3d9",
+    "lines": 73
+  },
+  {
+    "path": "lab",
+    "sha256": "5910040cea88557eb788f554bdbaa1ad4128c7334c43e10b1b5a6bc54b4c7546",
+    "lines": 5
+  },
+  {
+    "path": "compose.yaml",
+    "sha256": "3cd429087956a9b72596ae8f77c6aff5b4512997224d35ef64f69cd0f7ff108c",
+    "lines": 94
+  },
+  {
+    "path": "infra/nginx/Dockerfile",
+    "sha256": "eaca303ea022c8440ce0ce5516f3639b21143e3cb26762be107ba3656afcc40b",
+    "lines": 4
+  },
+  {
+    "path": "infra/nginx/nginx.conf",
+    "sha256": "93328957a4b0d8ac525e0ef16e0ed4f0aa6fc6b9f31acce80fc29c560948accd",
+    "lines": 32
+  },
+  {
+    "path": "infra/nginx/routing/active.conf",
+    "sha256": "94941166411cdc4c41c3a699d3dcb0a3b657796153bf204a79f0dd97fffc49c8",
+    "lines": 2
+  },
+  {
+    "path": "infra/nginx/routing/colour",
+    "sha256": "a0bee6616b5e5eae6799cb4525a884a82e7161614f11122bbdf4383b2ac05998",
+    "lines": 1
+  },
+  {
+    "path": "infra/control.py",
+    "sha256": "97c57e0c6295eece89fbf28fd253a3f90cb3cbc546922accdaf63aad3fd017e8",
+    "lines": 41
+  },
+  {
+    "path": "infra/sign-rpm.py",
+    "sha256": "1a23e437d319cb4faa84af3ca83837551493974c2d407e1fd5eede3ae98e3bd4",
+    "lines": 20
+  },
+  {
+    "path": "monitor/Dockerfile",
+    "sha256": "5535393dbf48f99ae32edc8217d5adb8d958dd42bea462f7cde14529ec0581d9",
+    "lines": 6
+  },
+  {
+    "path": "monitor/server.js",
+    "sha256": "61c019eb6128cdc7d00f630082875f1b3a9792bf905ff0f8d965d9793b2bf989",
+    "lines": 282
+  },
+  {
+    "path": "monitor/public/index.html",
+    "sha256": "c4852db362ac67d856fce8361321b0ac75b109cc623cfcdfe3dce9b21cf360e5",
+    "lines": 27
+  },
+  {
+    "path": "monitor/public/style.css",
+    "sha256": "5028f0566b49f1aa56ed6b66a2ca5b3acc5f8af6d9e6e2a4248d489a0e086f9c",
+    "lines": 1
+  },
+  {
+    "path": "monitor/public/app.js",
+    "sha256": "8f5ecf52c793e5a36fe783d4f7fee3bc9cc363ecae198eed30bb23057745aad3",
+    "lines": 115
+  },
+  {
+    "path": "aurora-app/ru.mai.auroradeploy.pro",
+    "sha256": "5a7dff61a9cf9e19e185f0842c4542fab8f93404566ec09de052d98066e2744b",
+    "lines": 6
+  },
+  {
+    "path": "aurora-app/ru.mai.auroradeploy.desktop",
+    "sha256": "a178c35563333d953acba8d4a954bdd7221a86f68361a11e2087386ec0be3353",
+    "lines": 11
+  },
+  {
+    "path": "aurora-app/rpm/ru.mai.auroradeploy.spec",
+    "sha256": "6d9985d112be157127ee7699f9df7384cd0132d9ffcb3fb72f58375ac5026da5",
+    "lines": 35
+  },
+  {
+    "path": "aurora-app/src/main.cpp",
+    "sha256": "9526d21c76938fbe07b0c31de389c9e7360fdbdd56bbcc4981b191f50abb9121",
+    "lines": 17
+  },
+  {
+    "path": "aurora-app/src/deployclient.h",
+    "sha256": "17eeb42136ff65e1eb364432f195dfd28b1a2c0889d243152973b8726a971be1",
+    "lines": 45
+  },
+  {
+    "path": "aurora-app/src/deployclient.cpp",
+    "sha256": "f968dae777aeff29105546670194c7fe1021b69a35a336e38ed1f15196344eac",
+    "lines": 133
+  },
+  {
+    "path": "aurora-app/qml/auroradeploy.qml",
+    "sha256": "56016fa0002be35c6cdf2be2f1085906cf371a93e3fd6f9948c9e660296050ad",
+    "lines": 47
+  },
+  {
+    "path": "tests/infrastructure-test.js",
+    "sha256": "be065088e2b95b9b718278cc984d6a08b49a79f5035614abd8d54e7961b6706f",
+    "lines": 61
+  },
+  {
+    "path": "tests/websocket-test.js",
+    "sha256": "e0517eeb6e11bea9c644672cae2668fcbc1370be5589b9a1e380bebbfa545bad",
+    "lines": 37
+  },
+  {
+    "path": "tests/emulator-demo.py",
+    "sha256": "69c628edcb6c7c2efa2dae153a0e2b31df0e6ec9d8d5728cc6045e2a249382d3",
+    "lines": 79
+  },
+  {
+    "path": "tests/browser-demo.js",
+    "sha256": "acd62d436b6becd4f8359870dc7acc162c663676fa79414a4fe20d06e17033cc",
+    "lines": 70
+  },
+  {
+    "path": "tests/host-check.py",
+    "sha256": "1bcf3d8f100be874a2ee9cb411999b4f98a8e6648e4e58e74c49ca55ced90e45",
+    "lines": 21
+  }
+]

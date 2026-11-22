@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+X-Nemo-Application-Type=silica-qt5
+Exec=/usr/bin/ru.mai.auroradeploy
+Name=Развёртывание Aurora
+
+[X-Application]
+Permissions=Internet
+OrganizationName=ru.mai
+ApplicationName=auroradeploy
+ExecDBus=/usr/bin/ru.mai.auroradeploy

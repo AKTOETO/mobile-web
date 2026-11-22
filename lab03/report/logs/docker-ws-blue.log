@@ -1,0 +1,3 @@
+ Container lab03-tests-run-9a2efd7834aa Creating 
+ Container lab03-tests-run-9a2efd7834aa Created 
+PASS WebSocket hello, push, ping/pong > 10 с; HTTP 405/404; версия 1.0.0

@@ -1,0 +1,11 @@
+runtime/
+build-*/
+aurora-app/Makefile
+aurora-app/*.o
+aurora-app/moc_*
+aurora-app/*.pro.user*
+aurora-app/RPMS/
+aurora-app/ru.mai.auroradeploy
+signing/private/
+.~lock.*#
+aurora-app/documentation.list

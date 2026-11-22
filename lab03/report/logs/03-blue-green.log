@@ -1,0 +1,13 @@
+[I] DeployClient::record:54 - 22:00:00 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 22:00:01 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 22:00:02 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 22:00:04 PUSH blue2 / v1.0.0: Остатки проверены
+[I] DeployClient::record:54 - 22:00:04 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 22:00:04 WS отключён; retry=1000
+[I] DeployClient::record:54 - 22:00:05 WS подключён
+[I] DeployClient::record:54 - 22:00:05 PUSH green1 / v2.0.0: Push-канал подключён
+[I] DeployClient::record:54 - 22:00:06 REST OK green1 / v2.0.0
+[I] DeployClient::record:54 - 22:00:06 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:08 REST OK green2 / v2.0.0
+[I] DeployClient::record:54 - 22:00:09 PUSH green1 / v2.0.0: Контроль дефицита: 1 поз.
+[I] DeployClient::record:54 - 22:00:10 REST OK green1 / v2.0.0

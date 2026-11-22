@@ -1,0 +1,5 @@
+Removed "/home/bogdan/.config/systemd/user/default.target.wants/lab03-backend@green1.service".
+Removed "/home/bogdan/.config/systemd/user/default.target.wants/lab03-nginx.service".
+Removed "/home/bogdan/.config/systemd/user/default.target.wants/lab03-backend@green2.service".
+Removed "/home/bogdan/.config/systemd/user/default.target.wants/lab03-backend@blue2.service".
+Removed "/home/bogdan/.config/systemd/user/default.target.wants/lab03-backend@blue1.service".

@@ -1,0 +1,6 @@
+{
+  "name": "lab03-inventory-monitor",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "start": "node server.js", "test": "node ../tests/infrastructure-test.js" }
+}

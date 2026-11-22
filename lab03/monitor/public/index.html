@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aurora · Docker Lab</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><div><small>ЛАБОРАТОРНАЯ РАБОТА №3 · ИНВЕНТАРЬ</small><h1>Aurora <span>Docker Lab</span></h1><p>Живой стенд: контейнеры → nginx → реальные ответы</p></div><div class="live"><i></i> LIVE <span id="clock"></span><strong id="colour">…</strong></div></header>
+<main>
+<section class="notice"><div><b>Для защиты</b> Нажимайте сценарии слева направо. Пробы идут через настоящий nginx; остановка и запуск меняют реальные Docker-контейнеры.</div><a href="http://localhost:9083/api/health" target="_blank">Открыть API ↗</a></section>
+<section class="scenarios">
+<button data-scenario="balance"><em>01</em><b>Балансировка</b><span>Blue · 40 запросов · обе реплики</span></button>
+<button data-scenario="failover"><em>02</em><b>Отказ реплики</b><span>Остановить активную *1 · 40 запросов</span></button>
+<button data-scenario="recover"><em>03</em><b>Восстановить</b><span>Запустить реплики · проверить сервис</span></button>
+<button data-scenario="deploy"><em>04</em><b>Blue → Green</b><span>100 запросов во время reload</span></button>
+<button data-scenario="rollback"><em>05</em><b>Откат на Blue</b><span>100 запросов · версия 1.0.0</span></button>
+</section>
+<div id="message" role="status">Подключение к мониторингу…</div>
+<section id="containers" class="containers"></section>
+<section class="metrics"><article><small>ПРОБ ЧЕРЕЗ NGINX</small><strong id="total">0</strong></article><article><small>УСПЕШНЫХ HTTP 200</small><strong id="successful">0</strong></article><article><small>ОШИБОК КЛИЕНТУ</small><strong id="errors">0</strong></article><article class="push"><small>WEBSOCKET · PUSH ЧЕРЕЗ NGINX</small><strong id="push-state">Подключение…</strong><span id="push-text">…</span></article></section>
+<div class="two-col">
+<section class="panel"><div class="section-title"><h2>Распределение ответов</h2><div><button id="traffic">Пауза проб</button><button id="reset">Сбросить счётчики</button></div></div><p class="hint">Каждый цвет — backend из заголовка X-Backend и тела реального ответа.</p><div id="bars"></div><div id="stream" aria-label="Последние ответы"></div><p class="hint">Счётчики относятся к пробам панели. nginx ниже учитывает также приложение Aurora и внешние запросы.</p></section>
+<section class="panel"><div class="section-title"><h2>Доказательства сценариев</h2><button id="download">Скачать JSON</button></div><div id="proofs" class="proofs"><p>Запустите первый сценарий.</p></div><pre id="nginx-status"></pre></section>
+</div>
+<div class="two-col bottom">
+<section class="panel"><h2>Журнал nginx · реальные upstream</h2><p class="hint">Итог 200 + попытки «502, 200» = отказ скрыт балансировщиком, запрос обслужила живая реплика.</p><div class="table-scroll"><table><thead><tr><th>Время</th><th>HTTP</th><th>Backend</th><th>Попытки</th><th>Адрес upstream</th></tr></thead><tbody id="nginx-log"></tbody></table></div></section>
+<section class="panel"><h2>События управления</h2><div id="events" class="events"></div></section>
+</div>
+<footer>Docker Compose · 4 backend + nginx + monitor · Backend-порты доступны только внутри сети Docker · Обновление панели каждую секунду</footer>
+</main><script src="/app.js"></script></body></html>

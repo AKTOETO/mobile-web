@@ -5,6 +5,10 @@
 
 ## Структура репозитория
 
+Правила подготовки следующих отчётов и авторские исправления титульного листа
+сохранены в `REPORTING.md`. Перед созданием/обновлением отчёта прочитать этот файл.
+Отчёты писать от лица одного автора, без ссылок на указания пользователя или переписку.
+
 ```
 mobile-web/
 ├── README.md
@@ -19,7 +23,7 @@ mobile-web/
 │   ├── inventory-server/     # Node.js REST API, HTTPS, OpenAPI, тест-страница
 │   ├── aurora-app/           # Qt/QML/C++ клиент: сеть, JSON, QSettings, SQLite
 │   └── report/               # логи команд, скриншоты, демо-журналы
-└── lab03/                    # задание следующей работы (docx)
+└── lab03/                    # Docker Compose, nginx, blue-green, Aurora и мониторинг
 ```
 
 Правило: каждая лабораторная — отдельная папка, свои `package.json`/`rpm`, тесты,
@@ -158,6 +162,31 @@ nohup env XDG_RUNTIME_DIR=/run/user/100000 \
 - В приложении ЛР2 единое «Обновить»: отправка очереди → GET, с наложением
   неподтверждённых правок на серверный снимок. Тест с SQLite и настоящим API:
   `aurora-app/tests/sync-test.pro` (запускать с изолированными XDG-каталогами).
+
+## ЛР3: Docker-стенд и защита
+
+- Все серверные компоненты работают в Docker: blue1/blue2, green1/green2,
+  nginx, monitor. Старые host-службы lab03-backend@ и lab03-nginx отключены.
+- Запуск: `./lab03/lab up -d --build --wait`, статус: `./lab03/lab ps -a`,
+  тесты: `./lab03/lab run --rm tests`. Оболочка фиксирует **контекст default**
+  только для ЛР3; глобальный контекст не менять. Docker Desktop в этом окружении
+  зависал при длительных проверках, поэтому серверы используют native Docker Engine.
+- Панель защиты: `http://localhost:9084`; nginx: `http://localhost:9083`;
+  Aurora: `http://10.0.2.2:9083`. Backend-порты на хост не публикуются.
+- Сеть `172.28.3.0/24`, постоянные backend IP .11/.12 и .21/.22;
+  это позволяет nginx запускаться при отключённой реплике без зависимости от DNS.
+- `lab03/DEMO.md` — сценарий защиты с кнопками балансировки, отказа,
+  восстановления, blue-green и отката. Панель сохраняет JSON-доказательства
+  в volume evidence. Не запускать тесты одновременно с ручной демонстрацией.
+- Дополнительные проверки: `node lab03/tests/browser-demo.js`,
+  `python3 lab03/tests/emulator-demo.py`, `python3 lab03/tests/host-check.py`.
+- Ручные правки DOCX сохранены в `lab03/report/editor/`; правила — `REPORTING.md`.
+  Отчёт: `python3 lab03/report/assemble.py`, затем build_report.py --check.
+- SDK-образ остаётся в контексте desktop-linux; для новой сборки Aurora
+  требуется запустить Docker Desktop. Это отдельная среда от серверов ЛР3.
+- Постоянный профиль экрана VM: 768×1600, scale=1; гостевые файлы
+  `~/.config/aurora-display.env`, `~/.config/systemd/user/lipstick.service.d/99-aurora-display.conf`.
+  Размер VirtualBox должен совпадать; временный профиль ЛР3 из infra не применять.
 
 ## Чего избегать
 

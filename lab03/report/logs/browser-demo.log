@@ -1,0 +1,7 @@
+PASS панель: 6 контейнеров, WebSocket подключён, nginx отвечает
+PASS кнопка balance 40/40
+PASS кнопка failover 40/40
+PASS кнопка recover 40/40
+PASS кнопка deploy 100/100
+PASS кнопка rollback 100/100
+ИТОГО: 5 кнопок проверены в Firefox; снимки сохранены

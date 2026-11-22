@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Только данный Compose-проект использует native Docker Engine.
+set -euo pipefail
+ROOT="$(dirname "$(readlink -f "$0")")"
+exec docker --context default compose -f "$ROOT/compose.yaml" "$@"

@@ -1,0 +1,2 @@
+lab03/build-aarch64/ru.mai.auroradeploy: ELF 64-bit LSB pie executable, ARM aarch64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-aarch64.so.1, BuildID[sha1]=22965b36e250149613b9749308950c147168851d, for GNU/Linux 3.18.0, with debug_info, not stripped
+lab03/build-armv7hl/ru.mai.auroradeploy: ELF 32-bit LSB pie executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux-armhf.so.3, BuildID[sha1]=3cbef00655f6135d7d20c5b0ade0b8467a82de9b, for GNU/Linux 3.18.0, with debug_info, not stripped

@@ -1,0 +1,95 @@
+{
+  "snapshot_sha256": "d08942fe5221c18eef87a79d4443f5b5c885a6122a99326b4239c5bb48465069",
+  "changes": [
+    {
+      "kind": "replace",
+      "before": [
+        "Институт №4 «Системы и средства связи»",
+        "Кафедра системного программирования и информационных технологий"
+      ],
+      "after": [
+        "Институт № 3 «Системы управления и информационные технологии»"
+      ]
+    },
+    {
+      "kind": "replace",
+      "before": [
+        "ВВЕДЕНИЕ",
+        "1 Постановка задачи и условия выполнения",
+        "2 Среда и архитектура",
+        "3 Реализация серверной инфраструктуры",
+        "4 Нативное приложение и RPM",
+        "5 Экспериментальная проверка",
+        "ЗАКЛЮЧЕНИЕ",
+        "СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ",
+        "ПРИЛОЖЕНИЕ А. Полные листинги"
+      ],
+      "after": [
+        "ВВЕДЕНИЕ3",
+        "1 Постановка задачи и условия выполнения3",
+        "2 Среда и архитектура4",
+        "3 Реализация серверной инфраструктуры6",
+        "4 Нативное приложение и RPM9",
+        "5 Экспериментальная проверка11",
+        "ЗАКЛЮЧЕНИЕ24",
+        "СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ25",
+        "ПРИЛОЖЕНИЕ А. Полные листинги25"
+      ]
+    },
+    {
+      "kind": "replace",
+      "before": [
+        "По указанию пользователя мобильные испытания проводились в уже запущенной Oracle VirtualBox VM Aurora OS, вместо физического телефона, указанного в TASK.md. Для сборки использован Docker-контейнер Aurora SDK. Установка на физический телефон не выполнялась и в результаты не включена.",
+        "В установленном SDK 5.1 отсутствует команда sign_package. Для фактической подписи применён штатный инструмент rpmsign-external и имеющийся тестовый сертификат разработчика SDK. Подпись проверена криптографически до установки. Таким образом, операция подписи выполнена, однако буквальное требование о названии утилиты отличается от использованной версии инструментария."
+      ],
+      "after": [
+        "Мобильные испытания проводились в Oracle VirtualBox VM Aurora OS, вместо физического телефона. Для сборки использован Docker-контейнер Aurora SDK. ",
+        "В установленном SDK 5.1 отсутствует команда sign_package. Для подписи применён штатный инструмент rpmsign-external и имеющийся тестовый сертификат разработчика SDK. "
+      ]
+    },
+    {
+      "kind": "delete",
+      "before": [
+        "В исходном профиле VirtualBox наблюдалось искажение framebuffer при 720×1600 и scale=2. Для получения читаемых снимков применён временный runtime drop-in службы lipstick с EnvironmentFile и режимом 768×1024, scale=1. Файлы профиля SDK не изменялись. Перезапуск compositor выполнен до основного демонстрационного сценария."
+      ],
+      "after": []
+    },
+    {
+      "kind": "replace",
+      "before": [
+        "Transaction:\tInstalling files",
+        "Status: \tWaiting in queue",
+        "Status: \tWaiting for authentication",
+        "Status: \tWaiting in queue",
+        "Status: \tStarting",
+        "Status: \tResolving dependencies",
+        "Percentage:\t0",
+        "Percentage:\t100",
+        "Status: \tInstalling packages",
+        "Percentage:\t0",
+        "Status: \tDownloading packages",
+        "Package:\tru.mai.auroradeploy-1.0.0-1.x86_64",
+        "Percentage:\t100",
+        "Status: \tInstalling packages",
+        "Status: \tFinished"
+      ],
+      "after": [
+        "Transaction:Installing files",
+        "Status: Waiting in queue",
+        "Status: Waiting for authentication",
+        "Status: Waiting in queue",
+        "Status: Starting",
+        "Status: Resolving dependencies",
+        "Percentage:0",
+        "Percentage:100",
+        "Status: Installing packages",
+        "Percentage:0",
+        "Status: Downloading packages",
+        "Package:ru.mai.auroradeploy-1.0.0-1.x86_64",
+        "Percentage:100",
+        "Status: Installing packages",
+        "Status: Finished"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+[
+  {"id": 1, "name": "Ноутбук Aurora", "quantity": 12},
+  {"id": 2, "name": "Терминал учёта", "quantity": 8},
+  {"id": 3, "name": "Сканер штрихкодов", "quantity": 24}
+]
