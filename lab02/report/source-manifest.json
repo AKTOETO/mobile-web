@@ -1,0 +1,217 @@
+[
+  {
+    "file": "inventory-server/server/auth.js",
+    "lines": 124,
+    "sha256": "c9d00f1ecae6197adf228a9e9236deafc2d328d87577b1bd35a993f06356f21e"
+  },
+  {
+    "file": "inventory-server/server/config.js",
+    "lines": 67,
+    "sha256": "7086f6240449924fdd8e559e15b70a18dec9dfb3ad10e7e0d9ce15919272de07"
+  },
+  {
+    "file": "inventory-server/server/openapi.js",
+    "lines": 312,
+    "sha256": "ab6df5fedc1d68ae97d8262b0bceb09ae6f77184d763e6a61881403c1139f120"
+  },
+  {
+    "file": "inventory-server/server/server.js",
+    "lines": 698,
+    "sha256": "b7a07e5b9fdd36b8450b8e37d28b33c4c717267c0945de7ca0256f8d89c8afd3"
+  },
+  {
+    "file": "inventory-server/server/store.js",
+    "lines": 225,
+    "sha256": "5abf85fe273b9f8fa88c779a81e4b3582cd69962e484412650ec08ecb6c90f90"
+  },
+  {
+    "file": "inventory-server/server/validation.js",
+    "lines": 98,
+    "sha256": "4b77f45f3c33a8cb018f831a96cc26960d0b2b13d8362d7d5be60da2d6641280"
+  },
+  {
+    "file": "inventory-server/public/css/style.css",
+    "lines": 243,
+    "sha256": "b735e72787175c999b08848b9d616a1920b1ab75931c63f4e318a56ed3690565"
+  },
+  {
+    "file": "inventory-server/public/css/swagger.css",
+    "lines": 24,
+    "sha256": "31de923aa9f7a6dab429bded112d08446606433b05c01f4cff84279fb96c377f"
+  },
+  {
+    "file": "inventory-server/public/docs.html",
+    "lines": 43,
+    "sha256": "911efe1cdab9edcaefe1e2791ee42e96c2ece032e53f632fa174947f0e2e4ff4"
+  },
+  {
+    "file": "inventory-server/public/favicon.svg",
+    "lines": 6,
+    "sha256": "590ddf7103fd5f4d06e44a047098bfb32b795642a38d665cbe033089e75d8167"
+  },
+  {
+    "file": "inventory-server/public/index.html",
+    "lines": 123,
+    "sha256": "b02c4ccf6f85270f777be2129f05ad776a1e76bc5d5ae9063817de67da06129e"
+  },
+  {
+    "file": "inventory-server/public/js/api.js",
+    "lines": 73,
+    "sha256": "6c2718db603b54ecd261f7d96d0a171e9baf0e622dc2da1a939c195bf83be728"
+  },
+  {
+    "file": "inventory-server/public/js/app.js",
+    "lines": 537,
+    "sha256": "fdd77e72250099c73faa93fa61eedb0a27bad5a229eab7ed629f9b02f05f93bc"
+  },
+  {
+    "file": "inventory-server/public/js/swagger-demo.js",
+    "lines": 92,
+    "sha256": "0b0f3f0d0e5404cf468ce525fa41ee00e9df00da888075119a7403314888b465"
+  },
+  {
+    "file": "inventory-server/public/js/swagger.js",
+    "lines": 41,
+    "sha256": "915e755599fe5b20e66168dd4a0d44ab6596fc25bfba9721c9a24879fa625f4d"
+  },
+  {
+    "file": "inventory-server/package.json",
+    "lines": 25,
+    "sha256": "1835f912b9a623efc84137163bfb5577b5174c71e2f3236b39498087699c7cb4"
+  },
+  {
+    "file": "inventory-server/tools/gen-cert.sh",
+    "lines": 50,
+    "sha256": "9a7d3992fb853b3da86becca005da34a2cc978ddba92b61f295336b3a5ee6459"
+  },
+  {
+    "file": "inventory-server/test/api-test.js",
+    "lines": 478,
+    "sha256": "a5d6457fbfbf565320cbfde2466ef20cb13f2c97650b69a34b8a481bb23d03f8"
+  },
+  {
+    "file": "aurora-app/src/inventoryclient.cpp",
+    "lines": 983,
+    "sha256": "4f3a66916b70391319d3be534e94e70cfedc31116843a0ae46148604ad2dc0f7"
+  },
+  {
+    "file": "aurora-app/src/inventoryclient.h",
+    "lines": 177,
+    "sha256": "2a31c53a6d59aec1a8b0a9263af396dc8a838bf89777187670dd5beb803e68d1"
+  },
+  {
+    "file": "aurora-app/src/itemmodel.cpp",
+    "lines": 106,
+    "sha256": "fda1a89facc2e39935d719a4d0725e396f078618892bfc1839b8cfbaa7c967d9"
+  },
+  {
+    "file": "aurora-app/src/itemmodel.h",
+    "lines": 64,
+    "sha256": "40418292b95e35435560fe6d55bb1720097abe3e092a56964abed5cd74ee2a30"
+  },
+  {
+    "file": "aurora-app/src/localcache.cpp",
+    "lines": 316,
+    "sha256": "e1471a41434be02704e9bbccdefcf81649531cdb11093348a42fa1c23145a268"
+  },
+  {
+    "file": "aurora-app/src/localcache.h",
+    "lines": 64,
+    "sha256": "d07ece84ef1217cf45dde5e110eed23ea73949a1b73e14afb63a176db0398cc8"
+  },
+  {
+    "file": "aurora-app/src/main.cpp",
+    "lines": 36,
+    "sha256": "283a10aed3313aa62eee6dde32f57b07f9e75f54d384deecb28585aa13fba48d"
+  },
+  {
+    "file": "aurora-app/qml/aurorainventory.qml",
+    "lines": 9,
+    "sha256": "070c3f9d8ef205a1a964a7a6772b0cc34c578e26c118c631b85f4c29820c7837"
+  },
+  {
+    "file": "aurora-app/qml/cover/CoverPage.qml",
+    "lines": 47,
+    "sha256": "d4e94a00df8ea72dcca9235c2a0a5986cfe60887426923bb4d64119f629dd7f7"
+  },
+  {
+    "file": "aurora-app/qml/pages/AboutPage.qml",
+    "lines": 83,
+    "sha256": "61956060d2fe00bb04a6668a792fd6d48189edfb82914393576ef38e6dd48a0d"
+  },
+  {
+    "file": "aurora-app/qml/pages/DemoLogPage.qml",
+    "lines": 55,
+    "sha256": "f833640098f09f9fd338e41fc25384bd0a01d0f3455776ee096ac57a1f823b57"
+  },
+  {
+    "file": "aurora-app/qml/pages/ItemPage.qml",
+    "lines": 133,
+    "sha256": "4c0c53de4c31013437880b7a7f8d3019ab54666968399ff52c1379880e686b18"
+  },
+  {
+    "file": "aurora-app/qml/pages/MainPage.qml",
+    "lines": 186,
+    "sha256": "8f8b792d5eac89dca272ad9af101f049c9144cf6f1bf5f64ec4520ef9e4d71b4"
+  },
+  {
+    "file": "aurora-app/qml/pages/SettingsPage.qml",
+    "lines": 146,
+    "sha256": "dd4626b70c068c2befbaa2a39ed8976fb841e29d8ec1d2a5ee2f9969e9181b27"
+  },
+  {
+    "file": "aurora-app/ru.mai.aurorainventory.pro",
+    "lines": 27,
+    "sha256": "cedbc3c3125e2a3b6848dd1d1c0edaed66421780f25b4136d3941e3a01cf611d"
+  },
+  {
+    "file": "aurora-app/ru.mai.aurorainventory.desktop",
+    "lines": 13,
+    "sha256": "0bc4cc4a12a7260fb7ba7bb54c5c0a4331c77d2356e0cd075083be77f31687dc"
+  },
+  {
+    "file": "aurora-app/resources.qrc",
+    "lines": 5,
+    "sha256": "a0641822825cfedaae8cd069caf10ce3d871c6bc44f94e29ac66bac72cc4e06b"
+  },
+  {
+    "file": "aurora-app/certs/ca.crt",
+    "lines": 22,
+    "sha256": "6b41b2d05e96a6f4e7675dfc9998bb032d98844a7f3a330fb4e80648875f0405"
+  },
+  {
+    "file": "aurora-app/rpm/ru.mai.aurorainventory.changes.in",
+    "lines": 3,
+    "sha256": "22b84f0ae9b06ce9583677d75ecfd75694775a5d543825ccdff6d3399dd2b4a2"
+  },
+  {
+    "file": "aurora-app/rpm/ru.mai.aurorainventory.changes.run.in",
+    "lines": 6,
+    "sha256": "188da0e7969a9a635f5a4fb4e254469aff44893f6ba0b71355ec3721dda9e569"
+  },
+  {
+    "file": "aurora-app/rpm/ru.mai.aurorainventory.spec",
+    "lines": 41,
+    "sha256": "e96a4eff2639485fe2507927884a37e940f76b8dae835ed763ec8c7bb59a747f"
+  },
+  {
+    "file": "aurora-app/tests/settings-login-test.cpp",
+    "lines": 82,
+    "sha256": "b14ad48c4a8339a1ee37fdb3cda3992d6ed9a0d0cebbc8a3872450d87054c5c1"
+  },
+  {
+    "file": "aurora-app/tests/settings-login-test.pro",
+    "lines": 9,
+    "sha256": "1b224309b41f77c97e25fc4bb73fe3c7ea7fda6a198cb6d1e0e5e4e796e815b7"
+  },
+  {
+    "file": "aurora-app/tests/sync-test.cpp",
+    "lines": 93,
+    "sha256": "cd153a9034627bf74f463f64c67fdf6e0a47980b7d5a5c30d8887cbe80da0b6c"
+  },
+  {
+    "file": "aurora-app/tests/sync-test.pro",
+    "lines": 9,
+    "sha256": "98298db59529a9297defec7a9ca014368cf8b3d88f7efbc3dfa29234af755d0d"
+  }
+]

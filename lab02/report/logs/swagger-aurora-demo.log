@@ -1,0 +1,15 @@
+Браузер: Mozilla/5.0 (Aurora 5.1; Mobile; rv:78.0) Gecko/78.0 Firefox/78.0
+Страница: https://10.0.2.2:9443/docs.html?auto=1
+Запросы выполнены кнопками Try it out / Execute в Swagger UI.
+[2026-11-08T15:21:24.816Z] GET /api/v1/health -> 200
+[2026-11-08T15:21:27.075Z] POST /api/v1/auth/login -> 200
+[2026-11-08T15:21:29.368Z] GET /api/v1/auth/me -> 200
+[2026-11-08T15:21:31.654Z] GET /api/v1/items?limit=50&offset=0 -> 200
+[2026-11-08T15:21:34.579Z] POST /api/v1/items -> 201
+[2026-11-08T15:21:37.073Z] GET /api/v1/items/87def826-cf6f-4701-a41d-d555f810014d -> 200
+[2026-11-08T15:21:40.681Z] PUT /api/v1/items/87def826-cf6f-4701-a41d-d555f810014d -> 200
+[2026-11-08T15:21:43.851Z] PATCH /api/v1/items/87def826-cf6f-4701-a41d-d555f810014d -> 200
+[2026-11-08T15:21:49.430Z] DELETE /api/v1/items/87def826-cf6f-4701-a41d-d555f810014d -> 204
+[2026-11-08T15:21:52.298Z] GET /api/v1/items/87def826-cf6f-4701-a41d-d555f810014d -> 404
+[2026-11-08T15:21:54.822Z] POST /api/v1/auth/logout -> 204
+Итог: 11/11, ok=true; контрольный запрос debug/demo-result -> 200.

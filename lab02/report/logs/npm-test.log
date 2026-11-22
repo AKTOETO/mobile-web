@@ -2,7 +2,7 @@
 > lab02-inventory-server@1.0.0 test
 > node test/api-test.js
 
-Сервер: https://127.0.0.1:46697, данные: /tmp/lab02-test-Uza3lB
+Сервер: https://127.0.0.1:46565, данные: /tmp/lab02-test-G1Asau
 
 [1] Здоровье, HTTP-редирект, статика, OpenAPI
   ok  health 200
@@ -16,6 +16,7 @@
   ok  GET / — HTML
   ok  GET / — страница инвентаря
   ok  GET / — Cache-Control no-cache
+  ok  главная содержит ссылку Swagger UI
   ok  CSS 200
   ok  CSS content-type
   ok  JS 200
@@ -23,7 +24,12 @@
   ok  app.js 200
   ok  app.js содержит автодемо
   ok  docs.html 200
-  ok  docs.html — OpenAPI
+  ok  docs.html — Swagger UI
+  ok  инициализация Swagger UI доступна
+  ok  Swagger UI загружает локальное описание
+  ok  локальный Swagger UI доступен без CDN
+  ok  Swagger UI имеет тип JavaScript
+  ok  стили Swagger UI доступны
   ok  favicon.svg 200
   ok  favicon content-type
   ok  HEAD / → 200
@@ -32,6 +38,8 @@
   ok  openapi 200
   ok  openapi версия
   ok  openapi описывает /items
+  ok  API использует текущий адрес без фиксированного IP
+  ok  редирект сохраняет адрес другой сети
 
 [2] Аутентификация JWT и cookie
   ok  неверный пароль → 401
@@ -132,4 +140,4 @@
   ok  logout: cookie сброшена
   ok  пустые учётные данные → 400
 
-Итого: 114 проверок, 0 ошибок.
+Итого: 122 проверок, 0 ошибок.

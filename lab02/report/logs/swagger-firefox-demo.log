@@ -1,0 +1,62 @@
+{
+  "url": "https://192.168.1.163:9443/docs.html?auto=1",
+  "done": true,
+  "ok": true,
+  "steps": [
+    {
+      "method": "get",
+      "path": "/health",
+      "status": 200
+    },
+    {
+      "method": "post",
+      "path": "/auth/login",
+      "status": 200
+    },
+    {
+      "method": "get",
+      "path": "/auth/me",
+      "status": 200
+    },
+    {
+      "method": "get",
+      "path": "/items",
+      "status": 200
+    },
+    {
+      "method": "post",
+      "path": "/items",
+      "status": 201
+    },
+    {
+      "method": "get",
+      "path": "/items/{id}",
+      "status": 200
+    },
+    {
+      "method": "put",
+      "path": "/items/{id}",
+      "status": 200
+    },
+    {
+      "method": "patch",
+      "path": "/items/{id}",
+      "status": 200
+    },
+    {
+      "method": "delete",
+      "path": "/items/{id}",
+      "status": 204
+    },
+    {
+      "method": "get",
+      "path": "/items/{id}",
+      "status": 404
+    },
+    {
+      "method": "post",
+      "path": "/auth/logout",
+      "status": 204
+    }
+  ]
+}

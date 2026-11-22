@@ -1,0 +1,10 @@
+Среда: Aurora OS 5.1.1.60 x86_64, QCoreApplication, SQLite, HTTPS.
+Команда: env XDG_CONFIG_HOME=/tmp/mai-sync-check-config XDG_DATA_HOME=/tmp/mai-sync-check-data /tmp/inventory-sync-test https://10.0.2.2:9443
+PASS: вход admin
+PASS: офлайн-создание с временным id
+PASS: обновление офлайн сохраняет очередь и предмет
+PASS: единое обновление отправляет правки и заменяет временный id
+PASS: после 403 и чтения сервера локальная правка остаётся в кэше и очереди
+PASS: повторное обновление после 403 не теряет локальные изменения
+PASS: сохранённая после 403 операция отправлена после входа admin
+PASS: удаление тестового предмета
